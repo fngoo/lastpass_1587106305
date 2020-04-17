@@ -1,2035 +1,0 @@
-travis_fold:start:worker_info[0K[33;1mWorker information[0m
-hostname: d1467f3a-cd81-4c91-965d-76f443c98007@1.worker-org-6bc68c5dcd-mj9pl.macstadium-prod-2
-version: v6.2.0 https://github.com/travis-ci/worker/tree/5e5476e01646095f48eec13196fdb3faf8f5cbf7
-instance: d30b79ed-5bab-4298-a730-26931c8bb45d travis-ci-macos-10.13-xcode9.4.1-1529955246 (via amqp)
-startup: 1m7.408978948s
-travis_fold:end:worker_info[0Ktravis_time:start:0363e96a[0Ktravis_time:end:0363e96a:start=1576023253185175000,finish=1576023253666998000,duration=481823000,event=no_world_writable_dirs[0Ktravis_time:start:0dc8552d[0Ktravis_time:end:0dc8552d:start=1576023253676314000,finish=1576023253683125000,duration=6811000,event=check_unsupported[0Ktravis_time:start:138791a0[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
-Build language: cpp
-Build id: 623446983
-Job id: 623446994
-Runtime kernel version: 17.4.0
-travis-build version: 773cff0ed
-[34m[1mBuild image provisioning date and time[0m
-Mon Jun 25 21:55:14 GMT 2018
-[34m[1mOperating System Details[0m
-ProductName:	Mac OS X
-ProductVersion:	10.13.3
-BuildVersion:	17D102
-[34m[1mGit version[0m
-git version 2.18.0
-[34m[1mbash version[0m
-GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin17)
-Copyright (C) 2007 Free Software Foundation, Inc.
-[34m[1mGCC version[0m
-Apple LLVM version 9.1.0 (clang-902.0.39.2)
-Target: x86_64-apple-darwin17.4.0
-Thread model: posix
-InstalledDir: /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-[34m[1mLLVM version[0m
-Apple LLVM version 9.1.0 (clang-902.0.39.2)
-Target: x86_64-apple-darwin17.4.0
-Thread model: posix
-InstalledDir: /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-[34m[1mPre-installed Ruby versions[0m
-ruby-2.3.5
-ruby-2.4.3
-[34m[1mPre-installed Node.js versions[0m
-v4.9.1
-v5.12.0
-v6.14.3
-v8.11.3
-[34m[1mmvn -version[0m
-Apache Maven 3.5.4 (1edded0938998edf8bf061f1ceb3cfdeccf443fe; 2018-06-17T18:33:14Z)
-Maven home: /usr/local/Cellar/maven/3.5.4/libexec
-Java version: 10.0.1, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/jdk-10.0.1.jdk/Contents/Home
-Default locale: en_US, platform encoding: UTF-8
-OS name: "mac os x", version: "10.13.3", arch: "x86_64", family: "mac"
-travis_fold:end:system_info[0K
-travis_time:end:138791a0:start=1576023253691772000,finish=1576023253707185000,duration=15413000,event=show_system_info[0Ktravis_time:start:0007af16[0Ktravis_time:end:0007af16:start=1576023253715035000,finish=1576023253721948000,duration=6913000,event=rm_riak_source[0Ktravis_time:start:00d2c966[0Ktravis_time:end:00d2c966:start=1576023253730103000,finish=1576023253737173000,duration=7070000,event=fix_rwky_redis[0Ktravis_time:start:07d24298[0Ktravis_time:end:07d24298:start=1576023253748261000,finish=1576023254093634000,duration=345373000,event=wait_for_network[0Ktravis_time:start:15fe1a27[0Ktravis_time:end:15fe1a27:start=1576023254101676000,finish=1576023254108042000,duration=6366000,event=update_apt_keys[0Ktravis_time:start:01302268[0Ktravis_time:end:01302268:start=1576023254115795000,finish=1576023254122887000,duration=7092000,event=fix_hhvm_source[0Ktravis_time:start:25d234f4[0Ktravis_time:end:25d234f4:start=1576023254130701000,finish=1576023254138023000,duration=7322000,event=update_mongo_arch[0Ktravis_time:start:07d1ad88[0Ktravis_time:end:07d1ad88:start=1576023254146676000,finish=1576023254157396000,duration=10720000,event=fix_sudo_enabled_trusty[0Ktravis_time:start:0d8d48b4[0Ktravis_time:end:0d8d48b4:start=1576023254167424000,finish=1576023254174399000,duration=6975000,event=update_glibc[0Ktravis_time:start:076fc497[0Ktravis_time:end:076fc497:start=1576023254184371000,finish=1576023254237218000,duration=52847000,event=clean_up_path[0Ktravis_time:start:2344e424[0Ktravis_time:end:2344e424:start=1576023254251415000,finish=1576023254298535000,duration=47120000,event=fix_resolv_conf[0Ktravis_time:start:31a1f4b0[0Ktravis_time:end:31a1f4b0:start=1576023254306576000,finish=1576023254351144000,duration=44568000,event=fix_etc_hosts[0Ktravis_time:start:02dc75c4[0Ktravis_time:end:02dc75c4:start=1576023254360000000,finish=1576023254367056000,duration=7056000,event=fix_mvn_settings_xml[0Ktravis_time:start:17457b76[0Ktravis_time:end:17457b76:start=1576023254376590000,finish=1576023254421516000,duration=44926000,event=no_ipv6_localhost[0Ktravis_time:start:03f74578[0Ktravis_time:end:03f74578:start=1576023254430811000,finish=1576023254441581000,duration=10770000,event=fix_etc_mavenrc[0Ktravis_time:start:2d40ac9d[0Ktravis_time:end:2d40ac9d:start=1576023254450271000,finish=1576023254673850000,duration=223579000,event=fix_wwdr_certificate[0Ktravis_time:start:114b1863[0Ktravis_time:end:114b1863:start=1576023254682135000,finish=1576023254832584000,duration=150449000,event=put_localhost_first[0Ktravis_time:start:03436449[0Ktravis_time:end:03436449:start=1576023254841023000,finish=1576023254847830000,duration=6807000,event=home_paths[0Ktravis_time:start:0b0697d8[0Ktravis_time:end:0b0697d8:start=1576023254856136000,finish=1576023254869475000,duration=13339000,event=disable_initramfs[0Ktravis_time:start:13af6089[0Ktravis_time:end:13af6089:start=1576023254878123000,finish=1576023254899011000,duration=20888000,event=disable_ssh_roaming[0Ktravis_time:start:0034daba[0Ktravis_time:end:0034daba:start=1576023254907473000,finish=1576023254913970000,duration=6497000,event=debug_tools[0Ktravis_time:start:01c68a11[0KUninstalled oclint to prevent interference with other packages.
-If you need oclint, you must explicitly install it.
-
-travis_time:end:01c68a11:start=1576023254923978000,finish=1576023258181107000,duration=3257129000,event=uninstall_oclint[0Ktravis_time:start:1f0f47d0[0Ktravis_time:end:1f0f47d0:start=1576023258190490000,finish=1576023259198997000,duration=1008507000,event=rvm_use[0Ktravis_time:start:040ae85a[0Ktravis_time:end:040ae85a:start=1576023259208287000,finish=1576023259249661000,duration=41374000,event=rm_etc_boto_cfg[0Ktravis_time:start:1627095f[0Ktravis_time:end:1627095f:start=1576023259258670000,finish=1576023259265895000,duration=7225000,event=rm_oraclejdk8_symlink[0Ktravis_time:start:01153ce4[0Ktravis_time:end:01153ce4:start=1576023259277015000,finish=1576023259290143000,duration=13128000,event=enable_i386[0Ktravis_time:start:280cf410[0Ktravis_time:end:280cf410:start=1576023259299182000,finish=1576023259310371000,duration=11189000,event=update_rubygems[0Ktravis_time:start:0408a000[0Ktravis_time:end:0408a000:start=1576023259320509000,finish=1576023259333364000,duration=12855000,event=ensure_path_components[0Ktravis_time:start:0d8ad17c[0Ktravis_time:end:0d8ad17c:start=1576023259342173000,finish=1576023259349022000,duration=6849000,event=redefine_curl[0Ktravis_time:start:16987b72[0Ktravis_time:end:16987b72:start=1576023259357691000,finish=1576023259364606000,duration=6915000,event=nonblock_pipe[0Ktravis_time:start:1cb7a43c[0Ktravis_time:end:1cb7a43c:start=1576023259373152000,finish=1576023259381505000,duration=8353000,event=apt_get_update[0Ktravis_time:start:0219a42b[0Ktravis_time:end:0219a42b:start=1576023259390064000,finish=1576023259396794000,duration=6730000,event=deprecate_xcode_64[0Ktravis_time:start:0527bd48[0Ktravis_time:end:0527bd48:start=1576023259406753000,finish=1576023259421319000,duration=14566000,event=update_heroku[0Ktravis_time:start:0a4d0ca8[0Ktravis_time:end:0a4d0ca8:start=1576023259430290000,finish=1576023259437818000,duration=7528000,event=shell_session_update[0Ktravis_time:start:134375ee[0Ktravis_time:end:134375ee:start=1576023259450503000,finish=1576023259458991000,duration=8488000,event=maven_central_mirror[0Ktravis_time:start:15cca28c[0Ktravis_time:end:15cca28c:start=1576023259472414000,finish=1576023259479689000,duration=7275000,event=fix_ps4[0Ktravis_time:start:22bd61cb[0K
-travis_fold:start:git.checkout[0Ktravis_time:start:048cb718[0K$ git clone --depth=50 https://github.com/lastpass/lastpass-cli.git lastpass/lastpass-cli
-Cloning into 'lastpass/lastpass-cli'...
-remote: Enumerating objects: 547, done.[K
-remote: Counting objects:   0% (1/547)[Kremote: Counting objects:   1% (6/547)[Kremote: Counting objects:   2% (11/547)[Kremote: Counting objects:   3% (17/547)[Kremote: Counting objects:   4% (22/547)[Kremote: Counting objects:   5% (28/547)[Kremote: Counting objects:   6% (33/547)[Kremote: Counting objects:   7% (39/547)[Kremote: Counting objects:   8% (44/547)[Kremote: Counting objects:   9% (50/547)[Kremote: Counting objects:  10% (55/547)[Kremote: Counting objects:  11% (61/547)[Kremote: Counting objects:  12% (66/547)[Kremote: Counting objects:  13% (72/547)[Kremote: Counting objects:  14% (77/547)[Kremote: Counting objects:  15% (83/547)[Kremote: Counting objects:  16% (88/547)[Kremote: Counting objects:  17% (93/547)[Kremote: Counting objects:  18% (99/547)[Kremote: Counting objects:  19% (104/547)[Kremote: Counting objects:  20% (110/547)[Kremote: Counting objects:  21% (115/547)[Kremote: Counting objects:  22% (121/547)[Kremote: Counting objects:  23% (126/547)[Kremote: Counting objects:  24% (132/547)[Kremote: Counting objects:  25% (137/547)[Kremote: Counting objects:  26% (143/547)[Kremote: Counting objects:  27% (148/547)[Kremote: Counting objects:  28% (154/547)[Kremote: Counting objects:  29% (159/547)[Kremote: Counting objects:  30% (165/547)[Kremote: Counting objects:  31% (170/547)[Kremote: Counting objects:  32% (176/547)[Kremote: Counting objects:  33% (181/547)[Kremote: Counting objects:  34% (186/547)[Kremote: Counting objects:  35% (192/547)[Kremote: Counting objects:  36% (197/547)[Kremote: Counting objects:  37% (203/547)[Kremote: Counting objects:  38% (208/547)[Kremote: Counting objects:  39% (214/547)[Kremote: Counting objects:  40% (219/547)[Kremote: Counting objects:  41% (225/547)[Kremote: Counting objects:  42% (230/547)[Kremote: Counting objects:  43% (236/547)[Kremote: Counting objects:  44% (241/547)[Kremote: Counting objects:  45% (247/547)[Kremote: Counting objects:  46% (252/547)[Kremote: Counting objects:  47% (258/547)[Kremote: Counting objects:  48% (263/547)[Kremote: Counting objects:  49% (269/547)[Kremote: Counting objects:  50% (274/547)[Kremote: Counting objects:  51% (279/547)[Kremote: Counting objects:  52% (285/547)[Kremote: Counting objects:  53% (290/547)[Kremote: Counting objects:  54% (296/547)[Kremote: Counting objects:  55% (301/547)[Kremote: Counting objects:  56% (307/547)[Kremote: Counting objects:  57% (312/547)[Kremote: Counting objects:  58% (318/547)[Kremote: Counting objects:  59% (323/547)[Kremote: Counting objects:  60% (329/547)[Kremote: Counting objects:  61% (334/547)[Kremote: Counting objects:  62% (340/547)[Kremote: Counting objects:  63% (345/547)[Kremote: Counting objects:  64% (351/547)[Kremote: Counting objects:  65% (356/547)[Kremote: Counting objects:  66% (362/547)[Kremote: Counting objects:  67% (367/547)[Kremote: Counting objects:  68% (372/547)[Kremote: Counting objects:  69% (378/547)[Kremote: Counting objects:  70% (383/547)[Kremote: Counting objects:  71% (389/547)[Kremote: Counting objects:  72% (394/547)[Kremote: Counting objects:  73% (400/547)[Kremote: Counting objects:  74% (405/547)[Kremote: Counting objects:  75% (411/547)[Kremote: Counting objects:  76% (416/547)[Kremote: Counting objects:  77% (422/547)[Kremote: Counting objects:  78% (427/547)[Kremote: Counting objects:  79% (433/547)[Kremote: Counting objects:  80% (438/547)[Kremote: Counting objects:  81% (444/547)[Kremote: Counting objects:  82% (449/547)[Kremote: Counting objects:  83% (455/547)[Kremote: Counting objects:  84% (460/547)[Kremote: Counting objects:  85% (465/547)[Kremote: Counting objects:  86% (471/547)[Kremote: Counting objects:  87% (476/547)[Kremote: Counting objects:  88% (482/547)[Kremote: Counting objects:  89% (487/547)[Kremote: Counting objects:  90% (493/547)[Kremote: Counting objects:  91% (498/547)[Kremote: Counting objects:  92% (504/547)[Kremote: Counting objects:  93% (509/547)[Kremote: Counting objects:  94% (515/547)[Kremote: Counting objects:  95% (520/547)[Kremote: Counting objects:  96% (526/547)[Kremote: Counting objects:  97% (531/547)[Kremote: Counting objects:  98% (537/547)[Kremote: Counting objects:  99% (542/547)[Kremote: Counting objects: 100% (547/547)[Kremote: Counting objects: 100% (547/547), done.[K
-remote: Compressing objects:   0% (1/287)[Kremote: Compressing objects:   1% (3/287)[Kremote: Compressing objects:   2% (6/287)[Kremote: Compressing objects:   3% (9/287)[Kremote: Compressing objects:   4% (12/287)[Kremote: Compressing objects:   5% (15/287)[Kremote: Compressing objects:   6% (18/287)[Kremote: Compressing objects:   7% (21/287)[Kremote: Compressing objects:   8% (23/287)[Kremote: Compressing objects:   9% (26/287)[Kremote: Compressing objects:  10% (29/287)[Kremote: Compressing objects:  11% (32/287)[Kremote: Compressing objects:  12% (35/287)[Kremote: Compressing objects:  13% (38/287)[Kremote: Compressing objects:  14% (41/287)[Kremote: Compressing objects:  15% (44/287)[Kremote: Compressing objects:  16% (46/287)[Kremote: Compressing objects:  17% (49/287)[Kremote: Compressing objects:  18% (52/287)[Kremote: Compressing objects:  19% (55/287)[Kremote: Compressing objects:  20% (58/287)[Kremote: Compressing objects:  21% (61/287)[Kremote: Compressing objects:  22% (64/287)[Kremote: Compressing objects:  23% (67/287)[Kremote: Compressing objects:  24% (69/287)[Kremote: Compressing objects:  25% (72/287)[Kremote: Compressing objects:  26% (75/287)[Kremote: Compressing objects:  27% (78/287)[Kremote: Compressing objects:  28% (81/287)[Kremote: Compressing objects:  29% (84/287)[Kremote: Compressing objects:  30% (87/287)[Kremote: Compressing objects:  31% (89/287)[Kremote: Compressing objects:  32% (92/287)[Kremote: Compressing objects:  33% (95/287)[Kremote: Compressing objects:  34% (98/287)[Kremote: Compressing objects:  35% (101/287)[Kremote: Compressing objects:  36% (104/287)[Kremote: Compressing objects:  37% (107/287)[Kremote: Compressing objects:  38% (110/287)[Kremote: Compressing objects:  39% (112/287)[Kremote: Compressing objects:  40% (115/287)[Kremote: Compressing objects:  41% (118/287)[Kremote: Compressing objects:  42% (121/287)[Kremote: Compressing objects:  43% (124/287)[Kremote: Compressing objects:  44% (127/287)[Kremote: Compressing objects:  45% (130/287)[Kremote: Compressing objects:  46% (133/287)[Kremote: Compressing objects:  47% (135/287)[Kremote: Compressing objects:  48% (138/287)[Kremote: Compressing objects:  49% (141/287)[Kremote: Compressing objects:  50% (144/287)[Kremote: Compressing objects:  51% (147/287)[Kremote: Compressing objects:  52% (150/287)[Kremote: Compressing objects:  53% (153/287)[Kremote: Compressing objects:  54% (155/287)[Kremote: Compressing objects:  55% (158/287)[Kremote: Compressing objects:  56% (161/287)[Kremote: Compressing objects:  57% (164/287)[Kremote: Compressing objects:  58% (167/287)[Kremote: Compressing objects:  59% (170/287)[Kremote: Compressing objects:  60% (173/287)[Kremote: Compressing objects:  61% (176/287)[Kremote: Compressing objects:  62% (178/287)[Kremote: Compressing objects:  63% (181/287)[Kremote: Compressing objects:  64% (184/287)[Kremote: Compressing objects:  65% (187/287)[Kremote: Compressing objects:  66% (190/287)[Kremote: Compressing objects:  67% (193/287)[Kremote: Compressing objects:  68% (196/287)[Kremote: Compressing objects:  69% (199/287)[Kremote: Compressing objects:  70% (201/287)[Kremote: Compressing objects:  71% (204/287)[Kremote: Compressing objects:  72% (207/287)[Kremote: Compressing objects:  73% (210/287)[Kremote: Compressing objects:  74% (213/287)[Kremote: Compressing objects:  75% (216/287)[Kremote: Compressing objects:  76% (219/287)[Kremote: Compressing objects:  77% (221/287)[Kremote: Compressing objects:  78% (224/287)[Kremote: Compressing objects:  79% (227/287)[Kremote: Compressing objects:  80% (230/287)[Kremote: Compressing objects:  81% (233/287)[Kremote: Compressing objects:  82% (236/287)[Kremote: Compressing objects:  83% (239/287)[Kremote: Compressing objects:  84% (242/287)[Kremote: Compressing objects:  85% (244/287)[Kremote: Compressing objects:  86% (247/287)[Kremote: Compressing objects:  87% (250/287)[Kremote: Compressing objects:  88% (253/287)[Kremote: Compressing objects:  89% (256/287)[Kremote: Compressing objects:  90% (259/287)[Kremote: Compressing objects:  91% (262/287)[Kremote: Compressing objects:  92% (265/287)[Kremote: Compressing objects:  93% (267/287)[Kremote: Compressing objects:  94% (270/287)[Kremote: Compressing objects:  95% (273/287)[Kremote: Compressing objects:  96% (276/287)[Kremote: Compressing objects:  97% (279/287)[Kremote: Compressing objects:  98% (282/287)[Kremote: Compressing objects:  99% (285/287)[Kremote: Compressing objects: 100% (287/287)[Kremote: Compressing objects: 100% (287/287), done.[K
-Receiving objects:   0% (1/547)   Receiving objects:   1% (6/547)   Receiving objects:   2% (11/547)   Receiving objects:   3% (17/547)   Receiving objects:   4% (22/547)   Receiving objects:   5% (28/547)   Receiving objects:   6% (33/547)   Receiving objects:   7% (39/547)   Receiving objects:   8% (44/547)   Receiving objects:   9% (50/547)   Receiving objects:  10% (55/547)   Receiving objects:  11% (61/547)   Receiving objects:  12% (66/547)   Receiving objects:  13% (72/547)   Receiving objects:  14% (77/547)   Receiving objects:  15% (83/547)   Receiving objects:  16% (88/547)   Receiving objects:  17% (93/547)   Receiving objects:  18% (99/547)   Receiving objects:  19% (104/547)   Receiving objects:  20% (110/547)   Receiving objects:  21% (115/547)   Receiving objects:  22% (121/547)   Receiving objects:  23% (126/547)   Receiving objects:  24% (132/547)   Receiving objects:  25% (137/547)   Receiving objects:  26% (143/547)   Receiving objects:  27% (148/547)   Receiving objects:  28% (154/547)   Receiving objects:  29% (159/547)   Receiving objects:  30% (165/547)   Receiving objects:  31% (170/547)   Receiving objects:  32% (176/547)   Receiving objects:  33% (181/547)   Receiving objects:  34% (186/547)   Receiving objects:  35% (192/547)   Receiving objects:  36% (197/547)   Receiving objects:  37% (203/547)   Receiving objects:  38% (208/547)   Receiving objects:  39% (214/547)   Receiving objects:  40% (219/547)   Receiving objects:  41% (225/547)   Receiving objects:  42% (230/547)   Receiving objects:  43% (236/547)   Receiving objects:  44% (241/547)   Receiving objects:  45% (247/547)   Receiving objects:  46% (252/547)   Receiving objects:  47% (258/547)   Receiving objects:  48% (263/547)   Receiving objects:  49% (269/547)   Receiving objects:  50% (274/547)   Receiving objects:  51% (279/547)   Receiving objects:  52% (285/547)   Receiving objects:  53% (290/547)   Receiving objects:  54% (296/547)   Receiving objects:  55% (301/547)   Receiving objects:  56% (307/547)   Receiving objects:  57% (312/547)   Receiving objects:  58% (318/547)   Receiving objects:  59% (323/547)   Receiving objects:  60% (329/547)   Receiving objects:  61% (334/547)   Receiving objects:  62% (340/547)   Receiving objects:  63% (345/547)   Receiving objects:  64% (351/547)   Receiving objects:  65% (356/547)   Receiving objects:  66% (362/547)   Receiving objects:  67% (367/547)   Receiving objects:  68% (372/547)   Receiving objects:  69% (378/547)   Receiving objects:  70% (383/547)   Receiving objects:  71% (389/547)   Receiving objects:  72% (394/547)   Receiving objects:  73% (400/547)   Receiving objects:  74% (405/547)   Receiving objects:  75% (411/547)   Receiving objects:  76% (416/547)   Receiving objects:  77% (422/547)   Receiving objects:  78% (427/547)   Receiving objects:  79% (433/547)   Receiving objects:  80% (438/547)   remote: Total 547 (delta 302), reused 429 (delta 253), pack-reused 0[K
-Receiving objects:  81% (444/547)   Receiving objects:  82% (449/547)   Receiving objects:  83% (455/547)   Receiving objects:  84% (460/547)   Receiving objects:  85% (465/547)   Receiving objects:  86% (471/547)   Receiving objects:  87% (476/547)   Receiving objects:  88% (482/547)   Receiving objects:  89% (487/547)   Receiving objects:  90% (493/547)   Receiving objects:  91% (498/547)   Receiving objects:  92% (504/547)   Receiving objects:  93% (509/547)   Receiving objects:  94% (515/547)   Receiving objects:  95% (520/547)   Receiving objects:  96% (526/547)   Receiving objects:  97% (531/547)   Receiving objects:  98% (537/547)   Receiving objects:  99% (542/547)   Receiving objects: 100% (547/547)   Receiving objects: 100% (547/547), 242.22 KiB | 7.12 MiB/s, done.
-Resolving deltas:   0% (0/302)   Resolving deltas:   1% (5/302)   Resolving deltas:   6% (20/302)   Resolving deltas:   8% (25/302)   Resolving deltas:  29% (88/302)   Resolving deltas:  30% (92/302)   Resolving deltas:  33% (102/302)   Resolving deltas:  35% (108/302)   Resolving deltas:  36% (109/302)   Resolving deltas:  45% (136/302)   Resolving deltas:  48% (146/302)   Resolving deltas:  49% (148/302)   Resolving deltas:  50% (153/302)   Resolving deltas:  51% (155/302)   Resolving deltas:  55% (167/302)   Resolving deltas:  57% (173/302)   Resolving deltas:  58% (178/302)   Resolving deltas:  59% (181/302)   Resolving deltas:  64% (195/302)   Resolving deltas:  65% (199/302)   Resolving deltas:  66% (201/302)   Resolving deltas:  67% (204/302)   Resolving deltas:  68% (207/302)   Resolving deltas:  70% (212/302)   Resolving deltas:  71% (216/302)   Resolving deltas:  72% (219/302)   Resolving deltas:  73% (223/302)   Resolving deltas:  74% (225/302)   Resolving deltas:  75% (227/302)   Resolving deltas:  78% (237/302)   Resolving deltas:  79% (239/302)   Resolving deltas:  80% (244/302)   Resolving deltas:  81% (247/302)   Resolving deltas:  82% (249/302)   Resolving deltas:  83% (251/302)   Resolving deltas:  84% (255/302)   Resolving deltas:  85% (258/302)   Resolving deltas:  86% (260/302)   Resolving deltas:  88% (267/302)   Resolving deltas:  89% (270/302)   Resolving deltas:  90% (273/302)   Resolving deltas:  91% (275/302)   Resolving deltas:  92% (278/302)   Resolving deltas:  93% (282/302)   Resolving deltas:  94% (284/302)   Resolving deltas:  95% (287/302)   Resolving deltas:  96% (292/302)   Resolving deltas:  97% (293/302)   Resolving deltas:  99% (300/302)   Resolving deltas: 100% (302/302)   Resolving deltas: 100% (302/302), done.
-travis_time:end:048cb718:start=1576023259501177000,finish=1576023260033122000,duration=531945000,event=checkout[0K$ cd lastpass/lastpass-cli
-travis_time:start:00a9dd00[0K$ git fetch origin +refs/pull/529/merge:
-remote: Enumerating objects: 20, done.[K
-remote: Counting objects:   5% (1/19)[Kremote: Counting objects:  10% (2/19)[Kremote: Counting objects:  15% (3/19)[Kremote: Counting objects:  21% (4/19)[Kremote: Counting objects:  26% (5/19)[Kremote: Counting objects:  31% (6/19)[Kremote: Counting objects:  36% (7/19)[Kremote: Counting objects:  42% (8/19)[Kremote: Counting objects:  47% (9/19)[Kremote: Counting objects:  52% (10/19)[Kremote: Counting objects:  57% (11/19)[Kremote: Counting objects:  63% (12/19)[Kremote: Counting objects:  68% (13/19)[Kremote: Counting objects:  73% (14/19)[Kremote: Counting objects:  78% (15/19)[Kremote: Counting objects:  84% (16/19)[Kremote: Counting objects:  89% (17/19)[Kremote: Counting objects:  94% (18/19)[Kremote: Counting objects: 100% (19/19)[Kremote: Counting objects: 100% (19/19), done.[K
-remote: Compressing objects:  25% (1/4)[Kremote: Compressing objects:  50% (2/4)[Kremote: Compressing objects:  75% (3/4)[Kremote: Compressing objects: 100% (4/4)[Kremote: Compressing objects: 100% (4/4), done.[K
-remote: Total 6 (delta 4), reused 3 (delta 2), pack-reused 0[K
-Unpacking objects:  16% (1/6)   Unpacking objects:  33% (2/6)   Unpacking objects:  50% (3/6)   Unpacking objects:  66% (4/6)   Unpacking objects:  83% (5/6)   Unpacking objects: 100% (6/6)   Unpacking objects: 100% (6/6), done.
-From https://github.com/lastpass/lastpass-cli
- * branch            refs/pull/529/merge -> FETCH_HEAD
-travis_time:end:00a9dd00:start=1576023260089706000,finish=1576023260375161000,duration=285455000,event=checkout[0K$ git checkout -qf FETCH_HEAD
-travis_fold:end:git.checkout[0K
-travis_time:end:00a9dd00:start=1576023260089706000,finish=1576023260404745000,duration=315039000,event=checkout[0Ktravis_time:start:32bdabe1[0Ktravis_time:end:32bdabe1:start=1576023260414192000,finish=1576023260438384000,duration=24192000,event=env[0K$ export TRAVIS_COMPILER=clang
-$ export CXX=${CXX:-clang++}
-$ export CXX_FOR_BUILD=${CXX_FOR_BUILD:-clang++}
-$ export CC=${CC:-clang}
-$ export CC_FOR_BUILD=${CC_FOR_BUILD:-clang}
-$ clang --version
-Apple LLVM version 9.1.0 (clang-902.0.39.2)
-Target: x86_64-apple-darwin17.4.0
-Thread model: posix
-InstalledDir: /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-travis_fold:start:before_install.1[0Ktravis_time:start:13160571[0K$ if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update; fi
-[34m==>[0m [1mDownloading https://homebrew.bintray.com/bottles-portable-ruby/portable-ruby-2.6.3.mavericks.bottle.tar.gz[0m
-##################                                                        25.5%##################################                                        47.7%#####################################################                     73.7%######################################################################    98.1%######################################################################## 100.0%
-[34m==>[0m [1mPouring portable-ruby-2.6.3.mavericks.bottle.tar.gz[0m
-[34m==>[0m [1mHomebrew has enabled anonymous aggregate formulae and cask analytics.[0m
-[1mRead the analytics documentation (and how to opt-out) here:
-  [4mhttps://docs.brew.sh/Analytics[24m[0m
-
-[34m==>[0m [1mHomebrew is run entirely by unpaid volunteers. Please consider donating:[0m
-  [4mhttps://github.com/Homebrew/brew#donations[24m
-Updated 2 taps (homebrew/cask and homebrew/core).
-[34m==>[0m [1mNew Formulae[0m
-adios2                                   libzt
-ahoy                                     lightgbm
-aliyun-cli                               lizard
-allureofthestars                         llvm@6
-alp                                      llvm@7
-amtk                                     llvm@8
-anime-downloader                         lsd
-antibody                                 lsusb
-anycable-go                              luarocks
-anyenv                                   luit
-aom                                      mage
-appium                                   mallet
-appstream-glib                           man-db
-aravis                                   manticoresearch
-arduino-cli                              mariadb@10.3
-astrometry-net                           maven@3.5
-asyncplusplus                            mdbook
-atasm                                    mesa
-atlantis                                 micronaut
-atomist-cli                              minica
-aws-cdk                                  minikube
-aws-google-auth                          miniserve
-aws-iam-authenticator                    minizip2
-aws-okta                                 mkcert
-awsume                                   moarvm
-azure-storage-cpp                        molten-vk
-badtouch                                 monolith
-base91                                   mpi4py
-bazelisk                                 msgpack-tools
-benthos                                  mysql-client@5.7
-berglas                                  mysql-connector-c++@1.1
-bingrep                                  navi
-bitwise                                  nbdime
-black                                    needle
-bloaty                                   netlify-cli
-bluetoothconnector                       newman
-borgmatic                                ngt
-boringtun                                nlohmann-json
-breezy                                   nng
-broot                                    node@10
-buildkit                                 node@12
-bumpversion                              notifiers
-bundletool                               now-cli
-c-blosc                                  nqp
-cafeobj                                  nu-smv
-calceph                                  numpy@1.16
-cargo-c                                  nushell
-carla                                    nwchem
-cartridge-cli                            oauth2l
-cash-cli                                 objfw
-cassandra-reaper                         oclgrind
-catch2                                   octant
-ccls                                     onefetch
-cf-tool                                  onnxruntime
-cfn-lint                                 opa
-cgit                                     open-image-denoise
-chafa                                    opencv@3
-cjson                                    openjdk
-clojure-lsp                              openjdk@11
-clp                                      openjdk@12
-clzip                                    openkim-models
-cmdshelf                                 opensubdiv
-cmix                                     opentracing-cpp
-cmusfm                                   operator-sdk
-codespell                                ospray
-coinutils                                osqp
-comby                                    osx-cpu-temp
-contentful-cli                           otf2
-cpl                                      oxipng
-cpp-gsl                                  pagmo
-cpu_features                             pass-otp
-cql                                      pastel
-create-dmg                               pcapplusplus
-cryptominisat                            pdfcpu
-csound                                   pdftk-java
-cstore_fdw                               perltidy
-csvq                                     peru
-cubelib                                  petsc-complex
-cups                                     php@7.3
-curl-openssl                             phpmd
-cwlogs                                   phpstan
-cxxopts                                  picat
-cypher-shell                             pict
-dafny                                    pijul
-dav1d                                    pipx
-dbmate                                   pnetcdf
-deno                                     pnpm
-detekt                                   pokerstove
-devdash                                  postgresql@10
-devspace                                 postgresql@11
-dhall                                    powerline-go
-dhall-bash                               pprint
-diceware                                 prestosql
-diesel                                   prettier
-diffr                                    procs
-diskus                                   proper
-dive                                     proteinortho
-dmg2img                                  protobuf@3.6
-dnscontrol                               protobuf@3.7
-docker-credential-helper-ecr             protoc-gen-go
-docker-machine-driver-hyperkit           prototool
-docker-machine-driver-vmware             pulp
-dockerize                                pulumi
-drone-cli                                pygments
-dune                                     pyinstaller
-dust                                     pylint
-dvc                                      pympress
-easyengine                               pyside
-eg-examples                              python-yq
-embree                                   qalculate-gtk
-entityx                                  quickjs
-erlang@21                                rakudo
-eslint                                   range-v3
-esptool                                  rargs
-fastmod                                  rav1e
-fasttext                                 rbspy
-faudio                                   re-flex
-fauna-shell                              react-native-cli
-faust                                    redis@4.0
-fff                                      reprepro
-ffsend                                   riff
-fluxctl                                  ripgrep-all
-frpc                                     rke
-frps                                     ruby@2.4
-fx                                       ruby@2.5
-gambit                                   s2geometry
-gambit-scheme                            s3ql
-gatsby-cli                               samurai
-gcc@8                                    scala@2.12
-geant4                                   scc
-gel                                      scdoc
-geogram                                  schema-evolution-manager
-gerbil-scheme                            scs
-ghc@8.6                                  scws
-ghr                                      sd
-gimme-aws-creds                          sentencepiece
-git-absorb                               serve
-git-delta                                serverless
-git-revise                               sfst
-gitleaks                                 sha3sum
-gitmoji                                  shadowenv
-gleam                                    shellz
-gmt@5                                    ship
-gnirehtet                                signal-cli
-gnunet                                   simple-scan
-go-md2man                                sk
-go@1.10                                  skopeo
-go@1.11                                  skymaker
-go@1.12                                  sloc
-golang-migrate                           smimesign
-goreman                                  sn0int
-govc                                     sng
-gptfdisk                                 solr@7.7
-gradio                                   sonarqube-lts
-grin                                     sonobuoy
-grin-wallet                              sourcedocs
-grpc-swift                               spice-gtk
-grpcurl                                  spice-protocol
-gtranslator                              spirv-cross
-h3                                       spirv-tools
-healpix                                  squashfuse
-heatshrink                               stanford-corenlp
-helm@2                                   starship
-helmfile                                 step
-helmsman                                 stolon
-hexyl                                    swagger-codegen@2
-hey                                      swagger2markup-cli
-homeassistant-cli                        swig@3
-hyperkit                                 switch-lan-play
-i2pd                                     tass64
-i386-elf-binutils                        tdkjs
-i386-elf-gcc                             tdlib
-i386-elf-gdb                             tealdeer
-i386-elf-grub                            tektoncd-cli
-imgproxy                                 termshark
-inadyn                                   termtosvg
-include-what-you-use                     terraform@0.11
-infrakit                                 terraformer
-inlets                                   terrahelp
-interactive-rebase-tool                  terrahub
-ipopt                                    tesseract-lang
-istioctl                                 texlab
-itk                                      tflint
-janet                                    thors-serializer
-javacc                                   tio
-jd                                       tmuxinator
-jinja2-cli                               tmx
-jmxterm                                  toast
-jp                                       topgrade
-json11                                   trader
-k3d                                      traefik@1
-k6                                       triangle
-kahip                                    ttyplot
-kcov                                     tweak
-kepubify                                 ucloud
-kim-api                                  um
-kind                                     ungit
-krew                                     up
-ktlint                                   usbredir
-kubeaudit                                v2ray-plugin
-kubebuilder                              vale
-kubeprod                                 vapoursynth-imwri
-kubernetes-service-catalog-client        vapoursynth-ocr
-kubeseal                                 vapoursynth-sub
-kubespy                                  vfuse
-kustomize                                virgil
-kyma-cli                                 virustotal-cli
-lazydocker                               volt
-lazygit                                  vulkan-headers
-leela-zero                               wagyu
-lerna                                    wal2json
-lf                                       wcslib
-libcerf                                  weaver
-libevhtp                                 websocat
-libgr                                    whalebrew
-libgusb                                  wiiuse
-libkeccak                                wiremock-standalone
-liblouis                                 wsk
-libnova                                  wskdeploy
-libopenmpt                               wtfutil
-libpsl                                   xcodegen
-libpulsar                                xgboost
-libsigc++@2                              xlearn
-libsignal-protocol-c                     xsimd
-libsixel                                 yapf
-libspng                                  yarn-completion
-libtensorflow@1                          zabbix-cli
-libtorch                                 zlog
-libvirt-glib                             zrepl
-libvmaf                                  zydis
-libvncserver
-[34m==>[0m [1mUpdated Formulae[0m
-[1mautomake [32m✔[0m[0m                               libgphoto2
-[1mboost [32m✔[0m[0m                                  libgraphqlparser
-[1mcarthage [32m✔[0m[0m                               libgsf
-[1mcgal [32m✔[0m[0m                                   libgtop
-[1mcmake [32m✔[0m[0m                                  libgweather
-[1mcoreutils [32m✔[0m[0m                              libgxps
-[1mfreexl [32m✔[0m[0m                                 libhdhomerun
-[1mgdal [32m✔[0m[0m                                   libheif
-[1mgdbm [32m✔[0m[0m                                   libhttpserver
-[1mgeos [32m✔[0m[0m                                   libhttpseverywhere
-[1mgettext [32m✔[0m[0m                                libical
-[1mgiflib [32m✔[0m[0m                                 libiconv
-[1mgit [32m✔[0m[0m                                    libidl
-[1mgnupg [32m✔[0m[0m                                  libimagequant
-[1mgnutls [32m✔[0m[0m                                 libimobiledevice
-[1mgo [32m✔[0m[0m                                     libinfinity
-[1micu4c [32m✔[0m[0m                                  libiodbc
-[1mlibassuan [32m✔[0m[0m                              libiptcdata
-[1mlibevent [32m✔[0m[0m                               libiscsi
-[1mlibgcrypt [32m✔[0m[0m                              libjson-rpc-cpp
-[1mlibgeotiff [32m✔[0m[0m                             libjwt
-[1mlibgpg-error [32m✔[0m[0m                           liblas
-[1mlibidn2 [32m✔[0m[0m                                liblcf
-[1mlibpng [32m✔[0m[0m                                 liblinear
-[1mlibpq [32m✔[0m[0m                                  liblo
-[1mlibspatialite [32m✔[0m[0m                          liblockfile
-[1mlibssh [32m✔[0m[0m                                 liblqr
-[1mlibtasn1 [32m✔[0m[0m                               libltc
-[1mlibtiff [32m✔[0m[0m                                liblunar
-[1mlibusb [32m✔[0m[0m                                 liblwgeom
-[1mlibxml2 [32m✔[0m[0m                                libmaa
-[1mlibyaml [32m✔[0m[0m                                libmagic
-[1mmaven [32m✔[0m[0m                                  libmatio
-[1mmercurial [32m✔[0m[0m                              libmatroska
-[1mmpfr [32m✔[0m[0m                                   libmaxminddb
-[1mmsgpack [32m✔[0m[0m                                libmicrohttpd
-[1mnettle [32m✔[0m[0m                                 libming
-[1mnode [32m✔[0m[0m                                   libmodbus
-[1mnpth [32m✔[0m[0m                                   libmowgli
-[1mnumpy [32m✔[0m[0m                                  libmp3splt
-[1mopenssl@1.1 [32m✔[0m[0m                            libmpd
-[1mp11-kit [32m✔[0m[0m                                libmpdclient
-[1mpcre [32m✔[0m[0m                                   libmspub
-[1mpostgis [32m✔[0m[0m                                libmtp
-[1mpostgresql [32m✔[0m[0m                             libmwaw
-[1mproj [32m✔[0m[0m                                   libmxml
-[1mpyenv [32m✔[0m[0m                                  libmypaint
-[1mpython [32m✔[0m[0m                                 libnfs
-[1mpython@2 [32m✔[0m[0m                               libnice
-[1mreadline [32m✔[0m[0m                               libnids
-[1msfcgal [32m✔[0m[0m                                 libnotify
-[1msqlite [32m✔[0m[0m                                 libntlm
-[1mswiftlint [32m✔[0m[0m                              liboauth
-[1mtmate [32m✔[0m[0m                                  libodfgen
-[1mwget [32m✔[0m[0m                                   libofx
-[1mxctool [32m✔[0m[0m                                 libogg
-abcde                                    libomp
-abcl                                     libopendkim
-abcm2ps                                  libopusenc
-abcmidi                                  libosinfo
-abook                                    libosip
-abyss                                    libosmium
-ace                                      libp11
-ack                                      libpcap
-acpica                                   libpeas
-activemq                                 libphonenumber
-activemq-cpp                             libplctag
-admesh                                   libplist
-adr-tools                                libpointing
-advancecomp                              libpqxx
-advancemame                              libprotoident
-adwaita-icon-theme                       libproxy
-aescrypt-packetizer                      libpst
-aespipe                                  libqalculate
-afflib                                   libquicktime
-afio                                     librasterlite
-afl-fuzz                                 libraw
-agda                                     librdkafka
-agedu                                    libre
-aha                                      libreadline-java
-aide                                     librealsense
-aircrack-ng                              librem
-akamai                                   libressl
-akka                                     librest
-alexjs                                   librsvg
-algernon                                 librsync
-allegro                                  librtlsdr
-allure                                   libsamplerate
-alluxio                                  libsass
-alot                                     libsbol
-alpine                                   libsecret
-amap                                     libshout
-amazon-ecs-cli                           libsigc++
-ammonite-repl                            libslax
-ampl-mp                                  libsmf
-amqp-cpp                                 libsodium
-angband                                  libsoundio
-angle-grinder                            libsoup
-angular-cli                              libspectre
-anjuta                                   libspectrum
-annie                                    libssh2
-ansible                                  libstatgrab
-ansible-cmdb                             libstfl
-ansible-lint                             libstrophe
-ansifilter                               libsvm
-ansiweather                              libswiften
-ant                                      libtcod
-ant@1.9                                  libtensorflow
-antlr                                    libtermkey
-antlr4-cpp-runtime                       libtins
-antlr@2                                  libtomcrypt
-apache-archiva                           libtommath
-apache-arrow                             libtorrent-rasterbar
-apache-arrow-glib                        libtrace
-apache-drill                             libu2f-host
-apache-flink                             libu2f-server
-apache-geode                             libuninameslist
-apache-opennlp                           libuv
-apache-spark                             libvirt
-apache-zeppelin                          libvisio
-apachetop                                libvoikko
-apib                                     libvpx
-apibuilder-cli                           libvterm
-apktool                                  libwbxml
-app-engine-java                          libwebsockets
-app-engine-python                        libwpd
-appledoc                                 libwpg
-appscale-tools                           libwps
-apr                                      libxc
-apr-util                                 libxkbcommon
-apt-dater                                libxlsxwriter
-aptly                                    libxml++
-aqbanking                                libxml++3
-arangodb                                 libxmlsec1
-arcade-learning-environment              libxo
-argon2                                   libxslt
-argus-clients                            libzdb
-argyll-cms                               libzip
-aria2                                    lightning
-arm-linux-gnueabihf-binutils             lighttpd
-armadillo                                lilv
-armor                                    link-grammar
-arp-scan                                 linkerd
-arpack                                   links
-arping                                   liquibase
-artifactory                              liquid-dsp
-arx                                      liquigraph
-asciidoc                                 livestreamer
-asciidoctor                              lldpd
-asciidoctorj                             llnode
-asciinema                                llvm
-asdf                                     lmdb
-asio                                     lmod
-ask-cli                                  lnav
-aspcud                                   log4cplus
-aspectj                                  log4shib
-aspell                                   logcheck
-assh                                     logentries
-assimp                                   logrotate
-atari800                                 logstalgia
-atdtool                                  logstash
-atk                                      logtalk
-atkmm                                    lolcat
-atlassian-cli                            lorem
-atomicparsley                            loudmouth
-ats2-postiats                            lrzsz
-aubio                                    lsdvd
-audacious                                lsof
-auditbeat                                ltc-tools
-augeas                                   lua
-augustus                                 lua@5.1
-aurora                                   luaradio
-aurora-cli                               lumo
-autoconf-archive                         luvit
-autogen                                  lv2
-autojump                                 lwtools
-autopep8                                 lxc
-autorest                                 lynis
-autossh                                  lynx
-avfs                                     lz4
-avian                                    lzip
-avra                                     lzlib
-avrdude                                  mackup
-avro-c                                   macvim
-avro-cpp                                 mafft
-avro-tools                               magic-wormhole
-awf                                      magnetix
-awk                                      mailutils
-aws-elasticbeanstalk                     makensis
-aws-es-proxy                             makepkg
-aws-sdk-cpp                              mame
-aws-shell                                mandoc
-awscli                                   mapcrafter
-awslogs                                  mapnik
-axel                                     mapserver
-azure-cli                                mariadb
-b2-tools                                 mariadb-connector-c
-babel                                    mariadb-connector-odbc
-babeld                                   mariadb@10.1
-babl                                     mariadb@10.2
-backupninja                              mas
-bacula-fd                                math-comp
-ballerina                                mawk
-bandcamp-dl                              maxima
-baobab                                   maxwell
-bareos-client                            mbedtls
-baresip                                  mcabber
-bartycrouch                              md5sha1sum
-basex                                    mdbtools
-bash                                     mdcat
-bash-completion@2                        mdds
-bash-snippets                            mdk
-bashdb                                   mdp
-bat                                      mdv
-batik                                    media-info
-bats-core                                mediaconch
-bazel                                    mednafen
-bbftp-client                             megacmd
-bcal                                     megatools
-bcftools                                 memcached
-bde                                      memcacheq
-bdw-gc                                   menhir
-beagle                                   meson
-beanstalkd                               meson-internal
-bear                                     mesos
-beast                                    metabase
-bedops                                   metaproxy
-bedtools                                 metashell
-bee                                      metricbeat
-befunge93                                mfterm
-bench                                    mg
-bento4                                   mgba
-berkeley-db                              micro
-bettercap                                micropython
-bgpdump                                  midgard2
-bgpq3                                    midnight-commander
-bgpstream                                mighttpd2
-bibtexconv                               mikutter
-bibutils                                 mill
-bigloo                                   miller
-binaryen                                 mimic
-bind                                     minbif
-bindfs                                   minetest
-binutils                                 mingw-w64
-binwalk                                  minimal-racket
-biogeme                                  minimesos
-bison                                    minio
-bit                                      minio-mc
-bitchx                                   minizinc
-bitcoin                                  mint
-bitlbee                                  mit-scheme
-bitrise                                  mitie
-bitwarden-cli                            mitmproxy
-blackbox                                 mk-configure
-blahtexml                                mkclean
-blast                                    mkdocs
-blastem                                  mkl-dnn
-blink1                                   mksh
-blockhash                                mktorrent
-bluepill                                 mkvtoolnix
-blueutil                                 mlkit
-bmake                                    mlt
-bnd                                      mm-common
-bogofilter                               mmark
-bookloupe                                mmseqs2
-boost-bcp                                mobiledevice
-boost-build                              mockserver
-boost-mpi                                moco
-boost-python                             modd
-boost-python3                            modgit
-boot-clj                                 modules
-botan                                    moe
-bower                                    mogenerator
-bowtie2                                  molecule
-boxes                                    monero
-braid                                    monetdb
-brew-gem                                 mongo-c-driver
-brew-php-switcher                        mongo-cxx-driver
-brogue                                   mongo-orchestration
-brotli                                   mongoose
-btfs                                     monit
-btparse                                  monitoring-plugins
-btpd                                     monkeysphere
-buildifier                               mono
-buku                                     mono-libgdiplus
-bulk_extractor                           moreutils
-bullet                                   mosh
-bup                                      mosquitto
-burp                                     most
-bvi                                      mozjpeg
-bwfmetaedit                              mp3cat
-bwm-ng                                   mp3splt
-byacc                                    mpc
-byobu                                    mpck
-byteman                                  mpd
-bzip2                                    mpdscribble
-bzt                                      mpg123
-c-ares                                   mpich
-c10t                                     mplayer
-cabal-install                            mplayershell
-cabextract                               mpop
-cadaver                                  mps-youtube
-caddy                                    mpv
-caf                                      mr
-caffe                                    mrboom
-cairo                                    mrtg
-cairomm                                  mruby
-cake                                     mscgen
-calabash                                 msitools
-calc                                     msktutil
-calcurse                                 msmtp
-calicoctl                                mtools
-camlp4                                   mtr
-camlp5                                   mu
-capnp                                    mujs
-capstone                                 multimarkdown
-cargo-completion                         muparser
-carrot2                                  mupdf
-cassandra                                mupdf-tools
-cassandra@2.1                            mutt
-cassandra@2.2                            mvnvm
-castxml                                  mvtools
-cataclysm                                mycli
-catimg                                   mydumper
-cattle                                   mypy
-cayley                                   mysql
-cc65                                     mysql++
-ccache                                   mysql-client
-ccextractor                              mysql-connector-c++
-ccm                                      mysql@5.6
-ccrypt                                   mysql@5.7
-cdk                                      mysqltuner
-cdogs-sdl                                mytop
-center-im                                n
-ceres-solver                             nagios
-cern-ndiff                               nagios-plugins
-certbot                                  nailgun
-certigo                                  nano
-certstrap                                nanomsg
-cf4ocl                                   nanopb-generator
-cfengine                                 nasm
-cfitsio                                  natalie
-cflow                                    nativefier
-cfr-decompiler                           nats-streaming-server
-cfssl                                    naturaldocs
-cgdb                                     nave
-cglm                                     ncdc
-cgrep                                    ncdu
-chakra                                   ncmpc
-chamber                                  ncmpcpp
-chapel                                   nco
-charm                                    ncompress
-charm-tools                              ncrack
-cheat                                    ncview
-check                                    ndpi
-check_postgres                           ne
-checkbashisms                            neatvi
-checkstyle                               neko
-chezscheme                               neo4j
-chicken                                  neofetch
-chipmunk                                 neomutt
-chisel                                   neon
-chkrootkit                               neovim
-choose                                   net-snmp
-chromaprint                              netcdf
-chrome-cli                               netdata
-chrome-export                            nethack
-chronograf                               netpbm
-chruby-fish                              newlisp
-cimg                                     newsboat
-circleci                                 newt
-citus                                    nexus
-cjdns                                    nfdump
-ckan                                     nghttp2
-clac                                     nginx
-clamav                                   ngircd
-clang-format                             ngspice
-clblast                                  nickle
-clhep                                    nicovideo-dl
-cli53                                    nifi
-clib                                     nifi-registry
-click                                    nim
-cling                                    ninja
-clingo                                   nkf
-clipper                                  nlopt
-clipsafe                                 nmap
-clisp                                    nmh
-cln                                      nnn
-cloc                                     node-build
-clojure                                  node@8
-clojurescript                            node_exporter
-closure-compiler                         nodebrew
-clozure-cl                               nodeenv
-clutter                                  nodenv
-clutter-gst                              nomad
-clutter-gtk                              nopoll
-cmark                                    noti
-cmark-gfm                                notmuch
-cmatrix                                  nrpe
-cminpack                                 nsd
-cmocka                                   nspr
-cmus                                     nsq
-cnats                                    nss
-cocoapods                                ntfs-3g
-codemod                                  ntl
-codequery                                ntopng
-coffeescript                             ntp
-cogl                                     nu
-cointop                                  nuget
-collada-dom                              nut
-collectd                                 nuxeo
-collector-sidecar                        nvc
-commandbox                               nvm
-compcert                                 nyancat
-composer                                 nylon
-conan                                    nyx
-configen                                 nzbget
-confuse                                  oath-toolkit
-conjure-up                               objc-codegenutils
-conserver                                ocaml
-console_bridge                           ocaml-findlib
-consul                                   ocaml-num
-consul-backinator                        ocamlbuild
-consul-template                          ocamlsdl
-container-diff                           ocproxy
-convox                                   ocrad
-cookiecutter                             ocrmypdf
-coq                                      octave
-corectl                                  octomap
-corsixth                                 ode
-coturn                                   odpi
-couchdb                                  offlineimap
-cp2k                                     ohcount
-cpanminus                                ola
-cpansearch                               omega
-cpmtools                                 omniorb
-cppad                                    ompl
-cppcheck                                 oniguruma
-cppcms                                   onioncat
-cpprestsdk                               onscripter
-cproto                                   ooniprobe
-cquery                                   opam
-cracklib                                 open-babel
-crc32c                                   open-jtalk
-credstash                                open-mesh
-creduce                                  open-mpi
-cromwell                                 open-scene-graph
-crosstool-ng                             open-zwave
-crowdin                                  openal-soft
-cryfs                                    openapi-generator
-cryptol                                  openblas
-cryptopp                                 opencascade
-crystal-icr                              opencc
-cscope                                   openclonk
-csfml                                    opencoarrays
-csv-fix                                  opencolorio
-csvkit                                   openconnect
-csvprintf                                opencv
-csvtomd                                  opencv@2
-ctl                                      opendbx
-ctop                                     opendetex
-cucumber-cpp                             openexr
-curaengine                               openfortivpn
-curl                                     openh264
-curlftpfs                                openhmd
-curlpp                                   openimageio
-cutter                                   openjazz
-cvs2svn                                  openjpeg
-cython                                   openldap
-czmq                                     openmsx
-dar                                      openrct2
-darcs                                    openrtsp
-dark-mode                                opensaml
-darksky-weather                          opensc
-dartsim                                  openshift-cli
-dash                                     openslide
-dasht                                    openssh
-dasm                                     opentsdb
-datamash                                 openttd
-datetime-fortran                         openvdb
-dateutils                                openvpn
-davix                                    ophcrack
-davmail                                  opus
-dbhash                                   opus-tools
-dbus                                     opusfile
-dbus-glib                                orbit
-dbxml                                    orc
-dc3dd                                    orc-tools
-dcd                                      ori
-dcm2niix                                 ortp
-dcmtk                                    osc
-dcos-cli                                 oscats
-ddclient                                 osm-gps-map
-ddgr                                     osm-pbf
-ddrescue                                 osm2pgrouting
-deark                                    osm2pgsql
-debianutils                              osmium-tool
-dehydrated                               osmosis
-deja-gnu                                 osquery
-dep                                      osrm-backend
-dependency-check                         osslsigncode
-deployer                                 ott
-derby                                    overmind
-desktop-file-utils                       owfs
-devd                                     oysttyer
-devtodo                                  p7zip
-dfc                                      pacapt
-dfmt                                     pachi
-dhall-json                               packer
-dhex                                     packer-completion
-di                                       packmol
-dialog                                   pacvim
-diamond                                  paket
-dieharder                                pam-u2f
-diff-pdf                                 pandoc
-diff-so-fancy                            pandoc-citeproc
-diffoscope                               pandoc-crossref
-diffstat                                 pango
-diffutils                                pangomm
-digdag                                   paperkey
-digitemp                                 paps
-direnv                                   parallel
-direvent                                 parallelstl
-discount                                 pari
-distcc                                   partio
-dita-ot                                  pass
-django-completion                        passenger
-dlib                                     passpie
-dmd                                      patchelf
-dmenu                                    payara
-dmtx-utils                               pazpar2
-dnscrypt-proxy                           pc6001vx
-dnscrypt-wrapper                         pcb
-dnsdist                                  pcb2gcode
-dnsmasq                                  pce
-dnsperf                                  pcl
-dnstwist                                 pcre2
-dnsviz                                   pcsc-lite
-docfx                                    pdal
-docker                                   pdf2htmlex
-docker-completion                        pdf2json
-docker-compose                           pdf2svg
-docker-compose-completion                pdfcrack
-docker-credential-helper                 pdfgrep
-docker-ls                                pdfpc
-docker-machine                           pdfsandwich
-docker-machine-completion                pdftoipe
-docker-machine-driver-xhyve              pdns
-docker-machine-nfs                       pdnsrec
-docker-machine-parallels                 pdsh
-docker-squash                            peg-markdown
-doctl                                    pegtl
-docutils                                 percol
-doitlive                                 percona-server
-dopewars                                 percona-toolkit
-dos2unix                                 percona-xtrabackup
-dosbox                                   perl
-dosbox-x                                 perl-build
-double-conversion                        petsc
-dovecot                                  pev
-doxygen                                  pgbadger
-dpkg                                     pgbouncer
-draco                                    pgcli
-drafter                                  pgformatter
-dropbear                                 pgloader
-druid                                    pgplot
-dscanner                                 pgpool-ii
-dspdfviewer                              pgroonga
-dssim                                    pgrouting
-dtc                                      pgweb
-dub                                      phoronix-test-suite
-duc                                      php
-duck                                     php-code-sniffer
-dungeon                                  php-cs-fixer
-duo_unix                                 phplint
-duplicity                                phpmyadmin
-duply                                    phpunit
-dvdauthor                                physfs
-dvdbackup                                pianobar
-dvm                                      pianod
-dwarf                                    picard-tools
-dwarfutils                               pick
-dwdiff                                   pidgin
-dwm                                      pig
-dxpy                                     pike
-dyld-headers                             pilosa
-dylibbundler                             pinboard-notes-backup
-dynamips                                 pinfo
-dynare                                   pioneer
-e2fsprogs                                pioneers
-easy-tag                                 pip-completion
-easyrpg-player                           pipenv
-ecasound                                 pius
-eccodes                                  pixman
-ed                                       pixz
-editorconfig                             pjproject
-efl                                      pkcs11-helper
-eiffelstudio                             pktanon
-eigen                                    planck
-ejabberd                                 plank
-ekg2                                     plantuml
-elasticsearch                            platformio
-elasticsearch@5.6                        platypus
-elektra                                  plplot
-eless                                    plzip
-elinks                                   pmd
-elixir                                   pms
-elm                                      png++
-elm-format                               pngquant
-elvish                                   poco
-emacs                                    pod2man
-emacs-clang-complete-async               podofo
-embulk                                   points2grid
-emscripten                               polyml
-encfs                                    pony-stable
-enchant                                  ponyc
-enet                                     poppler
-enigma                                   portmidi
-enscript                                 posh
-entr                                     postgresql@9.4
-envconsul                                postgresql@9.5
-ephemeralpg                              postgresql@9.6
-epic5                                    postgrest
-eprover                                  potrace
-epubcheck                                povray
-eralchemy                                powerman
-erlang                                   ppsspp
-erlang@20                                pqiv
-etcd                                     pre-commit
-ethereum                                 precomp
-etl                                      prefixsuffix
-etsh                                     prest
-ettercap                                 primesieve
-euler-py                                 prips
-evince                                   privoxy
-exa                                      procyon-decompiler
-exact-image                              profanity
-exempi                                   proftpd
-exercism                                 progress
-exiftool                                 proguard
-exim                                     prometheus
-exiv2                                    proselint
-exomizer                                 protobuf
-expat                                    protobuf-c
-exploitdb                                protobuf-swift
-eye-d3                                   proxychains-ng
-f3                                       proxytunnel
-faas-cli                                 ps2eps
-fabio                                    pspg
-fabric                                   psql2csv
-fades                                    psqlodbc
-fail2ban                                 pstoedit
-fakeroot                                 ptex
-fastbit                                  pulledpork
-fastjar                                  pulseaudio
-fastme                                   pumba
-fastqc                                   pure-ftpd
-fatsort                                  purescript
-fb-client                                pushpin
-fbi-servefiles                           putty
-fceux                                    puzzles
-fcl                                      pwntools
-fd                                       pwsafe
-fdclone                                  py2cairo
-fdk-aac                                  py3cairo
-fdk-aac-encoder                          pybind11
-fdroidserver                             pycodestyle
-feedgnuplot                              pygitup
-feh                                      pygobject
-fetchmail                                pygobject3
-ffe                                      pygtk
-ffmpeg                                   pygtkglext
-ffmpeg2theora                            pygtksourceview
-ffmpeg@2.8                               pyinvoke
-ffmpegthumbnailer                        pypy
-ffms2                                    pypy3
-fftw                                     pyqt
-fibjs                                    python-markdown
-field3d                                  pytouhou
-fifechan                                 pyvim
-fig2dev                                  q
-file-formula                             qbs
-file-roller                              qca
-findutils                                qcachegrind
-fio                                      qcli
-firebase-cli                             qd
-fish                                     qemu
-flac                                     qhull
-flake8                                   qjackctl
-flann                                    qmmp
-flashrom                                 qpdf
-flatbuffers                              qpid-proton
-flatcc                                   qrupdate
-flawfinder                               qscintilla2
-flex                                     qsoas
-flintrock                                qstat
-flow                                     qt
-flowgrind                                qtkeychain
-fltk                                     quantlib
-fluent-bit                               quazip
-fluid-synth                              quex
-flume                                    quicktype
-flyway                                   quilt
-fmpp                                     qwt
-fmsx                                     qxmpp
-fmt                                      r
-fn                                       rabbitmq
-fobis                                    rabbitmq-c
-folly                                    radare2
-fontconfig                               rakudo-star
-fontforge                                rancher-cli
-fonttools                                rancid
-fop                                      ranger
-ford                                     rawtoaces
-fork-cleaner                             raylib
-fortio                                   rbenv
-fossil                                   rc
-fourstore                                rclone
-fpc                                      rdesktop
-fping                                    rdfind
-fpp                                      rdup
-fq                                       re2
-fragroute                                re2c
-freeciv                                  reattach-to-user-namespace
-freediameter                             recode
-freedink                                 recon-ng
-freeimage                                recoverjpeg
-freeipmi                                 recutils
-freeling                                 redex
-freeradius-server                        redis
-freerdp                                  redis@3.2
-freeswitch                               redo
-freetds                                  redpen
-freetype                                 redshift
-fribidi                                  redsocks
-frotz                                    remarshal
-frugal                                   remctl
-fruit                                    remind
-fs-uae                                   reminiscence
-fselect                                  rename
-fstrm                                    renameutils
-fswatch                                  reop
-fuse-emulator                            repo
-fuse-zip                                 reposurgeon
-fuseki                                   residualvm
-futhark                                  restic
-fwknop                                   restview
-fwup                                     rethinkdb
-fzf                                      rex
-fzy                                      rgbds
-gabedit                                  rhash
-galen                                    rhino
-gammaray                                 riemann
-gammu                                    riemann-client
-gandi.cli                                ripgrep
-gauche                                   rlwrap
-gauge                                    rmlint
-gawk                                     robot-framework
-gbdfed                                   rocksdb
-gcab                                     roll
-gcc                                      rom-tools
-gcc@5                                    root
-gcc@6                                    roswell
-gcc@7                                    rp
-gcovr                                    rpm
-gcsfuse                                  rpm2cpio
-gdb                                      rrdtool
-gdcm                                     rst-lint
-gdk-pixbuf                               rswift
-gdl                                      rsyslog
-gdmap                                    rt-audio
-gdub                                     rtags
-gearboy                                  rtmidi
-gearman                                  rtmpdump
-gearsystem                               rtv
-geckodriver                              ruby
-gecode                                   ruby-build
-gedit                                    ruby-install
-geeqie                                   rush
-gegl                                     rust
-genact                                   rustup-init
-gengetopt                                s-lang
-genometools                              s-nail
-genstats                                 s-search
-geocode-glib                             s3-backer
-geographiclib                            s3cmd
-geoipupdate                              s3fs
-geoserver                                s6
-gerbv                                    sagittarius-scheme
-get_iplayer                              saldl
-getdns                                   samtools
-getmail                                  sane-backends
-getxbook                                 sassc
-gexiv2                                   saxon
-gflags                                   sbcl
-ghc                                      sbjson
-ghc@8.2                                  sblim-sfcc
-ghex                                     sbt
-ghostscript                              sbt@0.13
-ghq                                      sbtenv
-gibo                                     scala
-gif2png                                  scalaenv
-gifsicle                                 scalapack
-gifski                                   scalariform
-gimme                                    scamper
-ginac                                    sccache
-git-annex                                sceptre
-git-archive-all                          scipy
-git-cinnabar                             scmpuff
-git-cola                                 scons
-git-credential-manager                   scour
-git-crypt                                scrcpy
-git-extras                               screen
-git-fixup                                screenfetch
-git-flow-avh                             scrollkeeper
-git-fresh                                scrypt
-git-ftp                                  scummvm
-git-lfs                                  scummvm-tools
-git-open                                 scw
-git-quick-stats                          sdb
-git-recent                               sdcc
-git-remote-hg                            sdcv
-git-review                               sdhash
-git-secret                               sdl
-git-secrets                              sdl2
-git-series                               sdl2_image
-git-sizer                                sdl2_mixer
-git-standup                              sdl2_ttf
-git-subrepo                              sdlpop
-git-town                                 sec
-gitbucket                                securefs
-giter8                                   selenium-server-standalone
-gitfs                                    ser2net
-gitg                                     serd
-github-keygen                            serf
-github-markdown-toc                      serveit
-gitlab-gem                               servus
-gitlab-runner                            sf-pwgen
-gitless                                  sfk
-gitup                                    sflowtool
-gitversion                               sfml
-gjs                                      shadowsocks-libev
-gkrellm                                  shairport
-glade                                    shairport-sync
-glances                                  shapelib
-glbinding                                shared-mime-info
-glfw                                     shc
-glib                                     shellcheck
-glib-networking                          shellharden
-glib-openssl                             shellinabox
-glibmm                                   shellshare
-glide                                    shfmt
-glm                                      shibboleth-sp
-global                                   shmux
-globjects                                shogun
-globus-toolkit                           shpotify
-glog                                     shyaml
-gloox                                    siege
-glslang                                  signify-osx
-glslviewer                               sile
-glui                                     silk
-glyr                                     simgrid
-gmic                                     simh
-gmime                                    simple-amqp-client
-gmsh                                     simple-mtpfs
-gmt                                      simple-tiles
-gnome-autoar                             simutrans
-gnome-builder                            singular
-gnome-latex                              sip
-gnome-recipes                            sipp
-gnome-themes-standard                    sipsak
-gnu-apl                                  siril
-gnu-chess                                sispmctl
-gnu-getopt                               skaffold
-gnu-indent                               skafos
-gnu-prolog                               ski
-gnu-sed                                  skinny
-gnu-smalltalk                            skktools
-gnu-tar                                  slackcat
-gnu-typist                               sleepwatcher
-gnu-units                                sleuthkit
-gnumeric                                 slowhttptest
-gnupg-pkcs11-scd                         slrn
-gnupg@1.4                                smali
-gnuplot                                  smartmontools
-gnuplot@4                                snakemake
-gnuradio                                 snapcraft
-go-bindata                               snappystream
-go-jira                                  snapraid
-go-statik                                sngrep
-go@1.9                                   snort
-goaccess                                 snownews
-gobby                                    socat
-gobject-introspection                    sofia-sip
-gobuster                                 softhsm
-gocr                                     solarus
-gocryptfs                                solr
-godep                                    sonar-scanner
-goenv                                    sonarqube
-goffice                                  sops
-gollum                                   sord
-golo                                     sound-touch
-gom                                      source-highlight
-gomplate                                 source-to-image
-goocanvas                                sourcekitten
-goofys                                   sourcery
-google-authenticator-libpam              sox
-google-benchmark                         spades
-google-java-format                       sparkey
-googler                                  sparse
-goolabs                                  spatialindex
-gopass                                   spatialite-gui
-gor                                      spatialite-tools
-goreleaser                               spdlog
-gosu                                     spdylay
-gource                                   speedtest-cli
-gowsdl                                   sphinx
-gox                                      sphinx-doc
-gpa                                      spidermonkey
-gpac                                     spigot
-gpgme                                    spim
-gphoto2                                  spin
-gpredict                                 spiped
-gprof2dot                                spoof-mac
-gpsbabel                                 spotbugs
-gpsim                                    sqlcipher
-gqlplus                                  sqldiff
-gqview                                   sqlite-analyzer
-gr-osmosdr                               sqlmap
-gradle                                   sqlparse
-gradle-completion                        sqoop
-grafana                                  squashfs
-grails                                   squid
-grakn                                    sratom
-graph-tool                               sratoolkit
-graphene                                 src
-graphicsmagick                           srt
-graphite2                                ssh-audit
-graphviz                                 ssh-copy-id
-grep                                     ssh-permit-a38
-grip                                     sshconfigfs
-groff                                    sshfs
-grok                                     sshguard
-gromacs                                  sshrc
-gron                                     sshtrix
-groonga                                  sshuttle
-groovy                                   ssldump
-groovysdk                                sslh
-grpc                                     ssllabs-scan
-grsync                                   sslmate
-grt                                      sslscan
-grunt-cli                                sslsplit
-grunt-completion                         sslyze
-grv                                      sstp-client
-gsettings-desktop-schemas                stanford-ner
-gsl                                      stanford-parser
-gsmartcontrol                            statik
-gsoap                                    stella
-gspell                                   stellar-core
-gssdp                                    stern
-gssh                                     stgit
-gst-editing-services                     stk
-gst-libav                                stlink
-gst-plugins-bad                          stockfish
-gst-plugins-base                         stone-soup
-gst-plugins-good                         storm
-gst-plugins-ugly                         stormpath-cli
-gst-python                               stormssh
-gst-rtsp-server                          stout
-gst-validate                             stow
-gstreamer                                streamlink
-gstreamermm                              streamripper
-gtk+                                     stress-ng
-gtk+3                                    strongswan
-gtk-chtheme                              stubby
-gtk-doc                                  stunnel
-gtk-gnutella                             stuntman
-gtk-mac-integration                      subnetcalc
-gtk-vnc                                  subversion
-gtkdatabox                               subversion@1.8
-gtkextra                                 suil
-gtkglext                                 suite-sparse
-gtkmm                                    sundials
-gtkmm3                                   superlu
-gtksourceview                            supertux
-gtksourceview3                           supervisor
-gtksourceviewmm                          suricata
-gtksourceviewmm3                         svgo
-gtkspell3                                svtplay-dl
-gtmess                                   swagger-codegen
-gts                                      swaks
-gucharmap                                swi-prolog
-guile                                    swift
-gupnp                                    swift-protobuf
-gupnp-av                                 swiftformat
-gupnp-tools                              swiftgen
-gwenhywfar                               swig
-gwyddion                                 swimat
-gx                                       switchaudio-osx
-gx-go                                    sxiv
-gxml                                     sylpheed
-gzip                                     sync_gateway
-h2                                       syncthing
-h2o                                      synfig
-hadolint                                 synscan
-hadoop                                   sysbench
-hamlib                                   sysdig
-handbrake                                tag
-hapi-fhir-cli                            takt
-haproxy                                  talloc
-harfbuzz                                 tarantool
-hashcat                                  tarsnap
-hashpump                                 tarsnap-gui
-haskell-stack                            tarsnapper
-haste-client                             task
-hatari                                   taskell
-haxe                                     tbb
-hbase                                    tbox
-hcloud                                   tcc
-hdf5                                     tcl-tk
-hdf5@1.8                                 tcpdump
-hebcal                                   tcpflow
-heimdal                                  tcpreplay
-help2man                                 tcsh
-herrie                                   tectonic
-hevea                                    teleconsole
-hexgui                                   telegraf
-hfstospell                               telegram-cli
-hg-fast-export                           teleport
-hidapi                                   telnet
-highlight                                template-glib
-hiredis                                  temporal_tables
-hive                                     tenyr
-hivemind                                 tepl
-hledger                                  terminal-notifier
-hlint                                    termius
-hmmer                                    termrec
-homebank                                 terraform
-honcho                                   terraform-docs
-hopenpgp-tools                           terraform-inventory
-howard-hinnant-date                      terraform_landscape
-howdoi                                   terraforming
-hqx                                      terragrunt
-hss                                      tesseract
-html-xml-utils                           testdisk
-htmlcxx                                  testssl
-htmldoc                                  texinfo
-htop                                     texmath
-htpdate                                  tfenv
-htslib                                   tgui
-http-parser                              the_platinum_searcher
-http_load                                the_silver_searcher
-httpd                                    thefuck
-httperf                                  theharvester
-httpie                                   thrift
-httping                                  thrift@0.9
-httrack                                  tig
-hub                                      tiger-vnc
-hugo                                     tika
-hunspell                                 tile38
-hwloc                                    timewarrior
-hydra                                    timidity
-hyperfine                                tinc
-hyperscan                                tintin
-hypre                                    tiny-fugue
-i2p                                      tinyproxy
-iamy                                     tinyxml2
-ibex                                     tippecanoe
-ical-buddy                               titlecase
-icarus-verilog                           tkdiff
-icdiff                                   tmpreaper
-ice                                      tmux
-icecast                                  tmux-mem-cpu-load
-icecream                                 tmux-xpanes
-icemon                                   tmuxinator-completion
-idnits                                   tnef
-idris                                    todoman
-igv                                      tokei
-ike-scan                                 tomcat
-ilmbase                                  tomcat-native
-imagemagick                              tomcat@7
-imagemagick@6                            tomcat@8
-imageoptim-cli                           tomee-plus
-imageworsener                            tomee-webprofile
-imake                                    topgit
-imap-uw                                  tor
-imapfilter                               torsocks
-imapsync                                 tox
-imlib2                                   trace2html
-immortal                                 tracebox
-inetutils                                traefik
-infer                                    trafficserver
-influxdb                                 transcrypt
-inform6                                  translate-shell
-iniparser                                translate-toolkit
-innotop                                  trash
-insect                                   trash-cli
-inspircd                                 travis
-instead                                  tree
-intercal                                 treefrog
-internetarchive                          trezor-agent
-io                                       triton
-ioping                                   ttfautohint
-ios-deploy                               tty-solitaire
-ios-sim                                  ttyd
-ios-webkit-debug-proxy                   tundra
-iozone                                   tunnel
-ipbt                                     tup
-iperf                                    tvnamer
-iperf3                                   twarc
-ipfs                                     twemcache
-ipmitool                                 twine-pypi
-ipmiutil                                 two-lame
-iproute2mac                              twoping
-ipv6calc                                 twtxt
-ipython                                  txr
-ipython@5                                typescript
-ircd-hybrid                              u-boot-tools
-ircii                                    ubertooth
-irssi                                    udunits
-isl                                      ufraw
-iso-codes                                uftp
-ispc                                     uhd
-isync                                    umlet
-itex2mml                                 unbound
-itstool                                  uncrustify
-ivykis                                   unixodbc
-jabba                                    unnethack
-jadx                                     unoconv
-jailkit                                  unp64
-jansson                                  unrar
-jasper                                   unrtf
-jbake                                    unshield
-jbig2dec                                 unzip
-jboss-forge                              upscaledb
-jdnssec-tools                            uptimed
-jdupes                                   upx
-jemalloc                                 urbit
-jena                                     urdfdom
-jenkins                                  urdfdom_headers
-jenkins-job-builder                      urh
-jenkins-lts                              uriparser
-jenv                                     uru
-jerasure                                 urweb
-jetty                                    userspace-rcu
-jetty-runner                             utf8proc
-jflex                                    util-linux
-jfrog-cli-go                             utimer
-jhead                                    uwsgi
-jhiccup                                  v8
-jhipster                                 vagrant-completion
-jid                                      vala
-jigdo                                    valabind
-jing-trang                               valgrind
-jlog                                     vamp-plugin-sdk
-jmeter                                   vapoursynth
-jnettop                                  varnish
-jo                                       vault
-john                                     vault-cli
-john-jumbo                               vaulted
-joplin                                   vc4asm
-jose                                     vcdimager
-jp2a                                     vcftools
-jpeg-archive                             vdirsyncer
-jpeg-turbo                               vegeta
-jq                                       verilator
-jrnl                                     vert.x
-jruby                                    vgmstream
-jsdoc3                                   vice
-json-fortran                             viewvc
-json-glib                                vifm
-json_spirit                              vim
-jsoncpp                                  vim@7.4
-jsonnet                                  vimpc
-jsonrpc-glib                             vips
-jsonschema2pojo                          virtuoso
-jsvc                                     visp
-juise                                    vit
-juju                                     vitetris
-juju-wait                                vmtouch
-julius                                   vnstat
-jump                                     vnu
-just                                     volatility
-jvgrep                                   voldemort
-kafka                                    vorbis-tools
-kafkacat                                 vowpal-wabbit
-kakoune                                  vrpn
-kallisto                                 vsts-cli
-kapacitor                                vte
-keepassc                                 vte3
-keepkey-agent                            vtk
-kerl                                     vttest
-kettle                                   vultr
-khal                                     w3m
-khard                                    wabt
-kibana                                   wakatime-cli
-kibana@5.6                               wallpaper
-kitchen-sync                             wandio
-klavaro                                  wartremover
-knot                                     watchexec
-knot-resolver                            watchman
-kobalt                                   watson
-kompose                                  wdc
-kops                                     wdfs
-kore                                     wdiff
-kotlin                                   webdis
-kpcli                                    weboob
-krakend                                  webp
-krb5                                     webpack
-ksh                                      websocketd
-ktmpl                                    webtorrent-cli
-kube-aws                                 weechat
-kube-ps1                                 wellington
-kubecfg                                  wesnoth
-kubectx                                  wgetpaste
-kubeless                                 when
-kubernetes-cli                           whois
-kumo                                     widelands
-kvazaar                                  wiki
-kyoto-cabinet                            wildfly-as
-kyoto-tycoon                             wimlib
-lablgtk                                  winetricks
-lammps                                   wiredtiger
-landscaper                               wireguard-go
-languagetool                             wireguard-tools
-lapack                                   wireshark
-lasi                                     with-readline
-lasso                                    wla-dx
-lastpass-cli                             wmctrl
-laszip                                   woboq_codebrowser
-latex2html                               wolfssl
-latex2rtf                                wp-cli
-latexdiff                                wp-cli-completion
-latexml                                  wpscan
-launchdns                                wtf
-lbdb                                     wv
-lcdf-typetools                           wxmac
-lcm                                      wxmaxima
-lcov                                     wxpython
-ldapvi                                   x11vnc
-ldc                                      x264
-ldid                                     x265
-ldns                                     x3270
-lean                                     xa
-lean-cli                                 xalan-c
-ledger                                   xapian
-legit                                    xboard
-lego                                     xcproj
-leiningen                                xdot
-lensfun                                  xerces-c
-leptonica                                xmake
-less                                     xml-security-c
-leveldb                                  xml-tooling-c
-lftp                                     xmount
-lgogdownloader                           xmrig
-libarchive                               xonsh
-libatomic_ops                            xorriso
-libav                                    xpa
-libb2                                    xpdf
-libbi                                    xplanet
-libbitcoin                               xqilla
-libbitcoin-blockchain                    xrootd
-libbitcoin-client                        xsane
-libbitcoin-consensus                     xsd
-libbitcoin-database                      xtensor
-libbitcoin-explorer                      xvid
-libbitcoin-network                       xxhash
-libbitcoin-node                          yacas
-libbitcoin-protocol                      yadm
-libbitcoin-server                        yaf
-libbladerf                               yafc
-libbluray                                yaml-cpp
-libbtbb                                  yamllint
-libcaca                                  yank
-libcapn                                  yara
-libccd                                   yarn
-libcddb                                  yash
-libcdio                                  yasm
-libcdr                                   yaws
-libcds                                   yaz
-libcec                                   ydcv
-libchamplain                             yelp-tools
-libchaos                                 ykman
-libcoap                                  ykpers
-libcouchbase                             yle-dl
-libcroco                                 yosys
-libdap                                   you-get
-libdazzle                                youtube-dl
-libdc1394                                yq
-libdill                                  yubico-piv-tool
-libdvbpsi                                z3
-libdvdnav                                zabbix
-libdvdread                               zanata-client
-libebml                                  zbackup
-libedit                                  zbar
-libepoxy                                 zboy
-liberasurecode                           zebra
-libestr                                  zelda-roth-se
-libetonyek                               zenity
-libetpan                                 zero-install
-libev                                    zeromq
-libewf                                   zig
-libexosip                                zim
-libextractor                             zimg
-libfabric                                zint
-libfaketime                              zita-convolver
-libfixbuf                                zmqpp
-libfreefare                              znapzend
-libfreehand                              znc
-libftdi                                  zookeeper
-libgaiagraphics                          zopfli
-libgda                                   zorba
-libgdata                                 zpython
-libgee                                   zsdx
-libgig                                   zsh
-libgit2                                  zsh-autosuggestions
-libgit2-glib                             zsh-completions
-libglade                                 zsh-history-substring-search
-libglademm                               zshdb
-libgnomecanvas                           zstd
-libgnomecanvasmm                         zsxd
-libgosu                                  zurl
-[34m==>[0m [1mRenamed Formulae[0m
-ark -> velero                            kubernetes-helm -> helm
-bro -> zeek                              mat -> mat2
-cdiff -> ydiff                           php72 -> php@7.2
-confluent-oss -> confluent-platform      presto -> prestodb
-crystal-lang -> crystal                  rebar@3 -> rebar3
-gloo-ctl -> glooctl                      resin-cli -> balena-cli
-gnatsd -> nats-server                    saltstack -> salt
-gtksourceview@4 -> gtksourceview4        todolist -> ultralist
-gutenberg -> zola                        transmission -> transmission-cli
-hh -> hstr                               usbmuxd -> libusbmuxd
-jupyter -> jupyterlab
-[34m==>[0m [1mDeleted Formulae[0m
-[1mopenssl [32m✔[0m[0m                  hachoir-metadata           php@7.0
-aiccu                      hana                       php@7.1
-amber                      heroku                     pincaster
-ansible@1.9                httest                     plan9port
-ansible@2.0                hyper                      pldebugger
-apple-gcc42                ib                         postgres-xc
-aptly-completion           irods                      pound
-artifactory-cli-go         js-test-driver             protobuf@2.5
-asciinema2gif              juju-quickstart            protobuf@2.6
-at-spi2-atk                kibana@4.4                 protobuf@3.1
-at-spi2-core               konoha                     pxz
-bdsup2sub                  kontena                    pyexiv2
-boot2docker                ld64                       qt@5.5
-boot2docker-completion     libggz                     queequeg
-casperjs                   libguess                   raine
-cclive                     liblacewing                reclass
-cctools                    liblastfm                  redis@2.8
-cctools-headers            libopkele                  riak
-cherokee                   libutf                     rlvm
-cockroach                  llvm@3.7                   rock
-compose2kube               llvm@3.9                   ruby@1.8
-corebird                   llvm@4                     ruby@2.0
-cputhrottle                llvm@5                     ruby@2.2
-csup                       lsh                        ruby@2.3
-ctunnel                    lysp                       sary
-datomic                    mariadb@10.0               scala@2.10
-dcal                       maven@3.0                  shocco
-dirmngr                    maven@3.1                  sickbeard
-dsd                        mediatomb                  skipfish
-engine_pkcs11              mimms                      smlnj
-erlang@17                  minisat                    solr@5.5
-erlang@18                  monax                      sonarlint
-erlang@19                  mongodb                    submarine
-ffmbc                      mongodb@3.0                supersonic
-frag_find                  mongodb@3.2                swig@3.04
-freetds@0.91               mongodb@3.4                taisei
-ftimes                     mysql-cluster              taylor
-gdnsd                      mysql-connector-c          tcptrack
-ghc@8.0                    mysql@5.5                  thc-pptp-bruter
-gjstest                    nesemu2                    tlsdate
-gmt@4                      nethack4                   tmux-cssh
-gmtl                       node@4                     tn5250
-gnome-doc-utils            node@6                     tomcat@6
-gnupg@2.0                  nordugrid-arc              typesafe-activator
-go@1.4                     onepass                    varnish@4
-go@1.8                     open-vcdiff                voms
-gpg-agent                  opensyobon                 whirr
-gradle@2.14                packetbeat                 wine
-grib-api                   pbrt                       wry
-gtk-engines                pdftoedn                   xar-mackyle
-gtk-murrine-engine         percona-server-mongodb     xmoto
-guile@2.0                  percona-server@5.6         zxing-cpp
-gv                         php@5.6
-travis_time:end:13160571:start=1576023260471917000,finish=1576023534852218000,duration=274380301000,event=before_install[0Ktravis_fold:end:before_install.1[0Ktravis_fold:start:before_install.2[0Ktravis_time:start:00f0a8bc[0K$ if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install libxml2 || true ; fi
-[31mError:[0m libxml2 2.9.7 is already installed
-To upgrade to 2.9.10, run `brew upgrade libxml2`
-travis_time:end:00f0a8bc:start=1576023534862779000,finish=1576023538557659000,duration=3694880000,event=before_install[0Ktravis_fold:end:before_install.2[0Ktravis_fold:start:before_install.3[0Ktravis_time:start:137afa5b[0K$ if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install cmake || true ; fi
-[31mError:[0m cmake 3.11.4 is already installed
-To upgrade to 3.15.5, run `brew upgrade cmake`.
-[34m==>[0m [1m`brew cleanup` has not been run in 30 days, running now...[0m
-Removing: /Users/travis/Library/Caches/Homebrew/adns-1.5.1.high_sierra.bottle.tar.gz... (269.0KB)
-Removing: /Users/travis/Library/Caches/Homebrew/autoconf-2.69.high_sierra.bottle.4.tar.gz... (871.2KB)
-Removing: /Users/travis/Library/Caches/Homebrew/automake-1.16.1.high_sierra.bottle.tar.gz... (943.0KB)
-Removing: /Users/travis/Library/Caches/Homebrew/boost-1.67.0_1.high_sierra.bottle.tar.gz... (87.1MB)
-Removing: /Users/travis/Library/Caches/Homebrew/carthage-0.29.0.high_sierra.bottle.tar.gz... (8.3MB)
-Removing: /Users/travis/Library/Caches/Homebrew/cgal-4.12.high_sierra.bottle.tar.gz... (5.9MB)
-Removing: /Users/travis/Library/Caches/Homebrew/cmake-3.11.4.high_sierra.bottle.tar.gz... (11.7MB)
-Removing: /Users/travis/Library/Caches/Homebrew/coreutils-8.29.high_sierra.bottle.tar.gz... (3.9MB)
-Removing: /Users/travis/Library/Caches/Homebrew/freexl-1.0.5.high_sierra.bottle.tar.gz... (46KB)
-Removing: /Users/travis/Library/Caches/Homebrew/gdal-2.3.0.high_sierra.bottle.tar.gz... (16MB)
-Removing: /Users/travis/Library/Caches/Homebrew/gdbm-1.15.high_sierra.bottle.tar.gz... (187.8KB)
-Removing: /Users/travis/Library/Caches/Homebrew/geos-3.6.2.high_sierra.bottle.tar.gz... (2MB)
-Removing: /Users/travis/Library/Caches/Homebrew/gettext-0.19.8.1.high_sierra.bottle.tar.gz... (7.8MB)
-Removing: /Users/travis/Library/Caches/Homebrew/giflib-5.1.4.high_sierra.bottle.tar.gz... (88KB)
-Removing: /Users/travis/Library/Caches/Homebrew/git-2.18.0.high_sierra.bottle.tar.gz... (13.3MB)
-Removing: /Users/travis/Library/Caches/Homebrew/gmp-6.1.2_2.high_sierra.bottle.tar.gz... (1005KB)
-Removing: /Users/travis/Library/Caches/Homebrew/gnupg-2.2.8.high_sierra.bottle.tar.gz... (4MB)
-Removing: /Users/travis/Library/Caches/Homebrew/gnutls-3.5.18.high_sierra.bottle.tar.gz... (2.3MB)
-Removing: /Users/travis/Library/Caches/Homebrew/go-1.10.3.high_sierra.bottle.tar.gz... (102.6MB)
-Removing: /Users/travis/Library/Caches/Homebrew/icu4c-62.1.high_sierra.bottle.tar.gz... (25.5MB)
-Removing: /Users/travis/Library/Caches/Homebrew/jpeg-9c.high_sierra.bottle.tar.gz... (297.6KB)
-Removing: /Users/travis/Library/Caches/Homebrew/json-c-0.13.1.high_sierra.bottle.tar.gz... (79.5KB)
-Removing: /Users/travis/Library/Caches/Homebrew/libassuan-2.5.1.high_sierra.bottle.tar.gz... (146.4KB)
-Removing: /Users/travis/Library/Caches/Homebrew/libevent-2.1.8.high_sierra.bottle.tar.gz... (753KB)
-Removing: /Users/travis/Library/Caches/Homebrew/libffi-3.2.1.high_sierra.bottle.tar.gz... (97.2KB)
-Removing: /Users/travis/Library/Caches/Homebrew/libgcrypt-1.8.3.high_sierra.bottle.tar.gz... (1MB)
-Removing: /Users/travis/Library/Caches/Homebrew/libgeotiff-1.4.2_2.high_sierra.bottle.tar.gz... (1.2MB)
-Removing: /Users/travis/Library/Caches/Homebrew/libgpg-error-1.31.high_sierra.bottle.tar.gz... (261.3KB)
-Removing: /Users/travis/Library/Caches/Homebrew/libidn2-2.0.5.high_sierra.bottle.tar.gz... (217.2KB)
-Removing: /Users/travis/Library/Caches/Homebrew/libksba-1.3.5.high_sierra.bottle.tar.gz... (131.8KB)
-Removing: /Users/travis/Library/Caches/Homebrew/libpng-1.6.34.high_sierra.bottle.tar.gz... (444.4KB)
-Removing: /Users/travis/Library/Caches/Homebrew/libpq-10.4.high_sierra.bottle.tar.gz... (6MB)
-Removing: /Users/travis/Library/Caches/Homebrew/libspatialite-4.3.0a_6.high_sierra.bottle.tar.gz... (5.2MB)
-Removing: /Users/travis/Library/Caches/Homebrew/libssh-0.7.5.high_sierra.bottle.tar.gz... (416.2KB)
-Removing: /Users/travis/Library/Caches/Homebrew/libtasn1-4.13.high_sierra.bottle.tar.gz... (131.1KB)
-Removing: /Users/travis/Library/Caches/Homebrew/libtiff-4.0.9_3.high_sierra.bottle.tar.gz... (1MB)
-Removing: /Users/travis/Library/Caches/Homebrew/libtool-2.4.6_1.high_sierra.bottle.tar.gz... (1009.5KB)
-Removing: /Users/travis/Library/Caches/Homebrew/libunistring-0.9.10.high_sierra.bottle.tar.gz... (1.4MB)
-Removing: /Users/travis/Library/Caches/Homebrew/libusb-1.0.22.high_sierra.bottle.tar.gz... (159.2KB)
-Removing: /Users/travis/Library/Caches/Homebrew/libxml2-2.9.7.high_sierra.bottle.tar.gz... (2.4MB)
-Removing: /Users/travis/Library/Caches/Homebrew/libyaml-0.1.7.high_sierra.bottle.tar.gz... (100.4KB)
-Removing: /Users/travis/Library/Caches/Homebrew/maven-3.5.4.tar.gz... (8.4MB)
-Removing: /Users/travis/Library/Caches/Homebrew/md5deep-4.4.high_sierra.bottle.tar.gz... (706.8KB)
-Removing: /Users/travis/Library/Caches/Homebrew/mercurial-4.6.1.high_sierra.bottle.tar.gz... (2MB)
-Removing: /Users/travis/Library/Caches/Homebrew/mpfr-4.0.1.high_sierra.bottle.tar.gz... (1.1MB)
-Removing: /Users/travis/Library/Caches/Homebrew/msgpack-3.0.1.high_sierra.bottle.tar.gz... (379.2KB)
-Removing: /Users/travis/Library/Caches/Homebrew/nettle-3.4.high_sierra.bottle.tar.gz... (721.6KB)
-Removing: /Users/travis/Library/Caches/Homebrew/node-10.5.0_1.high_sierra.bottle.tar.gz... (16MB)
-Removing: /Users/travis/Library/Caches/Homebrew/npth-1.5.high_sierra.bottle.tar.gz... (23.5KB)
-Removing: /Users/travis/Library/Caches/Homebrew/numpy-1.14.5.high_sierra.bottle.tar.gz... (6.3MB)
-Removing: /Users/travis/Library/Caches/Homebrew/openssl-1.0.2o_2.high_sierra.bottle.tar.gz... (3.7MB)
-Removing: /Users/travis/Library/Caches/Homebrew/openssl@1.1-1.1.0h.high_sierra.bottle.tar.gz... (4.5MB)
-Removing: /Users/travis/Library/Caches/Homebrew/p11-kit-0.23.12.high_sierra.bottle.tar.gz... (696.3KB)
-Removing: /Users/travis/Library/Caches/Homebrew/pcre-8.42.high_sierra.bottle.tar.gz... (1.8MB)
-Removing: /Users/travis/Library/Caches/Homebrew/pinentry-1.1.0_1.high_sierra.bottle.tar.gz... (102.8KB)
-Removing: /Users/travis/Library/Caches/Homebrew/pkg-config-0.29.2.high_sierra.bottle.tar.gz... (235.8KB)
-Removing: /Users/travis/Library/Caches/Homebrew/postgis-2.4.4_1.high_sierra.bottle.tar.gz... (12.4MB)
-Removing: /Users/travis/Library/Caches/Homebrew/postgresql-10.4.high_sierra.bottle.tar.gz... (10.6MB)
-Removing: /Users/travis/Library/Caches/Homebrew/proj-5.1.0.high_sierra.bottle.tar.gz... (7.0MB)
-Removing: /Users/travis/Library/Caches/Homebrew/pyenv-1.2.4.high_sierra.bottle.tar.gz... (589.8KB)
-Removing: /Users/travis/Library/Caches/Homebrew/python-3.6.5_1.high_sierra.bottle.tar.gz... (21.9MB)
-Removing: /Users/travis/Library/Caches/Homebrew/python@2-2.7.15_1.high_sierra.bottle.tar.gz... (18.3MB)
-Removing: /Users/travis/Library/Caches/Homebrew/readline-7.0.3_1.high_sierra.bottle.tar.gz... (495.5KB)
-Removing: /Users/travis/Library/Caches/Homebrew/sfcgal-1.3.5.high_sierra.bottle.tar.gz... (2.0MB)
-Removing: /Users/travis/Library/Caches/Homebrew/sqlite-3.24.0.high_sierra.bottle.tar.gz... (1.7MB)
-Removing: /Users/travis/Library/Caches/Homebrew/swiftlint-0.26.0.high_sierra.bottle.tar.gz... (4.9MB)
-Removing: /Users/travis/Library/Caches/Homebrew/tmate-2.2.1_3.high_sierra.bottle.tar.gz... (269.2KB)
-Removing: /Users/travis/Library/Caches/Homebrew/wget-1.19.5.high_sierra.bottle.tar.gz... (1.3MB)
-Removing: /Users/travis/Library/Caches/Homebrew/xctool-0.3.4.high_sierra.bottle.tar.gz... (1013.5KB)
-Removing: /Users/travis/Library/Caches/Homebrew/xz-5.2.4.high_sierra.bottle.tar.gz... (372.7KB)
-Removing: /Users/travis/Library/Logs/Homebrew/adns... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/autoconf... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/automake... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/boost... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/carthage... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/cgal... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/cmake... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/coreutils... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/freexl... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/gdal... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/gdbm... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/geos... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/gettext... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/giflib... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/git... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/gmp... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/gnupg... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/gnutls... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/go... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/icu4c... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/jpeg... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/json-c... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/libassuan... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/libevent... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/libffi... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/libgcrypt... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/libgeotiff... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/libgpg-error... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/libidn2... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/libksba... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/libpng... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/libpq... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/libspatialite... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/libssh... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/libtasn1... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/libtiff... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/libtool... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/libunistring... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/libusb... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/libxml2... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/libyaml... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/maven... (107B)
-Removing: /Users/travis/Library/Logs/Homebrew/md5deep... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/mercurial... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/mpfr... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/msgpack... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/nettle... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/node... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/npth... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/numpy... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/openssl... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/openssl@1.1... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/p11-kit... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/pcre... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/pinentry... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/pkg-config... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/postgis... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/postgresql... (1.3KB)
-Removing: /Users/travis/Library/Logs/Homebrew/proj... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/pyenv... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/python... (3 files, 127.8KB)
-Removing: /Users/travis/Library/Logs/Homebrew/python@2... (3 files, 123.7KB)
-Removing: /Users/travis/Library/Logs/Homebrew/readline... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/sfcgal... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/sqlite... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/swiftlint... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/tmate... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/wget... (68B)
-Removing: /Users/travis/Library/Logs/Homebrew/xctool... (8 files, 2KB)
-Removing: /Users/travis/Library/Logs/Homebrew/xz... (68B)
-Pruned 0 symbolic links and 5 directories from /usr/local
-travis_time:end:137afa5b:start=1576023538567452000,finish=1576023548227410000,duration=9659958000,event=before_install[0Ktravis_fold:end:before_install.3[0Ktravis_fold:start:before_install.4[0Ktravis_time:start:002a2db4[0K$ if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get -qq update; fi
-travis_time:end:002a2db4:start=1576023548237733000,finish=1576023548244885000,duration=7152000,event=before_install[0Ktravis_fold:end:before_install.4[0Ktravis_fold:start:before_install.5[0Ktravis_time:start:025369b6[0K$ if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install -y libxml2-dev; fi
-travis_time:end:025369b6:start=1576023548257150000,finish=1576023548264210000,duration=7060000,event=before_install[0Ktravis_fold:end:before_install.5[0Ktravis_time:start:08800524[0K$ make && make test
-mkdir -p build && cd build && cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_MANDIR:PATH=/usr/share/man ..
--- The C compiler identification is AppleClang 9.1.0.9020039
--- The CXX compiler identification is AppleClang 9.1.0.9020039
--- Check for working C compiler: /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
--- Check for working C compiler: /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -- works
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
--- Check for working CXX compiler: /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Found PkgConfig: /usr/local/bin/pkg-config (found version "0.29.2") 
--- Checking for one of the modules 'bash-completion'
--- Found LibXml2: /usr/lib/libxml2.dylib (found version "2.9.4") 
--- Found OpenSSL: /usr/local/opt/openssl/lib/libcrypto.dylib (found version "1.0.2o") 
--- Found CURL: /usr/lib/libcurl.dylib (found version "7.54.0") 
-LASTPASS_CLI_VERSION  =1.3.3.17.g20998f6
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/travis/build/lastpass/lastpass-cli/build
-/Applications/Xcode-9.4.1.app/Contents/Developer/usr/bin/make -C build all
-[35m[1mScanning dependencies of target lpass[0m
-[  2%] [32mBuilding C object CMakeFiles/lpass.dir/agent.c.o[0m
-[  4%] [32mBuilding C object CMakeFiles/lpass.dir/blob.c.o[0m
-[  7%] [32mBuilding C object CMakeFiles/lpass.dir/cipher.c.o[0m
-[  9%] [32mBuilding C object CMakeFiles/lpass.dir/clipboard.c.o[0m
-[ 11%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-add.c.o[0m
-[ 14%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-duplicate.c.o[0m
-[ 16%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-edit.c.o[0m
-[ 19%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-export.c.o[0m
-[ 21%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-generate.c.o[0m
-[ 23%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-import.c.o[0m
-[ 26%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-login.c.o[0m
-[ 28%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-logout.c.o[0m
-[ 30%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-ls.c.o[0m
-[ 33%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-mv.c.o[0m
-[ 35%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-passwd.c.o[0m
-[ 38%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-rm.c.o[0m
-[ 40%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-share.c.o[0m
-[ 42%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-show.c.o[0m
-[ 45%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-status.c.o[0m
-[ 47%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-sync.c.o[0m
-[ 50%] [32mBuilding C object CMakeFiles/lpass.dir/cmd.c.o[0m
-[ 52%] [32mBuilding C object CMakeFiles/lpass.dir/config.c.o[0m
-[ 54%] [32mBuilding C object CMakeFiles/lpass.dir/edit.c.o[0m
-[ 57%] [32mBuilding C object CMakeFiles/lpass.dir/endpoints-login.c.o[0m
-[ 59%] [32mBuilding C object CMakeFiles/lpass.dir/endpoints-share.c.o[0m
-[ 61%] [32mBuilding C object CMakeFiles/lpass.dir/endpoints.c.o[0m
-[ 64%] [32mBuilding C object CMakeFiles/lpass.dir/format.c.o[0m
-[ 66%] [32mBuilding C object CMakeFiles/lpass.dir/http.c.o[0m
-[ 69%] [32mBuilding C object CMakeFiles/lpass.dir/json-format.c.o[0m
-[ 71%] [32mBuilding C object CMakeFiles/lpass.dir/kdf.c.o[0m
-[ 73%] [32mBuilding C object CMakeFiles/lpass.dir/log.c.o[0m
-[ 76%] [32mBuilding C object CMakeFiles/lpass.dir/lpass.c.o[0m
-[ 78%] [32mBuilding C object CMakeFiles/lpass.dir/notes.c.o[0m
-[ 80%] [32mBuilding C object CMakeFiles/lpass.dir/password.c.o[0m
-[ 83%] [32mBuilding C object CMakeFiles/lpass.dir/pbkdf2.c.o[0m
-[ 85%] [32mBuilding C object CMakeFiles/lpass.dir/process.c.o[0m
-[ 88%] [32mBuilding C object CMakeFiles/lpass.dir/session.c.o[0m
-[ 90%] [32mBuilding C object CMakeFiles/lpass.dir/terminal.c.o[0m
-[ 92%] [32mBuilding C object CMakeFiles/lpass.dir/upload-queue.c.o[0m
-[ 95%] [32mBuilding C object CMakeFiles/lpass.dir/util.c.o[0m
-[ 97%] [32mBuilding C object CMakeFiles/lpass.dir/xml.c.o[0m
-[100%] [32m[1mLinking C executable lpass[0m
-[100%] Built target lpass
-mkdir -p build && cd build && cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_MANDIR:PATH=/usr/share/man ..
--- Checking for one of the modules 'bash-completion'
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/travis/build/lastpass/lastpass-cli/build
-/Applications/Xcode-9.4.1.app/Contents/Developer/usr/bin/make -C build lpass-test && /Applications/Xcode-9.4.1.app/Contents/Developer/usr/bin/make -C build test
-[35m[1mScanning dependencies of target lpass-test[0m
-[  2%] [32mBuilding C object CMakeFiles/lpass-test.dir/test/http_mock.c.o[0m
-[  4%] [32mBuilding C object CMakeFiles/lpass-test.dir/agent.c.o[0m
-[  6%] [32mBuilding C object CMakeFiles/lpass-test.dir/blob.c.o[0m
-[  9%] [32mBuilding C object CMakeFiles/lpass-test.dir/cipher.c.o[0m
-[ 11%] [32mBuilding C object CMakeFiles/lpass-test.dir/clipboard.c.o[0m
-[ 13%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-add.c.o[0m
-[ 16%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-duplicate.c.o[0m
-[ 18%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-edit.c.o[0m
-[ 20%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-export.c.o[0m
-[ 23%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-generate.c.o[0m
-[ 25%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-import.c.o[0m
-[ 27%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-login.c.o[0m
-[ 30%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-logout.c.o[0m
-[ 32%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-ls.c.o[0m
-[ 34%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-mv.c.o[0m
-[ 37%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-passwd.c.o[0m
-[ 39%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-rm.c.o[0m
-[ 41%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-share.c.o[0m
-[ 44%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-show.c.o[0m
-[ 46%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-status.c.o[0m
-[ 48%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-sync.c.o[0m
-[ 51%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd.c.o[0m
-[ 53%] [32mBuilding C object CMakeFiles/lpass-test.dir/config.c.o[0m
-[ 55%] [32mBuilding C object CMakeFiles/lpass-test.dir/edit.c.o[0m
-[ 58%] [32mBuilding C object CMakeFiles/lpass-test.dir/endpoints-login.c.o[0m
-[ 60%] [32mBuilding C object CMakeFiles/lpass-test.dir/endpoints-share.c.o[0m
-[ 62%] [32mBuilding C object CMakeFiles/lpass-test.dir/endpoints.c.o[0m
-[ 65%] [32mBuilding C object CMakeFiles/lpass-test.dir/format.c.o[0m
-[ 67%] [32mBuilding C object CMakeFiles/lpass-test.dir/http.c.o[0m
-[ 69%] [32mBuilding C object CMakeFiles/lpass-test.dir/json-format.c.o[0m
-[ 72%] [32mBuilding C object CMakeFiles/lpass-test.dir/kdf.c.o[0m
-[ 74%] [32mBuilding C object CMakeFiles/lpass-test.dir/log.c.o[0m
-[ 76%] [32mBuilding C object CMakeFiles/lpass-test.dir/lpass.c.o[0m
-[ 79%] [32mBuilding C object CMakeFiles/lpass-test.dir/notes.c.o[0m
-[ 81%] [32mBuilding C object CMakeFiles/lpass-test.dir/password.c.o[0m
-[ 83%] [32mBuilding C object CMakeFiles/lpass-test.dir/pbkdf2.c.o[0m
-[ 86%] [32mBuilding C object CMakeFiles/lpass-test.dir/process.c.o[0m
-[ 88%] [32mBuilding C object CMakeFiles/lpass-test.dir/session.c.o[0m
-[ 90%] [32mBuilding C object CMakeFiles/lpass-test.dir/terminal.c.o[0m
-[ 93%] [32mBuilding C object CMakeFiles/lpass-test.dir/upload-queue.c.o[0m
-[ 95%] [32mBuilding C object CMakeFiles/lpass-test.dir/util.c.o[0m
-[ 97%] [32mBuilding C object CMakeFiles/lpass-test.dir/xml.c.o[0m
-[100%] [32m[1mLinking C executable lpass-test[0m
-[100%] Built target lpass-test
-[36mRunning tests...[0m
-Test project /Users/travis/build/lastpass/lastpass-cli/build
-      Start  1: test_login
- 1/21 Test  #1: test_login ........................   Passed    0.10 sec
-      Start  2: test_login_wrong_pw_should_fail
- 2/21 Test  #2: test_login_wrong_pw_should_fail ...   Passed    0.07 sec
-      Start  3: test_add_account
- 3/21 Test  #3: test_add_account ..................   Passed    0.17 sec
-      Start  4: test_add_note
- 4/21 Test  #4: test_add_note .....................   Passed    0.18 sec
-      Start  5: test_add_note_with_field
- 5/21 Test  #5: test_add_note_with_field ..........   Passed    0.17 sec
-      Start  6: test_add_site_note
- 6/21 Test  #6: test_add_site_note ................   Passed    0.18 sec
-      Start  7: test_add_ssn_name
- 7/21 Test  #7: test_add_ssn_name .................   Passed    0.18 sec
-      Start  8: test_add_ssh_key
- 8/21 Test  #8: test_add_ssh_key ..................   Passed    0.24 sec
-      Start  9: test_edit_ssh_key
- 9/21 Test  #9: test_edit_ssh_key .................   Passed    0.30 sec
-      Start 10: test_edit_username
-10/21 Test #10: test_edit_username ................   Passed    0.18 sec
-      Start 11: test_edit_field
-11/21 Test #11: test_edit_field ...................   Passed    0.18 sec
-      Start 12: test_edit_reprompt
-12/21 Test #12: test_edit_reprompt ................   Passed    0.28 sec
-      Start 13: test_duplicate
-13/21 Test #13: test_duplicate ....................   Passed    0.17 sec
-      Start 14: test_generate
-14/21 Test #14: test_generate .....................   Passed    0.17 sec
-      Start 15: test_show
-15/21 Test #15: test_show .........................   Passed    0.15 sec
-      Start 16: test_show_json
-16/21 Test #16: test_show_json ....................   Passed    0.14 sec
-      Start 17: test_show_note
-17/21 Test #17: test_show_note ....................   Passed    0.14 sec
-      Start 18: test_show_reprompt
-18/21 Test #18: test_show_reprompt ................   Passed    0.15 sec
-      Start 19: test_ls
-19/21 Test #19: test_ls ...........................   Passed    0.14 sec
-      Start 20: test_export
-20/21 Test #20: test_export .......................   Passed    0.17 sec
-      Start 21: test_export_extended
-21/21 Test #21: test_export_extended ..............   Passed    0.16 sec
-
-100% tests passed, 0 tests failed out of 21
-
-Total Test time (real) =   3.65 sec
-travis_time:end:08800524:start=1576023548273920000,finish=1576023567976709000,duration=19702789000,event=script[0K[32;1mThe command "make && make test" exited with 0.[0m
-
-
-Done. Your build exited with 0.

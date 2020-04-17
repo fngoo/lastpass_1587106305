@@ -1,675 +1,0 @@
-travis_fold:start:worker_info[0K[33;1mWorker information[0m
-hostname: abd0770a-885c-437b-a5be-1f8e7a26042e@1.worker-org-db8cd8d97-c2wm4.gce-production-1
-version: v6.2.8 https://github.com/travis-ci/worker/tree/6d3048d96b26562be21fa1a8b8144f4c4cecd083
-instance: travis-job-7e4b57cd-cfa1-49ed-b992-e1eb83668cc3 travis-ci-garnet-trusty-1512502259-986baf0 (via amqp)
-startup: 6.166037242s
-travis_fold:end:worker_info[0Ktravis_time:start:233248a6[0Ktravis_time:end:233248a6:start=1585037163734977445,finish=1585037163893460510,duration=158483065,event=no_world_writable_dirs[0Ktravis_time:start:01237ab8[0Ktravis_time:end:01237ab8:start=1585037163896500791,finish=1585037163903589869,duration=7089078,event=agent[0Ktravis_time:start:009aafdc[0Ktravis_time:end:009aafdc:start=1585037163906591369,finish=1585037163908663552,duration=2072183,event=check_unsupported[0Ktravis_time:start:07a59066[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
-Build language: cpp
-Build dist: trusty
-Build id: 666223960
-Job id: 666223961
-Runtime kernel version: 4.4.0-101-generic
-travis-build version: 6c0f7380c
-[34m[1mBuild image provisioning date and time[0m
-Tue Dec  5 19:58:13 UTC 2017
-[34m[1mOperating System Details[0m
-Distributor ID:	Ubuntu
-Description:	Ubuntu 14.04.5 LTS
-Release:	14.04
-Codename:	trusty
-[34m[1mCookbooks Version[0m
-7c2c6a6 https://github.com/travis-ci/travis-cookbooks/tree/7c2c6a6
-[34m[1mgit version[0m
-git version 2.15.1
-[34m[1mbash version[0m
-GNU bash, version 4.3.11(1)-release (x86_64-pc-linux-gnu)
-[34m[1mgcc version[0m
-gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
-Copyright (C) 2013 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-[34m[1mdocker version[0m
-Client:
- Version:      17.09.0-ce
- API version:  1.32
- Go version:   go1.8.3
- Git commit:   afdb6d4
- Built:        Tue Sep 26 22:42:38 2017
- OS/Arch:      linux/amd64
-
-Server:
- Version:      17.09.0-ce
- API version:  1.32 (minimum version 1.12)
- Go version:   go1.8.3
- Git commit:   afdb6d4
- Built:        Tue Sep 26 22:41:20 2017
- OS/Arch:      linux/amd64
- Experimental: false
-[34m[1mclang version[0m
-clang version 5.0.0 (tags/RELEASE_500/final)
-Target: x86_64-unknown-linux-gnu
-Thread model: posix
-InstalledDir: /usr/local/clang-5.0.0/bin
-[34m[1mjq version[0m
-jq-1.5
-[34m[1mbats version[0m
-Bats 0.4.0
-[34m[1mshellcheck version[0m
-0.4.6
-[34m[1mshfmt version[0m
-v2.0.0
-[34m[1mccache version[0m
-ccache version 3.1.9
-
-Copyright (C) 2002-2007 Andrew Tridgell
-Copyright (C) 2009-2011 Joel Rosdahl
-
-This program is free software; you can redistribute it and/or modify it under
-the terms of the GNU General Public License as published by the Free Software
-Foundation; either version 3 of the License, or (at your option) any later
-version.
-[34m[1mcmake version[0m
-cmake version 3.9.2
-
-CMake suite maintained and supported by Kitware (kitware.com/cmake).
-[34m[1mheroku version[0m
-heroku-cli/6.14.39-addc925 (linux-x64) node-v9.2.0
-[34m[1mimagemagick version[0m
-Version: ImageMagick 6.7.7-10 2017-07-31 Q16 http://www.imagemagick.org
-[34m[1mmd5deep version[0m
-4.2
-[34m[1mmercurial version[0m
-Mercurial Distributed SCM (version 4.2.2)
-(see https://mercurial-scm.org for more information)
-
-Copyright (C) 2005-2017 Matt Mackall and others
-This is free software; see the source for copying conditions. There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-[34m[1mmysql version[0m
-mysql  Ver 14.14 Distrib 5.6.33, for debian-linux-gnu (x86_64) using  EditLine wrapper
-[34m[1mopenssl version[0m
-OpenSSL 1.0.1f 6 Jan 2014
-[34m[1mpacker version[0m
-Packer v1.0.2
-
-Your version of Packer is out of date! The latest version
-is 1.1.2. You can update by downloading from www.packer.io
-[34m[1mpostgresql client version[0m
-psql (PostgreSQL) 9.6.6
-[34m[1mragel version[0m
-Ragel State Machine Compiler version 6.8 Feb 2013
-Copyright (c) 2001-2009 by Adrian Thurston
-[34m[1msubversion version[0m
-svn, version 1.8.8 (r1568071)
-   compiled Aug 10 2017, 17:20:39 on x86_64-pc-linux-gnu
-
-Copyright (C) 2013 The Apache Software Foundation.
-This software consists of contributions made by many people;
-see the NOTICE file for more information.
-Subversion is open source software, see http://subversion.apache.org/
-
-The following repository access (RA) modules are available:
-
-* ra_svn : Module for accessing a repository using the svn network protocol.
-  - with Cyrus SASL authentication
-  - handles 'svn' scheme
-* ra_local : Module for accessing a repository on local disk.
-  - handles 'file' scheme
-* ra_serf : Module for accessing a repository via WebDAV protocol using serf.
-  - using serf 1.3.3
-  - handles 'http' scheme
-  - handles 'https' scheme
-
-[34m[1msudo version[0m
-Sudo version 1.8.9p5
-Configure options: --prefix=/usr -v --with-all-insults --with-pam --with-fqdn --with-logging=syslog --with-logfac=authpriv --with-env-editor --with-editor=/usr/bin/editor --with-timeout=15 --with-password-timeout=0 --with-passprompt=[sudo] password for %p:  --without-lecture --with-tty-tickets --disable-root-mailer --enable-admin-flag --with-sendmail=/usr/sbin/sendmail --with-timedir=/var/lib/sudo --mandir=/usr/share/man --libexecdir=/usr/lib/sudo --with-sssd --with-sssd-lib=/usr/lib/x86_64-linux-gnu --with-selinux
-Sudoers policy plugin version 1.8.9p5
-Sudoers file grammar version 43
-
-Sudoers path: /etc/sudoers
-Authentication methods: 'pam'
-Syslog facility if syslog is being used for logging: authpriv
-Syslog priority to use when user authenticates successfully: notice
-Syslog priority to use when user authenticates unsuccessfully: alert
-Send mail if the user is not in sudoers
-Use a separate timestamp for each user/tty combo
-Lecture user the first time they run sudo
-Root may run sudo
-Allow some information gathering to give useful error messages
-Require fully-qualified hostnames in the sudoers file
-Visudo will honor the EDITOR environment variable
-Set the LOGNAME and USER environment variables
-Length at which to wrap log file lines (0 for no wrap): 80
-Authentication timestamp timeout: 15.0 minutes
-Password prompt timeout: 0.0 minutes
-Number of tries to enter a password: 3
-Umask to use or 0777 to use user's: 022
-Path to mail program: /usr/sbin/sendmail
-Flags for mail program: -t
-Address to send mail to: root
-Subject line for mail messages: *** SECURITY information for %h ***
-Incorrect password message: Sorry, try again.
-Path to authentication timestamp dir: /var/lib/sudo
-Default password prompt: [sudo] password for %p: 
-Default user to run commands as: root
-Value to override user's $PATH with: /usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/snap/bin
-Path to the editor for use by visudo: /usr/bin/editor
-When to require a password for 'list' pseudocommand: any
-When to require a password for 'verify' pseudocommand: all
-File descriptors >= 3 will be closed before executing a command
-Environment variables to check for sanity:
-	TZ
-	TERM
-	LINGUAS
-	LC_*
-	LANGUAGE
-	LANG
-	COLORTERM
-Environment variables to remove:
-	RUBYOPT
-	RUBYLIB
-	PYTHONUSERBASE
-	PYTHONINSPECT
-	PYTHONPATH
-	PYTHONHOME
-	TMPPREFIX
-	ZDOTDIR
-	READNULLCMD
-	NULLCMD
-	FPATH
-	PERL5DB
-	PERL5OPT
-	PERL5LIB
-	PERLLIB
-	PERLIO_DEBUG 
-	JAVA_TOOL_OPTIONS
-	SHELLOPTS
-	GLOBIGNORE
-	PS4
-	BASH_ENV
-	ENV
-	TERMCAP
-	TERMPATH
-	TERMINFO_DIRS
-	TERMINFO
-	_RLD*
-	LD_*
-	PATH_LOCALE
-	NLSPATH
-	HOSTALIASES
-	RES_OPTIONS
-	LOCALDOMAIN
-	CDPATH
-	IFS
-Environment variables to preserve:
-	JAVA_HOME
-	TRAVIS
-	CI
-	DEBIAN_FRONTEND
-	XAUTHORIZATION
-	XAUTHORITY
-	PS2
-	PS1
-	PATH
-	LS_COLORS
-	KRB5CCNAME
-	HOSTNAME
-	HOME
-	DISPLAY
-	COLORS
-Locale to use while parsing sudoers: C
-Directory in which to store input/output logs: /var/log/sudo-io
-File in which to store the input/output log: %{seq}
-Add an entry to the utmp/utmpx file when allocating a pty
-PAM service name to use
-PAM service name to use for login shells
-Create a new PAM session for the command to run in
-Maximum I/O log sequence number: 0
-
-Local IP address and netmask pairs:
-	10.240.0.28/255.255.255.255
-	172.17.0.1/255.255.0.0
-
-Sudoers I/O plugin version 1.8.9p5
-[34m[1mgzip version[0m
-gzip 1.6
-Copyright (C) 2007, 2010, 2011 Free Software Foundation, Inc.
-Copyright (C) 1993 Jean-loup Gailly.
-This is free software.  You may redistribute copies of it under the terms of
-the GNU General Public License <http://www.gnu.org/licenses/gpl.html>.
-There is NO WARRANTY, to the extent permitted by law.
-
-Written by Jean-loup Gailly.
-[34m[1mzip version[0m
-Copyright (c) 1990-2008 Info-ZIP - Type 'zip "-L"' for software license.
-This is Zip 3.0 (July 5th 2008), by Info-ZIP.
-Currently maintained by E. Gordon.  Please send bug reports to
-the authors using the web page at www.info-zip.org; see README for details.
-
-Latest sources and executables are at ftp://ftp.info-zip.org/pub/infozip,
-as of above date; see http://www.info-zip.org/ for other sites.
-
-Compiled with gcc 4.8.2 for Unix (Linux ELF) on Oct 21 2013.
-
-Zip special compilation options:
-	USE_EF_UT_TIME       (store Universal Time)
-	BZIP2_SUPPORT        (bzip2 library version 1.0.6, 6-Sept-2010)
-	    bzip2 code and library copyright (c) Julian R Seward
-	    (See the bzip2 license for terms of use)
-	SYMLINK_SUPPORT      (symbolic links supported)
-	LARGE_FILE_SUPPORT   (can read and write large files on file system)
-	ZIP64_SUPPORT        (use Zip64 to store large files in archives)
-	UNICODE_SUPPORT      (store and read UTF-8 Unicode paths)
-	STORE_UNIX_UIDs_GIDs (store UID/GID sizes/values using new extra field)
-	UIDGID_NOT_16BIT     (old Unix 16-bit UID/GID extra field not used)
-	[encryption, version 2.91 of 05 Jan 2007] (modified for Zip 3)
-
-Encryption notice:
-	The encryption code of this program is not copyrighted and is
-	put in the public domain.  It was originally written in Europe
-	and, to the best of our knowledge, can be freely distributed
-	in both source and object forms from any country, including
-	the USA under License Exception TSU of the U.S. Export
-	Administration Regulations (section 740.13(e)) of 6 June 2002.
-
-Zip environment options:
-             ZIP:  [none]
-          ZIPOPT:  [none]
-[34m[1mvim version[0m
-VIM - Vi IMproved 7.4 (2013 Aug 10, compiled Nov 24 2016 16:43:18)
-Included patches: 1-52
-Extra patches: 8.0.0056
-Modified by pkg-vim-maintainers@lists.alioth.debian.org
-Compiled by buildd@
-Huge version without GUI.  Features included (+) or not (-):
-+acl             +farsi           +mouse_netterm   +syntax
-+arabic          +file_in_path    +mouse_sgr       +tag_binary
-+autocmd         +find_in_path    -mouse_sysmouse  +tag_old_static
--balloon_eval    +float           +mouse_urxvt     -tag_any_white
--browse          +folding         +mouse_xterm     -tcl
-++builtin_terms  -footer          +multi_byte      +terminfo
-+byte_offset     +fork()          +multi_lang      +termresponse
-+cindent         +gettext         -mzscheme        +textobjects
--clientserver    -hangul_input    +netbeans_intg   +title
--clipboard       +iconv           +path_extra      -toolbar
-+cmdline_compl   +insert_expand   -perl            +user_commands
-+cmdline_hist    +jumplist        +persistent_undo +vertsplit
-+cmdline_info    +keymap          +postscript      +virtualedit
-+comments        +langmap         +printer         +visual
-+conceal         +libcall         +profile         +visualextra
-+cryptv          +linebreak       +python          +viminfo
-+cscope          +lispindent      -python3         +vreplace
-+cursorbind      +listcmds        +quickfix        +wildignore
-+cursorshape     +localmap        +reltime         +wildmenu
-+dialog_con      -lua             +rightleft       +windows
-+diff            +menu            -ruby            +writebackup
-+digraphs        +mksession       +scrollbind      -X11
--dnd             +modify_fname    +signs           -xfontset
--ebcdic          +mouse           +smartindent     -xim
-+emacs_tags      -mouseshape      -sniff           -xsmp
-+eval            +mouse_dec       +startuptime     -xterm_clipboard
-+ex_extra        +mouse_gpm       +statusline      -xterm_save
-+extra_search    -mouse_jsbterm   -sun_workshop    -xpm
-   system vimrc file: "$VIM/vimrc"
-     user vimrc file: "$HOME/.vimrc"
- 2nd user vimrc file: "~/.vim/vimrc"
-      user exrc file: "$HOME/.exrc"
-  fall-back for $VIM: "/usr/share/vim"
-Compilation: gcc -c -I. -Iproto -DHAVE_CONFIG_H     -g -O2 -fstack-protector --param=ssp-buffer-size=4 -Wformat -Werror=format-security -U_FORTIFY_SOURCE -D_FORTIFY_SOURCE=1      
-Linking: gcc   -Wl,-Bsymbolic-functions -Wl,-z,relro -Wl,--as-needed -o vim        -lm -ltinfo -lnsl  -lselinux  -lacl -lattr -lgpm -ldl    -L/usr/lib/python2.7/config-x86_64-linux-gnu -lpython2.7 -lpthread -ldl -lutil -lm -Xlinker -export-dynamic -Wl,-O1 -Wl,-Bsymbolic-functions      
-[34m[1miptables version[0m
-iptables v1.4.21
-[34m[1mcurl version[0m
-curl 7.35.0 (x86_64-pc-linux-gnu) libcurl/7.35.0 OpenSSL/1.0.1f zlib/1.2.8 libidn/1.28 librtmp/2.3
-[34m[1mwget version[0m
-GNU Wget 1.15 built on linux-gnu.
-[34m[1mrsync version[0m
-rsync  version 3.1.0  protocol version 31
-[34m[1mgimme version[0m
-v1.2.0
-[34m[1mnvm version[0m
-0.33.6
-[34m[1mperlbrew version[0m
-/home/travis/perl5/perlbrew/bin/perlbrew  - App::perlbrew/0.80
-[34m[1mphpenv version[0m
-rbenv 1.1.1-25-g6aa70b6
-[34m[1mrvm version[0m
-rvm 1.29.3 (latest) by Michal Papis, Piotr Kuczynski, Wayne E. Seguin [https://rvm.io]
-[34m[1mdefault ruby version[0m
-ruby 2.4.1p111 (2017-03-22 revision 58053) [x86_64-linux]
-[34m[1mCouchDB version[0m
-couchdb 1.6.1
-[34m[1mElasticSearch version[0m
-5.5.0
-[34m[1mInstalled Firefox version[0m
-firefox 56.0.2
-[34m[1mMongoDB version[0m
-MongoDB 3.4.10
-[34m[1mPhantomJS version[0m
-2.1.1
-[34m[1mPre-installed PostgreSQL versions[0m
-9.2.24
-9.3.20
-9.4.15
-9.5.10
-9.6.6
-[34m[1mRabbitMQ Version[0m
-3.6.14
-[34m[1mRedis version[0m
-redis-server 4.0.6
-[34m[1mriak version[0m
-2.2.3
-[34m[1mPre-installed Go versions[0m
-1.7.4
-[34m[1mant version[0m
-Apache Ant(TM) version 1.9.3 compiled on April 8 2014
-[34m[1mmvn version[0m
-Apache Maven 3.5.2 (138edd61fd100ec658bfa2d307c43b76940a5d7d; 2017-10-18T07:58:13Z)
-Maven home: /usr/local/maven-3.5.2
-Java version: 1.8.0_151, vendor: Oracle Corporation
-Java home: /usr/lib/jvm/java-8-oracle/jre
-Default locale: en_US, platform encoding: UTF-8
-OS name: "linux", version: "4.4.0-98-generic", arch: "amd64", family: "unix"
-[34m[1mgradle version[0m
-
-------------------------------------------------------------
-Gradle 4.0.1
-------------------------------------------------------------
-
-Build time:   2017-07-07 14:02:41 UTC
-Revision:     38e5dc0f772daecca1d2681885d3d85414eb6826
-
-Groovy:       2.4.11
-Ant:          Apache Ant(TM) version 1.9.6 compiled on June 29 2015
-JVM:          1.8.0_151 (Oracle Corporation 25.151-b12)
-OS:           Linux 4.4.0-98-generic amd64
-
-[34m[1mlein version[0m
-Leiningen 2.8.1 on Java 1.8.0_151 Java HotSpot(TM) 64-Bit Server VM
-[34m[1mPre-installed Node.js versions[0m
-v4.8.6
-v6.12.0
-v6.12.1
-v8.9
-v8.9.1
-[34m[1mphpenv versions[0m
-  system
-  5.6
-* 5.6.32 (set by /home/travis/.phpenv/version)
-  7.0
-  7.0.25
-  7.1
-  7.1.11
-  hhvm
-  hhvm-stable
-[34m[1mcomposer --version[0m
-Composer version 1.5.2 2017-09-11 16:59:25
-[34m[1mPre-installed Ruby versions[0m
-ruby-2.2.7
-ruby-2.3.4
-ruby-2.4.1
-travis_fold:end:system_info[0K
-travis_time:end:07a59066:start=1585037163911229756,finish=1585037163918654948,duration=7425192,event=show_system_info[0Ktravis_time:start:02dd433a[0Ktravis_time:end:02dd433a:start=1585037163921463376,finish=1585037163944937373,duration=23473997,event=rm_riak_source[0Ktravis_time:start:05391c33[0Ktravis_time:end:05391c33:start=1585037163948107208,finish=1585037163953472521,duration=5365313,event=fix_rwky_redis[0Ktravis_time:start:031a80b8[0Ktravis_time:end:031a80b8:start=1585037163957341776,finish=1585037164252125227,duration=294783451,event=wait_for_network[0Ktravis_time:start:179584c2[0Ktravis_time:end:179584c2:start=1585037164255137367,finish=1585037165609327327,duration=1354189960,event=update_apt_keys[0Ktravis_time:start:0106cd03[0Ktravis_time:end:0106cd03:start=1585037165612275526,finish=1585037166505600377,duration=893324851,event=fix_hhvm_source[0Ktravis_time:start:047f6538[0Ktravis_time:end:047f6538:start=1585037166508715609,finish=1585037166517058127,duration=8342518,event=update_mongo_arch[0Ktravis_time:start:16b858aa[0Ktravis_time:end:16b858aa:start=1585037166521381062,finish=1585037166562409259,duration=41028197,event=fix_sudo_enabled_trusty[0Ktravis_time:start:02d84c28[0Ktravis_time:end:02d84c28:start=1585037166566056894,finish=1585037166568535603,duration=2478709,event=update_glibc[0Ktravis_time:start:04f73ec5[0Ktravis_time:end:04f73ec5:start=1585037166571720661,finish=1585037166580004960,duration=8284299,event=clean_up_path[0Ktravis_time:start:2497d450[0Ktravis_time:end:2497d450:start=1585037166583030058,finish=1585037166590980235,duration=7950177,event=fix_resolv_conf[0Ktravis_time:start:0a0d1e2a[0Ktravis_time:end:0a0d1e2a:start=1585037166593954098,finish=1585037166603425427,duration=9471329,event=fix_etc_hosts[0Ktravis_time:start:01d357f4[0Ktravis_time:end:01d357f4:start=1585037166606552425,finish=1585037166614318793,duration=7766368,event=fix_mvn_settings_xml[0Ktravis_time:start:39a4c0f4[0Ktravis_time:end:39a4c0f4:start=1585037166616964858,finish=1585037166625258343,duration=8293485,event=no_ipv6_localhost[0Ktravis_time:start:1f249f66[0Ktravis_time:end:1f249f66:start=1585037166627862707,finish=1585037166629804007,duration=1941300,event=fix_etc_mavenrc[0Ktravis_time:start:0def204c[0Ktravis_time:end:0def204c:start=1585037166632357628,finish=1585037166635022696,duration=2665068,event=fix_wwdr_certificate[0Ktravis_time:start:16804cd1[0Ktravis_time:end:16804cd1:start=1585037166637625572,finish=1585037166658560873,duration=20935301,event=put_localhost_first[0Ktravis_time:start:0bcb43fa[0Ktravis_time:end:0bcb43fa:start=1585037166661194713,finish=1585037166663909273,duration=2714560,event=home_paths[0Ktravis_time:start:066db0ea[0Ktravis_time:end:066db0ea:start=1585037166666765475,finish=1585037166677160403,duration=10394928,event=disable_initramfs[0Ktravis_time:start:06eabe7c[0Ktravis_time:end:06eabe7c:start=1585037166679715957,finish=1585037166917662964,duration=237947007,event=disable_ssh_roaming[0Ktravis_time:start:1a8d3a28[0Ktravis_time:end:1a8d3a28:start=1585037166920391970,finish=1585037166922336361,duration=1944391,event=debug_tools[0Ktravis_time:start:2cf179e0[0Ktravis_time:end:2cf179e0:start=1585037166925229555,finish=1585037166927888969,duration=2659414,event=uninstall_oclint[0Ktravis_time:start:0e3f6be6[0Ktravis_time:end:0e3f6be6:start=1585037166930456932,finish=1585037166933046340,duration=2589408,event=rvm_use[0Ktravis_time:start:143841bc[0Ktravis_time:end:143841bc:start=1585037166935634673,finish=1585037166943396051,duration=7761378,event=rm_etc_boto_cfg[0Ktravis_time:start:151143a6[0Ktravis_time:end:151143a6:start=1585037166946615446,finish=1585037166948794046,duration=2178600,event=rm_oraclejdk8_symlink[0Ktravis_time:start:034aca66[0Ktravis_time:end:034aca66:start=1585037166951656481,finish=1585037167001416731,duration=49760250,event=enable_i386[0Ktravis_time:start:1ba28a95[0Ktravis_time:end:1ba28a95:start=1585037167004350835,finish=1585037167007949918,duration=3599083,event=update_rubygems[0Ktravis_time:start:28819934[0Ktravis_time:end:28819934:start=1585037167010707090,finish=1585037167863701493,duration=852994403,event=ensure_path_components[0Ktravis_time:start:1b7b1324[0Ktravis_time:end:1b7b1324:start=1585037167866561980,finish=1585037167868553846,duration=1991866,event=redefine_curl[0Ktravis_time:start:325b66ac[0Ktravis_time:end:325b66ac:start=1585037167871205274,finish=1585037167873084959,duration=1879685,event=nonblock_pipe[0Ktravis_time:start:2503d313[0Ktravis_time:end:2503d313:start=1585037167875533546,finish=1585037181986182055,duration=14110648509,event=apt_get_update[0Ktravis_time:start:11daa0be[0Ktravis_time:end:11daa0be:start=1585037181989317455,finish=1585037181991484228,duration=2166773,event=deprecate_xcode_64[0Ktravis_time:start:039d7f67[0Ktravis_time:end:039d7f67:start=1585037181994582155,finish=1585037186398571898,duration=4403989743,event=update_heroku[0Ktravis_time:start:019e1204[0Ktravis_time:end:019e1204:start=1585037186401404171,finish=1585037186403542301,duration=2138130,event=shell_session_update[0Ktravis_time:start:20c707d8[0Ktravis_fold:start:docker_mtu[0Kdocker stop/waiting
-docker start/running, process 4687
-travis_fold:end:docker_mtu[0Ktravis_time:end:20c707d8:start=1585037186406247537,finish=1585037187582771389,duration=1176523852,event=set_docker_mtu[0Ktravis_time:start:0b811171[0Ktravis_fold:start:resolvconf[0Kresolvconf stop/waiting
-resolvconf start/running
-travis_fold:end:resolvconf[0Ktravis_time:end:0b811171:start=1585037187585722904,finish=1585037187638236873,duration=52513969,event=resolvconf[0Ktravis_time:start:09673176[0Ktravis_time:end:09673176:start=1585037187641058251,finish=1585037187721100317,duration=80042066,event=maven_central_mirror[0Ktravis_time:start:02197710[0Ktravis_time:end:02197710:start=1585037187723860737,finish=1585037187783039480,duration=59178743,event=maven_https[0Ktravis_time:start:051d5d96[0Ktravis_time:end:051d5d96:start=1585037187786042700,finish=1585037187787923824,duration=1881124,event=fix_ps4[0Ktravis_time:start:0988e80a[0K
-travis_fold:start:git.checkout[0Ktravis_time:start:225a54d4[0K$ git clone --depth=50 https://github.com/lastpass/lastpass-cli.git lastpass/lastpass-cli
-Cloning into 'lastpass/lastpass-cli'...
-remote: Enumerating objects: 547, done.[K
-remote: Counting objects:   0% (1/547)[Kremote: Counting objects:   1% (6/547)[Kremote: Counting objects:   2% (11/547)[Kremote: Counting objects:   3% (17/547)[Kremote: Counting objects:   4% (22/547)[Kremote: Counting objects:   5% (28/547)[Kremote: Counting objects:   6% (33/547)[Kremote: Counting objects:   7% (39/547)[Kremote: Counting objects:   8% (44/547)[Kremote: Counting objects:   9% (50/547)[Kremote: Counting objects:  10% (55/547)[Kremote: Counting objects:  11% (61/547)[Kremote: Counting objects:  12% (66/547)[Kremote: Counting objects:  13% (72/547)[Kremote: Counting objects:  14% (77/547)[Kremote: Counting objects:  15% (83/547)[Kremote: Counting objects:  16% (88/547)[Kremote: Counting objects:  17% (93/547)[Kremote: Counting objects:  18% (99/547)[Kremote: Counting objects:  19% (104/547)[Kremote: Counting objects:  20% (110/547)[Kremote: Counting objects:  21% (115/547)[Kremote: Counting objects:  22% (121/547)[Kremote: Counting objects:  23% (126/547)[Kremote: Counting objects:  24% (132/547)[Kremote: Counting objects:  25% (137/547)[Kremote: Counting objects:  26% (143/547)[Kremote: Counting objects:  27% (148/547)[Kremote: Counting objects:  28% (154/547)[Kremote: Counting objects:  29% (159/547)[Kremote: Counting objects:  30% (165/547)[Kremote: Counting objects:  31% (170/547)[Kremote: Counting objects:  32% (176/547)[Kremote: Counting objects:  33% (181/547)[Kremote: Counting objects:  34% (186/547)[Kremote: Counting objects:  35% (192/547)[Kremote: Counting objects:  36% (197/547)[Kremote: Counting objects:  37% (203/547)[Kremote: Counting objects:  38% (208/547)[Kremote: Counting objects:  39% (214/547)[Kremote: Counting objects:  40% (219/547)[Kremote: Counting objects:  41% (225/547)[Kremote: Counting objects:  42% (230/547)[Kremote: Counting objects:  43% (236/547)[Kremote: Counting objects:  44% (241/547)[Kremote: Counting objects:  45% (247/547)[Kremote: Counting objects:  46% (252/547)[Kremote: Counting objects:  47% (258/547)[Kremote: Counting objects:  48% (263/547)[Kremote: Counting objects:  49% (269/547)[Kremote: Counting objects:  50% (274/547)[Kremote: Counting objects:  51% (279/547)[Kremote: Counting objects:  52% (285/547)[Kremote: Counting objects:  53% (290/547)[Kremote: Counting objects:  54% (296/547)[Kremote: Counting objects:  55% (301/547)[Kremote: Counting objects:  56% (307/547)[Kremote: Counting objects:  57% (312/547)[Kremote: Counting objects:  58% (318/547)[Kremote: Counting objects:  59% (323/547)[Kremote: Counting objects:  60% (329/547)[Kremote: Counting objects:  61% (334/547)[Kremote: Counting objects:  62% (340/547)[Kremote: Counting objects:  63% (345/547)[Kremote: Counting objects:  64% (351/547)[Kremote: Counting objects:  65% (356/547)[Kremote: Counting objects:  66% (362/547)[Kremote: Counting objects:  67% (367/547)[Kremote: Counting objects:  68% (372/547)[Kremote: Counting objects:  69% (378/547)[Kremote: Counting objects:  70% (383/547)[Kremote: Counting objects:  71% (389/547)[Kremote: Counting objects:  72% (394/547)[Kremote: Counting objects:  73% (400/547)[Kremote: Counting objects:  74% (405/547)[Kremote: Counting objects:  75% (411/547)[Kremote: Counting objects:  76% (416/547)[Kremote: Counting objects:  77% (422/547)[Kremote: Counting objects:  78% (427/547)[Kremote: Counting objects:  79% (433/547)[Kremote: Counting objects:  80% (438/547)[Kremote: Counting objects:  81% (444/547)[Kremote: Counting objects:  82% (449/547)[Kremote: Counting objects:  83% (455/547)[Kremote: Counting objects:  84% (460/547)[Kremote: Counting objects:  85% (465/547)[Kremote: Counting objects:  86% (471/547)[Kremote: Counting objects:  87% (476/547)[Kremote: Counting objects:  88% (482/547)[Kremote: Counting objects:  89% (487/547)[Kremote: Counting objects:  90% (493/547)[Kremote: Counting objects:  91% (498/547)[Kremote: Counting objects:  92% (504/547)[Kremote: Counting objects:  93% (509/547)[Kremote: Counting objects:  94% (515/547)[Kremote: Counting objects:  95% (520/547)[Kremote: Counting objects:  96% (526/547)[Kremote: Counting objects:  97% (531/547)[Kremote: Counting objects:  98% (537/547)[Kremote: Counting objects:  99% (542/547)[Kremote: Counting objects: 100% (547/547)[Kremote: Counting objects: 100% (547/547), done.[K
-remote: Compressing objects:   0% (1/279)[Kremote: Compressing objects:   1% (3/279)[Kremote: Compressing objects:   2% (6/279)[Kremote: Compressing objects:   3% (9/279)[Kremote: Compressing objects:   4% (12/279)[Kremote: Compressing objects:   5% (14/279)[Kremote: Compressing objects:   6% (17/279)[Kremote: Compressing objects:   7% (20/279)[Kremote: Compressing objects:   8% (23/279)[Kremote: Compressing objects:   9% (26/279)[Kremote: Compressing objects:  10% (28/279)[Kremote: Compressing objects:  11% (31/279)[Kremote: Compressing objects:  12% (34/279)[Kremote: Compressing objects:  13% (37/279)[Kremote: Compressing objects:  14% (40/279)[Kremote: Compressing objects:  15% (42/279)[Kremote: Compressing objects:  16% (45/279)[Kremote: Compressing objects:  17% (48/279)[Kremote: Compressing objects:  18% (51/279)[Kremote: Compressing objects:  19% (54/279)[Kremote: Compressing objects:  20% (56/279)[Kremote: Compressing objects:  21% (59/279)[Kremote: Compressing objects:  22% (62/279)[Kremote: Compressing objects:  23% (65/279)[Kremote: Compressing objects:  24% (67/279)[Kremote: Compressing objects:  25% (70/279)[Kremote: Compressing objects:  26% (73/279)[Kremote: Compressing objects:  27% (76/279)[Kremote: Compressing objects:  28% (79/279)[Kremote: Compressing objects:  29% (81/279)[Kremote: Compressing objects:  30% (84/279)[Kremote: Compressing objects:  31% (87/279)[Kremote: Compressing objects:  32% (90/279)[Kremote: Compressing objects:  33% (93/279)[Kremote: Compressing objects:  34% (95/279)[Kremote: Compressing objects:  35% (98/279)[Kremote: Compressing objects:  36% (101/279)[Kremote: Compressing objects:  37% (104/279)[Kremote: Compressing objects:  38% (107/279)[Kremote: Compressing objects:  39% (109/279)[Kremote: Compressing objects:  40% (112/279)[Kremote: Compressing objects:  41% (115/279)[Kremote: Compressing objects:  42% (118/279)[Kremote: Compressing objects:  43% (120/279)[Kremote: Compressing objects:  44% (123/279)[Kremote: Compressing objects:  45% (126/279)[Kremote: Compressing objects:  46% (129/279)[Kremote: Compressing objects:  47% (132/279)[Kremote: Compressing objects:  48% (134/279)[Kremote: Compressing objects:  49% (137/279)[Kremote: Compressing objects:  50% (140/279)[Kremote: Compressing objects:  51% (143/279)[Kremote: Compressing objects:  52% (146/279)[Kremote: Compressing objects:  53% (148/279)[Kremote: Compressing objects:  54% (151/279)[Kremote: Compressing objects:  55% (154/279)[Kremote: Compressing objects:  56% (157/279)[Kremote: Compressing objects:  57% (160/279)[Kremote: Compressing objects:  58% (162/279)[Kremote: Compressing objects:  59% (165/279)[Kremote: Compressing objects:  60% (168/279)[Kremote: Compressing objects:  61% (171/279)[Kremote: Compressing objects:  62% (173/279)[Kremote: Compressing objects:  63% (176/279)[Kremote: Compressing objects:  64% (179/279)[Kremote: Compressing objects:  65% (182/279)[Kremote: Compressing objects:  66% (185/279)[Kremote: Compressing objects:  67% (187/279)[Kremote: Compressing objects:  68% (190/279)[Kremote: Compressing objects:  69% (193/279)[Kremote: Compressing objects:  70% (196/279)[Kremote: Compressing objects:  71% (199/279)[Kremote: Compressing objects:  72% (201/279)[Kremote: Compressing objects:  73% (204/279)[Kremote: Compressing objects:  74% (207/279)[Kremote: Compressing objects:  75% (210/279)[Kremote: Compressing objects:  76% (213/279)[Kremote: Compressing objects:  77% (215/279)[Kremote: Compressing objects:  78% (218/279)[Kremote: Compressing objects:  79% (221/279)[Kremote: Compressing objects:  80% (224/279)[Kremote: Compressing objects:  81% (226/279)[Kremote: Compressing objects:  82% (229/279)[Kremote: Compressing objects:  83% (232/279)[Kremote: Compressing objects:  84% (235/279)[Kremote: Compressing objects:  85% (238/279)[Kremote: Compressing objects:  86% (240/279)[Kremote: Compressing objects:  87% (243/279)[Kremote: Compressing objects:  88% (246/279)[Kremote: Compressing objects:  89% (249/279)[Kremote: Compressing objects:  90% (252/279)[Kremote: Compressing objects:  91% (254/279)[Kremote: Compressing objects:  92% (257/279)[Kremote: Compressing objects:  93% (260/279)[Kremote: Compressing objects:  94% (263/279)[Kremote: Compressing objects:  95% (266/279)[Kremote: Compressing objects:  96% (268/279)[Kremote: Compressing objects:  97% (271/279)[Kremote: Compressing objects:  98% (274/279)[Kremote: Compressing objects:  99% (277/279)[Kremote: Compressing objects: 100% (279/279)[Kremote: Compressing objects: 100% (279/279), done.[K
-Receiving objects:   0% (1/547)   Receiving objects:   1% (6/547)   Receiving objects:   2% (11/547)   Receiving objects:   3% (17/547)   Receiving objects:   4% (22/547)   Receiving objects:   5% (28/547)   Receiving objects:   6% (33/547)   Receiving objects:   7% (39/547)   Receiving objects:   8% (44/547)   Receiving objects:   9% (50/547)   Receiving objects:  10% (55/547)   Receiving objects:  11% (61/547)   Receiving objects:  12% (66/547)   Receiving objects:  13% (72/547)   Receiving objects:  14% (77/547)   Receiving objects:  15% (83/547)   Receiving objects:  16% (88/547)   Receiving objects:  17% (93/547)   Receiving objects:  18% (99/547)   Receiving objects:  19% (104/547)   Receiving objects:  20% (110/547)   Receiving objects:  21% (115/547)   Receiving objects:  22% (121/547)   Receiving objects:  23% (126/547)   Receiving objects:  24% (132/547)   Receiving objects:  25% (137/547)   Receiving objects:  26% (143/547)   Receiving objects:  27% (148/547)   Receiving objects:  28% (154/547)   Receiving objects:  29% (159/547)   Receiving objects:  30% (165/547)   Receiving objects:  31% (170/547)   Receiving objects:  32% (176/547)   Receiving objects:  33% (181/547)   Receiving objects:  34% (186/547)   Receiving objects:  35% (192/547)   Receiving objects:  36% (197/547)   Receiving objects:  37% (203/547)   Receiving objects:  38% (208/547)   Receiving objects:  39% (214/547)   Receiving objects:  40% (219/547)   Receiving objects:  41% (225/547)   Receiving objects:  42% (230/547)   Receiving objects:  43% (236/547)   Receiving objects:  44% (241/547)   Receiving objects:  45% (247/547)   Receiving objects:  46% (252/547)   Receiving objects:  47% (258/547)   Receiving objects:  48% (263/547)   Receiving objects:  49% (269/547)   Receiving objects:  50% (274/547)   Receiving objects:  51% (279/547)   Receiving objects:  52% (285/547)   Receiving objects:  53% (290/547)   Receiving objects:  54% (296/547)   Receiving objects:  55% (301/547)   Receiving objects:  56% (307/547)   Receiving objects:  57% (312/547)   Receiving objects:  58% (318/547)   Receiving objects:  59% (323/547)   Receiving objects:  60% (329/547)   Receiving objects:  61% (334/547)   Receiving objects:  62% (340/547)   Receiving objects:  63% (345/547)   Receiving objects:  64% (351/547)   Receiving objects:  65% (356/547)   Receiving objects:  66% (362/547)   Receiving objects:  67% (367/547)   Receiving objects:  68% (372/547)   Receiving objects:  69% (378/547)   Receiving objects:  70% (383/547)   Receiving objects:  71% (389/547)   Receiving objects:  72% (394/547)   Receiving objects:  73% (400/547)   Receiving objects:  74% (405/547)   Receiving objects:  75% (411/547)   Receiving objects:  76% (416/547)   Receiving objects:  77% (422/547)   Receiving objects:  78% (427/547)   Receiving objects:  79% (433/547)   Receiving objects:  80% (438/547)   Receiving objects:  81% (444/547)   Receiving objects:  82% (449/547)   Receiving objects:  83% (455/547)   Receiving objects:  84% (460/547)   Receiving objects:  85% (465/547)   Receiving objects:  86% (471/547)   Receiving objects:  87% (476/547)   Receiving objects:  88% (482/547)   Receiving objects:  89% (487/547)   Receiving objects:  90% (493/547)   Receiving objects:  91% (498/547)   Receiving objects:  92% (504/547)   Receiving objects:  93% (509/547)   Receiving objects:  94% (515/547)   Receiving objects:  95% (520/547)   remote: Total 547 (delta 302), reused 440 (delta 261), pack-reused 0[K
-Receiving objects:  96% (526/547)   Receiving objects:  97% (531/547)   Receiving objects:  98% (537/547)   Receiving objects:  99% (542/547)   Receiving objects: 100% (547/547)   Receiving objects: 100% (547/547), 241.01 KiB | 4.73 MiB/s, done.
-Resolving deltas:   0% (0/302)   Resolving deltas:   3% (10/302)   Resolving deltas:   4% (15/302)   Resolving deltas:   5% (18/302)   Resolving deltas:   9% (29/302)   Resolving deltas:  11% (34/302)   Resolving deltas:  24% (74/302)   Resolving deltas:  31% (96/302)   Resolving deltas:  33% (101/302)   Resolving deltas:  35% (107/302)   Resolving deltas:  45% (138/302)   Resolving deltas:  50% (151/302)   Resolving deltas:  57% (175/302)   Resolving deltas:  58% (178/302)   Resolving deltas:  59% (180/302)   Resolving deltas:  66% (200/302)   Resolving deltas:  68% (207/302)   Resolving deltas:  69% (210/302)   Resolving deltas:  70% (213/302)   Resolving deltas:  71% (216/302)   Resolving deltas:  72% (219/302)   Resolving deltas:  75% (227/302)   Resolving deltas:  76% (231/302)   Resolving deltas:  77% (233/302)   Resolving deltas:  78% (236/302)   Resolving deltas:  80% (242/302)   Resolving deltas:  81% (245/302)   Resolving deltas:  83% (251/302)   Resolving deltas:  84% (254/302)   Resolving deltas:  85% (257/302)   Resolving deltas:  87% (265/302)   Resolving deltas:  88% (268/302)   Resolving deltas:  89% (269/302)   Resolving deltas:  90% (272/302)   Resolving deltas:  91% (275/302)   Resolving deltas:  92% (278/302)   Resolving deltas:  93% (282/302)   Resolving deltas:  95% (289/302)   Resolving deltas:  96% (291/302)   Resolving deltas:  97% (295/302)   Resolving deltas:  99% (300/302)   Resolving deltas: 100% (302/302)   Resolving deltas: 100% (302/302), done.
-travis_time:end:225a54d4:start=1585037187793113893,finish=1585037188406528111,duration=613414218,event=checkout[0K$ cd lastpass/lastpass-cli
-travis_time:start:0121f090[0K$ git fetch origin +refs/pull/545/merge:
-remote: Enumerating objects: 18, done.[K
-remote: Counting objects:   6% (1/15)[Kremote: Counting objects:  13% (2/15)[Kremote: Counting objects:  20% (3/15)[Kremote: Counting objects:  26% (4/15)[Kremote: Counting objects:  33% (5/15)[Kremote: Counting objects:  40% (6/15)[Kremote: Counting objects:  46% (7/15)[Kremote: Counting objects:  53% (8/15)[Kremote: Counting objects:  60% (9/15)[Kremote: Counting objects:  66% (10/15)[Kremote: Counting objects:  73% (11/15)[Kremote: Counting objects:  80% (12/15)[Kremote: Counting objects:  86% (13/15)[Kremote: Counting objects:  93% (14/15)[Kremote: Counting objects: 100% (15/15)[Kremote: Counting objects: 100% (15/15), done.[K
-remote: Compressing objects:  50% (1/2)[Kremote: Compressing objects: 100% (2/2)[Kremote: Compressing objects: 100% (2/2), done.[K
-remote: Total 4 (delta 2), reused 3 (delta 2), pack-reused 0[K
-Unpacking objects:  25% (1/4)   Unpacking objects:  50% (2/4)   Unpacking objects:  75% (3/4)   Unpacking objects: 100% (4/4)   Unpacking objects: 100% (4/4), done.
-From https://github.com/lastpass/lastpass-cli
- * branch            refs/pull/545/merge -> FETCH_HEAD
-travis_time:end:0121f090:start=1585037188410024285,finish=1585037188753567372,duration=343543087,event=checkout[0K$ git checkout -qf FETCH_HEAD
-travis_fold:end:git.checkout[0K
-travis_time:end:0121f090:start=1585037188410024285,finish=1585037188761121288,duration=351097003,event=checkout[0Ktravis_time:start:2967c993[0Ktravis_time:end:2967c993:start=1585037188763874534,finish=1585037188769419760,duration=5545226,event=env[0K$ export TRAVIS_COMPILER=gcc
-$ export CXX=${CXX:-g++}
-$ export CXX_FOR_BUILD=${CXX_FOR_BUILD:-g++}
-$ export CC=${CC:-gcc}
-$ export CC_FOR_BUILD=${CC_FOR_BUILD:-gcc}
-$ gcc --version
-gcc (Ubuntu 4.8.4-2ubuntu1~14.04.3) 4.8.4
-Copyright (C) 2013 Free Software Foundation, Inc.
-This is free software; see the source for copying conditions.  There is NO
-warranty; not even for MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-travis_fold:start:before_install.1[0Ktravis_time:start:03e295dd[0K$ if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update; fi
-travis_time:end:03e295dd:start=1585037188775407865,finish=1585037188777424157,duration=2016292,event=before_install[0Ktravis_fold:end:before_install.1[0Ktravis_fold:start:before_install.2[0Ktravis_time:start:119736da[0K$ if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install libxml2 || true ; fi
-travis_time:end:119736da:start=1585037188780471016,finish=1585037188782502504,duration=2031488,event=before_install[0Ktravis_fold:end:before_install.2[0Ktravis_fold:start:before_install.3[0Ktravis_time:start:0c55111a[0K$ if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install cmake || true ; fi
-travis_time:end:0c55111a:start=1585037188785794731,finish=1585037188787897360,duration=2102629,event=before_install[0Ktravis_fold:end:before_install.3[0Ktravis_fold:start:before_install.4[0Ktravis_time:start:29d6e074[0K$ if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get -qq update; fi
-W: GPG error: http://dl.google.com/linux/chrome/deb stable Release: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 78BD65473CB3BD13
-W: The repository 'http://dl.google.com/linux/chrome/deb stable Release' is not signed.
-W: There is no public key available for the following key IDs:
-78BD65473CB3BD13  
-W: http://ppa.launchpad.net/couchdb/stable/ubuntu/dists/trusty/Release.gpg: Signature by key 15866BAFD9BCC4F3C1E0DFC7D69548E1C17EAB57 uses weak digest algorithm (SHA1)
-W: GPG error: https://packagecloud.io/github/git-lfs/ubuntu trusty InRelease: The following signatures couldn't be verified because the public key is not available: NO_PUBKEY 6B05F25D762E3157
-W: The repository 'https://packagecloud.io/github/git-lfs/ubuntu trusty InRelease' is not signed.
-W: There is no public key available for the following key IDs:
-6B05F25D762E3157  
-travis_time:end:29d6e074:start=1585037188791392912,finish=1585037191862460214,duration=3071067302,event=before_install[0Ktravis_fold:end:before_install.4[0Ktravis_fold:start:before_install.5[0Ktravis_time:start:06bf02f1[0K$ if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install -y libxml2-dev; fi
-Reading package lists... 0%Reading package lists... 100%Reading package lists... Done
-Building dependency tree... 0%Building dependency tree... 0%Building dependency tree... 50%Building dependency tree... 50%Building dependency tree       
-Reading state information... 0%Reading state information... 0%Reading state information... Done
-The following additional packages will be installed:
-  libxml2
-The following packages will be upgraded:
-  libxml2 libxml2-dev
-2 upgraded, 0 newly installed, 0 to remove and 302 not upgraded.
-Need to get 1,203 kB of archives.
-After this operation, 0 B of additional disk space will be used.
-0% [Working]            Get:1 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 libxml2-dev amd64 2.9.1+dfsg1-3ubuntu4.13 [630 kB]
-0% [1 libxml2-dev 2,293 B/630 kB 0%]41% [1 libxml2-dev 623 kB/630 kB 99%]                                     52% [Working]             Get:2 http://archive.ubuntu.com/ubuntu trusty-updates/main amd64 libxml2 amd64 2.9.1+dfsg1-3ubuntu4.13 [573 kB]
-53% [2 libxml2 10.0 kB/573 kB 2%]                                 100% [Working]              Fetched 1,203 kB in 0s (1,470 kB/s)
-(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 93695 files and directories currently installed.)
-Preparing to unpack .../libxml2-dev_2.9.1+dfsg1-3ubuntu4.13_amd64.deb ...
-Unpacking libxml2-dev:amd64 (2.9.1+dfsg1-3ubuntu4.13) over (2.9.1+dfsg1-3ubuntu4.11) ...
-Preparing to unpack .../libxml2_2.9.1+dfsg1-3ubuntu4.13_amd64.deb ...
-Unpacking libxml2:amd64 (2.9.1+dfsg1-3ubuntu4.13) over (2.9.1+dfsg1-3ubuntu4.11) ...
-Processing triggers for man-db (2.6.7.1-1ubuntu1) ...
-Setting up libxml2:amd64 (2.9.1+dfsg1-3ubuntu4.13) ...
-Setting up libxml2-dev:amd64 (2.9.1+dfsg1-3ubuntu4.13) ...
-Processing triggers for libc-bin (2.19-0ubuntu6.13) ...
-travis_time:end:06bf02f1:start=1585037191866080055,finish=1585037194264772304,duration=2398692249,event=before_install[0Ktravis_fold:end:before_install.5[0Ktravis_time:start:2bef90db[0K$ make && make test
-mkdir -p build && cd build && cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_MANDIR:PATH=/usr/share/man ..
--- The C compiler identification is GNU 4.8.4
--- The CXX compiler identification is GNU 4.8.4
--- Check for working C compiler: /usr/bin/gcc
--- Check for working C compiler: /usr/bin/gcc -- works
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: /usr/bin/g++
--- Check for working CXX compiler: /usr/bin/g++ -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Found PkgConfig: /usr/bin/pkg-config (found version "0.26") 
--- Checking for one of the modules 'bash-completion'
--- Found LibXml2: /usr/lib/x86_64-linux-gnu/libxml2.so (found version "2.9.1") 
--- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "1.0.1f") 
--- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.35.0") 
-LASTPASS_CLI_VERSION  =1.3.3.17.gf45f835
--- Configuring done
--- Generating done
--- Build files have been written to: /home/travis/build/lastpass/lastpass-cli/build
-make -C build all
-make[1]: Entering directory `/home/travis/build/lastpass/lastpass-cli/build'
-make[2]: Entering directory `/home/travis/build/lastpass/lastpass-cli/build'
-make[3]: Entering directory `/home/travis/build/lastpass/lastpass-cli/build'
-[35m[1mScanning dependencies of target lpass[0m
-make[3]: Leaving directory `/home/travis/build/lastpass/lastpass-cli/build'
-make[3]: Entering directory `/home/travis/build/lastpass/lastpass-cli/build'
-[  2%] [32mBuilding C object CMakeFiles/lpass.dir/agent.c.o[0m
-[  4%] [32mBuilding C object CMakeFiles/lpass.dir/blob.c.o[0m
-[  7%] [32mBuilding C object CMakeFiles/lpass.dir/cipher.c.o[0m
-[  9%] [32mBuilding C object CMakeFiles/lpass.dir/clipboard.c.o[0m
-[ 11%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-add.c.o[0m
-[ 14%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-duplicate.c.o[0m
-[ 16%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-edit.c.o[0m
-[ 19%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-export.c.o[0m
-[ 21%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-generate.c.o[0m
-[ 23%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-import.c.o[0m
-[ 26%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-login.c.o[0m
-[ 28%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-logout.c.o[0m
-[ 30%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-ls.c.o[0m
-[ 33%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-mv.c.o[0m
-[ 35%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-passwd.c.o[0m
-[ 38%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-rm.c.o[0m
-[ 40%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-share.c.o[0m
-[ 42%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-show.c.o[0m
-[ 45%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-status.c.o[0m
-[ 47%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-sync.c.o[0m
-[ 50%] [32mBuilding C object CMakeFiles/lpass.dir/cmd.c.o[0m
-[ 52%] [32mBuilding C object CMakeFiles/lpass.dir/config.c.o[0m
-[ 54%] [32mBuilding C object CMakeFiles/lpass.dir/edit.c.o[0m
-[ 57%] [32mBuilding C object CMakeFiles/lpass.dir/endpoints-login.c.o[0m
-[ 59%] [32mBuilding C object CMakeFiles/lpass.dir/endpoints-share.c.o[0m
-[ 61%] [32mBuilding C object CMakeFiles/lpass.dir/endpoints.c.o[0m
-[ 64%] [32mBuilding C object CMakeFiles/lpass.dir/format.c.o[0m
-[ 66%] [32mBuilding C object CMakeFiles/lpass.dir/http.c.o[0m
-[ 69%] [32mBuilding C object CMakeFiles/lpass.dir/json-format.c.o[0m
-[ 71%] [32mBuilding C object CMakeFiles/lpass.dir/kdf.c.o[0m
-[ 73%] [32mBuilding C object CMakeFiles/lpass.dir/log.c.o[0m
-[ 76%] [32mBuilding C object CMakeFiles/lpass.dir/lpass.c.o[0m
-[ 78%] [32mBuilding C object CMakeFiles/lpass.dir/notes.c.o[0m
-[ 80%] [32mBuilding C object CMakeFiles/lpass.dir/password.c.o[0m
-[ 83%] [32mBuilding C object CMakeFiles/lpass.dir/pbkdf2.c.o[0m
-[ 85%] [32mBuilding C object CMakeFiles/lpass.dir/process.c.o[0m
-[ 88%] [32mBuilding C object CMakeFiles/lpass.dir/session.c.o[0m
-[ 90%] [32mBuilding C object CMakeFiles/lpass.dir/terminal.c.o[0m
-[ 92%] [32mBuilding C object CMakeFiles/lpass.dir/upload-queue.c.o[0m
-[ 95%] [32mBuilding C object CMakeFiles/lpass.dir/util.c.o[0m
-[ 97%] [32mBuilding C object CMakeFiles/lpass.dir/xml.c.o[0m
-[100%] [32m[1mLinking C executable lpass[0m
-make[3]: Leaving directory `/home/travis/build/lastpass/lastpass-cli/build'
-[100%] Built target lpass
-make[2]: Leaving directory `/home/travis/build/lastpass/lastpass-cli/build'
-make[1]: Leaving directory `/home/travis/build/lastpass/lastpass-cli/build'
-mkdir -p build && cd build && cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_MANDIR:PATH=/usr/share/man ..
--- Configuring done
--- Generating done
--- Build files have been written to: /home/travis/build/lastpass/lastpass-cli/build
-make -C build lpass-test && make -C build test
-make[1]: Entering directory `/home/travis/build/lastpass/lastpass-cli/build'
-make[2]: Entering directory `/home/travis/build/lastpass/lastpass-cli/build'
-make[3]: Entering directory `/home/travis/build/lastpass/lastpass-cli/build'
-make[4]: Entering directory `/home/travis/build/lastpass/lastpass-cli/build'
-[35m[1mScanning dependencies of target lpass-test[0m
-make[4]: Leaving directory `/home/travis/build/lastpass/lastpass-cli/build'
-make[4]: Entering directory `/home/travis/build/lastpass/lastpass-cli/build'
-[  2%] [32mBuilding C object CMakeFiles/lpass-test.dir/test/http_mock.c.o[0m
-[  4%] [32mBuilding C object CMakeFiles/lpass-test.dir/agent.c.o[0m
-[  6%] [32mBuilding C object CMakeFiles/lpass-test.dir/blob.c.o[0m
-[  9%] [32mBuilding C object CMakeFiles/lpass-test.dir/cipher.c.o[0m
-[ 11%] [32mBuilding C object CMakeFiles/lpass-test.dir/clipboard.c.o[0m
-[ 13%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-add.c.o[0m
-[ 16%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-duplicate.c.o[0m
-[ 18%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-edit.c.o[0m
-[ 20%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-export.c.o[0m
-[ 23%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-generate.c.o[0m
-[ 25%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-import.c.o[0m
-[ 27%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-login.c.o[0m
-[ 30%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-logout.c.o[0m
-[ 32%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-ls.c.o[0m
-[ 34%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-mv.c.o[0m
-[ 37%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-passwd.c.o[0m
-[ 39%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-rm.c.o[0m
-[ 41%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-share.c.o[0m
-[ 44%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-show.c.o[0m
-[ 46%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-status.c.o[0m
-[ 48%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-sync.c.o[0m
-[ 51%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd.c.o[0m
-[ 53%] [32mBuilding C object CMakeFiles/lpass-test.dir/config.c.o[0m
-[ 55%] [32mBuilding C object CMakeFiles/lpass-test.dir/edit.c.o[0m
-[ 58%] [32mBuilding C object CMakeFiles/lpass-test.dir/endpoints-login.c.o[0m
-[ 60%] [32mBuilding C object CMakeFiles/lpass-test.dir/endpoints-share.c.o[0m
-[ 62%] [32mBuilding C object CMakeFiles/lpass-test.dir/endpoints.c.o[0m
-[ 65%] [32mBuilding C object CMakeFiles/lpass-test.dir/format.c.o[0m
-[ 67%] [32mBuilding C object CMakeFiles/lpass-test.dir/http.c.o[0m
-[ 69%] [32mBuilding C object CMakeFiles/lpass-test.dir/json-format.c.o[0m
-[ 72%] [32mBuilding C object CMakeFiles/lpass-test.dir/kdf.c.o[0m
-[ 74%] [32mBuilding C object CMakeFiles/lpass-test.dir/log.c.o[0m
-[ 76%] [32mBuilding C object CMakeFiles/lpass-test.dir/lpass.c.o[0m
-[ 79%] [32mBuilding C object CMakeFiles/lpass-test.dir/notes.c.o[0m
-[ 81%] [32mBuilding C object CMakeFiles/lpass-test.dir/password.c.o[0m
-[ 83%] [32mBuilding C object CMakeFiles/lpass-test.dir/pbkdf2.c.o[0m
-[ 86%] [32mBuilding C object CMakeFiles/lpass-test.dir/process.c.o[0m
-[ 88%] [32mBuilding C object CMakeFiles/lpass-test.dir/session.c.o[0m
-[ 90%] [32mBuilding C object CMakeFiles/lpass-test.dir/terminal.c.o[0m
-[ 93%] [32mBuilding C object CMakeFiles/lpass-test.dir/upload-queue.c.o[0m
-[ 95%] [32mBuilding C object CMakeFiles/lpass-test.dir/util.c.o[0m
-[ 97%] [32mBuilding C object CMakeFiles/lpass-test.dir/xml.c.o[0m
-[100%] [32m[1mLinking C executable lpass-test[0m
-make[4]: Leaving directory `/home/travis/build/lastpass/lastpass-cli/build'
-[100%] Built target lpass-test
-make[3]: Leaving directory `/home/travis/build/lastpass/lastpass-cli/build'
-make[2]: Leaving directory `/home/travis/build/lastpass/lastpass-cli/build'
-make[1]: Leaving directory `/home/travis/build/lastpass/lastpass-cli/build'
-make[1]: Entering directory `/home/travis/build/lastpass/lastpass-cli/build'
-[36mRunning tests...[0m
-Test project /home/travis/build/lastpass/lastpass-cli/build
-      Start  1: test_login
- 1/21 Test  #1: test_login ........................   Passed    0.03 sec
-      Start  2: test_login_wrong_pw_should_fail
- 2/21 Test  #2: test_login_wrong_pw_should_fail ...   Passed    0.02 sec
-      Start  3: test_add_account
- 3/21 Test  #3: test_add_account ..................   Passed    0.05 sec
-      Start  4: test_add_note
- 4/21 Test  #4: test_add_note .....................   Passed    0.05 sec
-      Start  5: test_add_note_with_field
- 5/21 Test  #5: test_add_note_with_field ..........   Passed    0.05 sec
-      Start  6: test_add_site_note
- 6/21 Test  #6: test_add_site_note ................   Passed    0.05 sec
-      Start  7: test_add_ssn_name
- 7/21 Test  #7: test_add_ssn_name .................   Passed    0.05 sec
-      Start  8: test_add_ssh_key
- 8/21 Test  #8: test_add_ssh_key ..................   Passed    0.06 sec
-      Start  9: test_edit_ssh_key
- 9/21 Test  #9: test_edit_ssh_key .................   Passed    0.08 sec
-      Start 10: test_edit_username
-10/21 Test #10: test_edit_username ................   Passed    0.05 sec
-      Start 11: test_edit_field
-11/21 Test #11: test_edit_field ...................   Passed    0.05 sec
-      Start 12: test_edit_reprompt
-12/21 Test #12: test_edit_reprompt ................   Passed    0.08 sec
-      Start 13: test_duplicate
-13/21 Test #13: test_duplicate ....................   Passed    0.05 sec
-      Start 14: test_generate
-14/21 Test #14: test_generate .....................   Passed    0.05 sec
-      Start 15: test_show
-15/21 Test #15: test_show .........................   Passed    0.04 sec
-      Start 16: test_show_json
-16/21 Test #16: test_show_json ....................   Passed    0.04 sec
-      Start 17: test_show_note
-17/21 Test #17: test_show_note ....................   Passed    0.04 sec
-      Start 18: test_show_reprompt
-18/21 Test #18: test_show_reprompt ................   Passed    0.05 sec
-      Start 19: test_ls
-19/21 Test #19: test_ls ...........................   Passed    0.04 sec
-      Start 20: test_export
-20/21 Test #20: test_export .......................   Passed    0.04 sec
-      Start 21: test_export_extended
-21/21 Test #21: test_export_extended ..............   Passed    0.04 sec
-
-100% tests passed, 0 tests failed out of 21
-
-Total Test time (real) =   1.03 sec
-make[1]: Leaving directory `/home/travis/build/lastpass/lastpass-cli/build'
-travis_time:end:2bef90db:start=1585037194268446396,finish=1585037200169982995,duration=5901536599,event=script[0K[32;1mThe command "make && make test" exited with 0.[0m
-
-
-Done. Your build exited with 0.

@@ -1,371 +1,0 @@
-travis_fold:start:worker_info[0K[33;1mWorker information[0m
-hostname: 798cbe69-02c7-4b1e-a3d1-73cbd30daf93@1.worker-org-7f6cdc984-hxjs7.macstadium-prod-1
-version: v6.2.0 https://github.com/travis-ci/worker/tree/5e5476e01646095f48eec13196fdb3faf8f5cbf7
-instance: 3a004abb-4fee-4dd8-9eef-0a16061148de travis-ci-macos10.13-xcode9.4.1-19-1576204381 (via amqp)
-startup: 1m6.664431643s
-travis_fold:end:worker_info[0Ktravis_time:start:10a30d21[0Ktravis_time:end:10a30d21:start=1577319770048587000,finish=1577319770679434000,duration=630847000,event=no_world_writable_dirs[0Ktravis_time:start:089f6fa6[0Ktravis_time:end:089f6fa6:start=1577319770693862000,finish=1577319770703862000,duration=10000000,event=check_unsupported[0Ktravis_time:start:05522e74[0Ktravis_fold:start:system_info[0K[33;1mBuild system information[0m
-Build language: cpp
-Build id: 629507254
-Job id: 629507258
-Runtime kernel version: 17.7.0
-travis-build version: 2dca56efb
-[34m[1mBuild image provisioning date and time[0m
-Fri Dec 13 04:54:58 GMT 2019
-[34m[1mOperating System Details[0m
-ProductName:	Mac OS X
-ProductVersion:	10.13.6
-BuildVersion:	17G65
-[34m[1mGit version[0m
-git version 2.24.1
-[34m[1mbash version[0m
-GNU bash, version 3.2.57(1)-release (x86_64-apple-darwin17)
-Copyright (C) 2007 Free Software Foundation, Inc.
-[34m[1mGCC version[0m
-Apple LLVM version 9.1.0 (clang-902.0.39.2)
-Target: x86_64-apple-darwin17.7.0
-Thread model: posix
-InstalledDir: /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-[34m[1mLLVM version[0m
-Apple LLVM version 9.1.0 (clang-902.0.39.2)
-Target: x86_64-apple-darwin17.7.0
-Thread model: posix
-InstalledDir: /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-[34m[1mPre-installed Ruby versions[0m
-ruby-2.6.3
-[34m[1mPre-installed Node.js versions[0m
-v10.17.0
-v12.13.0
-v12.13.1
-v13.0.1
-v4.9.1
-v6.17.1
-v8.16.2
-[34m[1mmvn -version[0m
-Apache Maven 3.6.3 (cecedd343002696d0abb50b32b541b8a6ba2883f)
-Maven home: /usr/local/Cellar/maven/3.6.3/libexec
-Java version: 13.0.1, vendor: Oracle Corporation, runtime: /Library/Java/JavaVirtualMachines/openjdk-13.0.1.jdk/Contents/Home
-Default locale: en_US, platform encoding: UTF-8
-OS name: "mac os x", version: "10.13.6", arch: "x86_64", family: "mac"
-travis_fold:end:system_info[0K
-travis_time:end:05522e74:start=1577319770781566000,finish=1577319770944928000,duration=163362000,event=show_system_info[0Ktravis_time:start:165041a0[0Ktravis_time:end:165041a0:start=1577319770957198000,finish=1577319770969098000,duration=11900000,event=rm_riak_source[0Ktravis_time:start:01c67dea[0Ktravis_time:end:01c67dea:start=1577319770981870000,finish=1577319770992218000,duration=10348000,event=fix_rwky_redis[0Ktravis_time:start:25bdbe4a[0Ktravis_time:end:25bdbe4a:start=1577319771005740000,finish=1577319771396471000,duration=390731000,event=wait_for_network[0Ktravis_time:start:0f9eb644[0Ktravis_time:end:0f9eb644:start=1577319771408411000,finish=1577319771418136000,duration=9725000,event=update_apt_keys[0Ktravis_time:start:006a24cb[0Ktravis_time:end:006a24cb:start=1577319771430454000,finish=1577319771441637000,duration=11183000,event=fix_hhvm_source[0Ktravis_time:start:1c6d1acc[0Ktravis_time:end:1c6d1acc:start=1577319771453633000,finish=1577319771463694000,duration=10061000,event=update_mongo_arch[0Ktravis_time:start:0405f9a6[0Ktravis_time:end:0405f9a6:start=1577319771475999000,finish=1577319771491204000,duration=15205000,event=fix_sudo_enabled_trusty[0Ktravis_time:start:07f127d0[0Ktravis_time:end:07f127d0:start=1577319771502739000,finish=1577319771512015000,duration=9276000,event=update_glibc[0Ktravis_time:start:00a03e49[0Ktravis_time:end:00a03e49:start=1577319771524196000,finish=1577319771585932000,duration=61736000,event=clean_up_path[0Ktravis_time:start:18d24c10[0Ktravis_time:end:18d24c10:start=1577319771597896000,finish=1577319771651410000,duration=53514000,event=fix_resolv_conf[0Ktravis_time:start:24c51dff[0Ktravis_time:end:24c51dff:start=1577319771663366000,finish=1577319771722244000,duration=58878000,event=fix_etc_hosts[0Ktravis_time:start:033599b6[0Ktravis_time:end:033599b6:start=1577319771733948000,finish=1577319771743362000,duration=9414000,event=fix_mvn_settings_xml[0Ktravis_time:start:0d970b73[0Ktravis_time:end:0d970b73:start=1577319771754896000,finish=1577319771812988000,duration=58092000,event=no_ipv6_localhost[0Ktravis_time:start:1569b3c4[0Ktravis_time:end:1569b3c4:start=1577319771824837000,finish=1577319771834107000,duration=9270000,event=fix_etc_mavenrc[0Ktravis_time:start:1f56b57f[0Ktravis_time:end:1f56b57f:start=1577319771847191000,finish=1577319772066063000,duration=218872000,event=fix_wwdr_certificate[0Ktravis_time:start:08e6177e[0Ktravis_time:end:08e6177e:start=1577319772078161000,finish=1577319772251107000,duration=172946000,event=put_localhost_first[0Ktravis_time:start:25b2dfce[0Ktravis_time:end:25b2dfce:start=1577319772262786000,finish=1577319772272396000,duration=9610000,event=home_paths[0Ktravis_time:start:07604be5[0Ktravis_time:end:07604be5:start=1577319772284207000,finish=1577319772303485000,duration=19278000,event=disable_initramfs[0Ktravis_time:start:0fa1412c[0Ktravis_time:end:0fa1412c:start=1577319772315196000,finish=1577319772340556000,duration=25360000,event=disable_ssh_roaming[0Ktravis_time:start:1a38bea7[0Ktravis_time:end:1a38bea7:start=1577319772352511000,finish=1577319772361690000,duration=9179000,event=debug_tools[0Ktravis_time:start:23b36bbd[0K
-travis_time:end:23b36bbd:start=1577319772373235000,finish=1577319775787054000,duration=3413819000,event=uninstall_oclint[0Ktravis_time:start:01600120[0Ktravis_time:end:01600120:start=1577319775807094000,finish=1577319777405445000,duration=1598351000,event=rvm_use[0Ktravis_time:start:0d523bf6[0Ktravis_time:end:0d523bf6:start=1577319777419435000,finish=1577319777481077000,duration=61642000,event=rm_etc_boto_cfg[0Ktravis_time:start:17619c1d[0Ktravis_time:end:17619c1d:start=1577319777495114000,finish=1577319777504917000,duration=9803000,event=rm_oraclejdk8_symlink[0Ktravis_time:start:00b5bd5e[0Ktravis_time:end:00b5bd5e:start=1577319777519990000,finish=1577319777539843000,duration=19853000,event=enable_i386[0Ktravis_time:start:0151da38[0Ktravis_time:end:0151da38:start=1577319777554404000,finish=1577319777571774000,duration=17370000,event=update_rubygems[0Ktravis_time:start:05c944a1[0Ktravis_time:end:05c944a1:start=1577319777587856000,finish=1577319777609821000,duration=21965000,event=ensure_path_components[0Ktravis_time:start:0dc9547c[0Ktravis_time:end:0dc9547c:start=1577319777624615000,finish=1577319777635640000,duration=11025000,event=redefine_curl[0Ktravis_time:start:1c81b0b1[0Ktravis_time:end:1c81b0b1:start=1577319777651144000,finish=1577319777661941000,duration=10797000,event=nonblock_pipe[0Ktravis_time:start:03cf56b0[0Ktravis_time:end:03cf56b0:start=1577319777675143000,finish=1577319777689406000,duration=14263000,event=apt_get_update[0Ktravis_time:start:2dc62338[0Ktravis_time:end:2dc62338:start=1577319777705453000,finish=1577319777718870000,duration=13417000,event=deprecate_xcode_64[0Ktravis_time:start:0be11f30[0Ktravis_time:end:0be11f30:start=1577319777733135000,finish=1577319777752352000,duration=19217000,event=update_heroku[0Ktravis_time:start:1279b0a0[0Ktravis_time:end:1279b0a0:start=1577319777768548000,finish=1577319777778961000,duration=10413000,event=shell_session_update[0Ktravis_time:start:00f390a9[0Ktravis_time:end:00f390a9:start=1577319777791593000,finish=1577319777802624000,duration=11031000,event=maven_central_mirror[0Ktravis_time:start:2063f5f8[0Ktravis_time:end:2063f5f8:start=1577319777819597000,finish=1577319777830067000,duration=10470000,event=fix_ps4[0Ktravis_time:start:05ab4654[0K
-travis_fold:start:git.checkout[0Ktravis_time:start:2e278491[0K$ git clone --depth=50 https://github.com/lastpass/lastpass-cli.git lastpass/lastpass-cli
-Cloning into 'lastpass/lastpass-cli'...
-remote: Enumerating objects: 547, done.[K
-remote: Counting objects:   0% (1/547)[Kremote: Counting objects:   1% (6/547)[Kremote: Counting objects:   2% (11/547)[Kremote: Counting objects:   3% (17/547)[Kremote: Counting objects:   4% (22/547)[Kremote: Counting objects:   5% (28/547)[Kremote: Counting objects:   6% (33/547)[Kremote: Counting objects:   7% (39/547)[Kremote: Counting objects:   8% (44/547)[Kremote: Counting objects:   9% (50/547)[Kremote: Counting objects:  10% (55/547)[Kremote: Counting objects:  11% (61/547)[Kremote: Counting objects:  12% (66/547)[Kremote: Counting objects:  13% (72/547)[Kremote: Counting objects:  14% (77/547)[Kremote: Counting objects:  15% (83/547)[Kremote: Counting objects:  16% (88/547)[Kremote: Counting objects:  17% (93/547)[Kremote: Counting objects:  18% (99/547)[Kremote: Counting objects:  19% (104/547)[Kremote: Counting objects:  20% (110/547)[Kremote: Counting objects:  21% (115/547)[Kremote: Counting objects:  22% (121/547)[Kremote: Counting objects:  23% (126/547)[Kremote: Counting objects:  24% (132/547)[Kremote: Counting objects:  25% (137/547)[Kremote: Counting objects:  26% (143/547)[Kremote: Counting objects:  27% (148/547)[Kremote: Counting objects:  28% (154/547)[Kremote: Counting objects:  29% (159/547)[Kremote: Counting objects:  30% (165/547)[Kremote: Counting objects:  31% (170/547)[Kremote: Counting objects:  32% (176/547)[Kremote: Counting objects:  33% (181/547)[Kremote: Counting objects:  34% (186/547)[Kremote: Counting objects:  35% (192/547)[Kremote: Counting objects:  36% (197/547)[Kremote: Counting objects:  37% (203/547)[Kremote: Counting objects:  38% (208/547)[Kremote: Counting objects:  39% (214/547)[Kremote: Counting objects:  40% (219/547)[Kremote: Counting objects:  41% (225/547)[Kremote: Counting objects:  42% (230/547)[Kremote: Counting objects:  43% (236/547)[Kremote: Counting objects:  44% (241/547)[Kremote: Counting objects:  45% (247/547)[Kremote: Counting objects:  46% (252/547)[Kremote: Counting objects:  47% (258/547)[Kremote: Counting objects:  48% (263/547)[Kremote: Counting objects:  49% (269/547)[Kremote: Counting objects:  50% (274/547)[Kremote: Counting objects:  51% (279/547)[Kremote: Counting objects:  52% (285/547)[Kremote: Counting objects:  53% (290/547)[Kremote: Counting objects:  54% (296/547)[Kremote: Counting objects:  55% (301/547)[Kremote: Counting objects:  56% (307/547)[Kremote: Counting objects:  57% (312/547)[Kremote: Counting objects:  58% (318/547)[Kremote: Counting objects:  59% (323/547)[Kremote: Counting objects:  60% (329/547)[Kremote: Counting objects:  61% (334/547)[Kremote: Counting objects:  62% (340/547)[Kremote: Counting objects:  63% (345/547)[Kremote: Counting objects:  64% (351/547)[Kremote: Counting objects:  65% (356/547)[Kremote: Counting objects:  66% (362/547)[Kremote: Counting objects:  67% (367/547)[Kremote: Counting objects:  68% (372/547)[Kremote: Counting objects:  69% (378/547)[Kremote: Counting objects:  70% (383/547)[Kremote: Counting objects:  71% (389/547)[Kremote: Counting objects:  72% (394/547)[Kremote: Counting objects:  73% (400/547)[Kremote: Counting objects:  74% (405/547)[Kremote: Counting objects:  75% (411/547)[Kremote: Counting objects:  76% (416/547)[Kremote: Counting objects:  77% (422/547)[Kremote: Counting objects:  78% (427/547)[Kremote: Counting objects:  79% (433/547)[Kremote: Counting objects:  80% (438/547)[Kremote: Counting objects:  81% (444/547)[Kremote: Counting objects:  82% (449/547)[Kremote: Counting objects:  83% (455/547)[Kremote: Counting objects:  84% (460/547)[Kremote: Counting objects:  85% (465/547)[Kremote: Counting objects:  86% (471/547)[Kremote: Counting objects:  87% (476/547)[Kremote: Counting objects:  88% (482/547)[Kremote: Counting objects:  89% (487/547)[Kremote: Counting objects:  90% (493/547)[Kremote: Counting objects:  91% (498/547)[Kremote: Counting objects:  92% (504/547)[Kremote: Counting objects:  93% (509/547)[Kremote: Counting objects:  94% (515/547)[Kremote: Counting objects:  95% (520/547)[Kremote: Counting objects:  96% (526/547)[Kremote: Counting objects:  97% (531/547)[Kremote: Counting objects:  98% (537/547)[Kremote: Counting objects:  99% (542/547)[Kremote: Counting objects: 100% (547/547)[Kremote: Counting objects: 100% (547/547), done.[K
-remote: Compressing objects:   0% (1/287)[Kremote: Compressing objects:   1% (3/287)[Kremote: Compressing objects:   2% (6/287)[Kremote: Compressing objects:   3% (9/287)[Kremote: Compressing objects:   4% (12/287)[Kremote: Compressing objects:   5% (15/287)[Kremote: Compressing objects:   6% (18/287)[Kremote: Compressing objects:   7% (21/287)[Kremote: Compressing objects:   8% (23/287)[Kremote: Compressing objects:   9% (26/287)[Kremote: Compressing objects:  10% (29/287)[Kremote: Compressing objects:  11% (32/287)[Kremote: Compressing objects:  12% (35/287)[Kremote: Compressing objects:  13% (38/287)[Kremote: Compressing objects:  14% (41/287)[Kremote: Compressing objects:  15% (44/287)[Kremote: Compressing objects:  16% (46/287)[Kremote: Compressing objects:  17% (49/287)[Kremote: Compressing objects:  18% (52/287)[Kremote: Compressing objects:  19% (55/287)[Kremote: Compressing objects:  20% (58/287)[Kremote: Compressing objects:  21% (61/287)[Kremote: Compressing objects:  22% (64/287)[Kremote: Compressing objects:  23% (67/287)[Kremote: Compressing objects:  24% (69/287)[Kremote: Compressing objects:  25% (72/287)[Kremote: Compressing objects:  26% (75/287)[Kremote: Compressing objects:  27% (78/287)[Kremote: Compressing objects:  28% (81/287)[Kremote: Compressing objects:  29% (84/287)[Kremote: Compressing objects:  30% (87/287)[Kremote: Compressing objects:  31% (89/287)[Kremote: Compressing objects:  32% (92/287)[Kremote: Compressing objects:  33% (95/287)[Kremote: Compressing objects:  34% (98/287)[Kremote: Compressing objects:  35% (101/287)[Kremote: Compressing objects:  36% (104/287)[Kremote: Compressing objects:  37% (107/287)[Kremote: Compressing objects:  38% (110/287)[Kremote: Compressing objects:  39% (112/287)[Kremote: Compressing objects:  40% (115/287)[Kremote: Compressing objects:  41% (118/287)[Kremote: Compressing objects:  42% (121/287)[Kremote: Compressing objects:  43% (124/287)[Kremote: Compressing objects:  44% (127/287)[Kremote: Compressing objects:  45% (130/287)[Kremote: Compressing objects:  46% (133/287)[Kremote: Compressing objects:  47% (135/287)[Kremote: Compressing objects:  48% (138/287)[Kremote: Compressing objects:  49% (141/287)[Kremote: Compressing objects:  50% (144/287)[Kremote: Compressing objects:  51% (147/287)[Kremote: Compressing objects:  52% (150/287)[Kremote: Compressing objects:  53% (153/287)[Kremote: Compressing objects:  54% (155/287)[Kremote: Compressing objects:  55% (158/287)[Kremote: Compressing objects:  56% (161/287)[Kremote: Compressing objects:  57% (164/287)[Kremote: Compressing objects:  58% (167/287)[Kremote: Compressing objects:  59% (170/287)[Kremote: Compressing objects:  60% (173/287)[Kremote: Compressing objects:  61% (176/287)[Kremote: Compressing objects:  62% (178/287)[Kremote: Compressing objects:  63% (181/287)[Kremote: Compressing objects:  64% (184/287)[Kremote: Compressing objects:  65% (187/287)[Kremote: Compressing objects:  66% (190/287)[Kremote: Compressing objects:  67% (193/287)[Kremote: Compressing objects:  68% (196/287)[Kremote: Compressing objects:  69% (199/287)[Kremote: Compressing objects:  70% (201/287)[Kremote: Compressing objects:  71% (204/287)[Kremote: Compressing objects:  72% (207/287)[Kremote: Compressing objects:  73% (210/287)[Kremote: Compressing objects:  74% (213/287)[Kremote: Compressing objects:  75% (216/287)[Kremote: Compressing objects:  76% (219/287)[Kremote: Compressing objects:  77% (221/287)[Kremote: Compressing objects:  78% (224/287)[Kremote: Compressing objects:  79% (227/287)[Kremote: Compressing objects:  80% (230/287)[Kremote: Compressing objects:  81% (233/287)[Kremote: Compressing objects:  82% (236/287)[Kremote: Compressing objects:  83% (239/287)[Kremote: Compressing objects:  84% (242/287)[Kremote: Compressing objects:  85% (244/287)[Kremote: Compressing objects:  86% (247/287)[Kremote: Compressing objects:  87% (250/287)[Kremote: Compressing objects:  88% (253/287)[Kremote: Compressing objects:  89% (256/287)[Kremote: Compressing objects:  90% (259/287)[Kremote: Compressing objects:  91% (262/287)[Kremote: Compressing objects:  92% (265/287)[Kremote: Compressing objects:  93% (267/287)[Kremote: Compressing objects:  94% (270/287)[Kremote: Compressing objects:  95% (273/287)[Kremote: Compressing objects:  96% (276/287)[Kremote: Compressing objects:  97% (279/287)[Kremote: Compressing objects:  98% (282/287)[Kremote: Compressing objects:  99% (285/287)[Kremote: Compressing objects: 100% (287/287)[Kremote: Compressing objects: 100% (287/287), done.[K
-Receiving objects:   0% (1/547)Receiving objects:   1% (6/547)Receiving objects:   2% (11/547)Receiving objects:   3% (17/547)Receiving objects:   4% (22/547)Receiving objects:   5% (28/547)Receiving objects:   6% (33/547)Receiving objects:   7% (39/547)Receiving objects:   8% (44/547)Receiving objects:   9% (50/547)Receiving objects:  10% (55/547)Receiving objects:  11% (61/547)Receiving objects:  12% (66/547)Receiving objects:  13% (72/547)Receiving objects:  14% (77/547)Receiving objects:  15% (83/547)Receiving objects:  16% (88/547)Receiving objects:  17% (93/547)Receiving objects:  18% (99/547)Receiving objects:  19% (104/547)Receiving objects:  20% (110/547)Receiving objects:  21% (115/547)Receiving objects:  22% (121/547)Receiving objects:  23% (126/547)Receiving objects:  24% (132/547)Receiving objects:  25% (137/547)Receiving objects:  26% (143/547)Receiving objects:  27% (148/547)Receiving objects:  28% (154/547)Receiving objects:  29% (159/547)Receiving objects:  30% (165/547)Receiving objects:  31% (170/547)Receiving objects:  32% (176/547)Receiving objects:  33% (181/547)Receiving objects:  34% (186/547)Receiving objects:  35% (192/547)Receiving objects:  36% (197/547)Receiving objects:  37% (203/547)Receiving objects:  38% (208/547)Receiving objects:  39% (214/547)Receiving objects:  40% (219/547)Receiving objects:  41% (225/547)Receiving objects:  42% (230/547)Receiving objects:  43% (236/547)Receiving objects:  44% (241/547)Receiving objects:  45% (247/547)Receiving objects:  46% (252/547)Receiving objects:  47% (258/547)Receiving objects:  48% (263/547)Receiving objects:  49% (269/547)Receiving objects:  50% (274/547)Receiving objects:  51% (279/547)Receiving objects:  52% (285/547)Receiving objects:  53% (290/547)Receiving objects:  54% (296/547)Receiving objects:  55% (301/547)Receiving objects:  56% (307/547)Receiving objects:  57% (312/547)Receiving objects:  58% (318/547)Receiving objects:  59% (323/547)Receiving objects:  60% (329/547)Receiving objects:  61% (334/547)Receiving objects:  62% (340/547)Receiving objects:  63% (345/547)Receiving objects:  64% (351/547)Receiving objects:  65% (356/547)Receiving objects:  66% (362/547)Receiving objects:  67% (367/547)Receiving objects:  68% (372/547)Receiving objects:  69% (378/547)Receiving objects:  70% (383/547)Receiving objects:  71% (389/547)Receiving objects:  72% (394/547)Receiving objects:  73% (400/547)Receiving objects:  74% (405/547)remote: Total 547 (delta 302), reused 429 (delta 253), pack-reused 0[K
-Receiving objects:  75% (411/547)Receiving objects:  76% (416/547)Receiving objects:  77% (422/547)Receiving objects:  78% (427/547)Receiving objects:  79% (433/547)Receiving objects:  80% (438/547)Receiving objects:  81% (444/547)Receiving objects:  82% (449/547)Receiving objects:  83% (455/547)Receiving objects:  84% (460/547)Receiving objects:  85% (465/547)Receiving objects:  86% (471/547)Receiving objects:  87% (476/547)Receiving objects:  88% (482/547)Receiving objects:  89% (487/547)Receiving objects:  90% (493/547)Receiving objects:  91% (498/547)Receiving objects:  92% (504/547)Receiving objects:  93% (509/547)Receiving objects:  94% (515/547)Receiving objects:  95% (520/547)Receiving objects:  96% (526/547)Receiving objects:  97% (531/547)Receiving objects:  98% (537/547)Receiving objects:  99% (542/547)Receiving objects: 100% (547/547)Receiving objects: 100% (547/547), 242.22 KiB | 5.50 MiB/s, done.
-Resolving deltas:   0% (0/302)Resolving deltas:  24% (75/302)Resolving deltas:  26% (80/302)Resolving deltas:  28% (87/302)Resolving deltas:  29% (89/302)Resolving deltas:  40% (122/302)Resolving deltas:  41% (124/302)Resolving deltas:  43% (131/302)Resolving deltas:  44% (134/302)Resolving deltas:  47% (142/302)Resolving deltas:  50% (151/302)Resolving deltas:  51% (155/302)Resolving deltas:  55% (169/302)Resolving deltas:  57% (173/302)Resolving deltas:  58% (177/302)Resolving deltas:  59% (180/302)Resolving deltas:  63% (192/302)Resolving deltas:  68% (206/302)Resolving deltas:  69% (210/302)Resolving deltas:  70% (212/302)Resolving deltas:  71% (215/302)Resolving deltas:  72% (218/302)Resolving deltas:  73% (223/302)Resolving deltas:  75% (227/302)Resolving deltas:  76% (230/302)Resolving deltas:  77% (233/302)Resolving deltas:  79% (239/302)Resolving deltas:  81% (245/302)Resolving deltas:  82% (248/302)Resolving deltas:  83% (253/302)Resolving deltas:  84% (254/302)Resolving deltas:  85% (259/302)Resolving deltas:  86% (260/302)Resolving deltas:  89% (270/302)Resolving deltas:  90% (273/302)Resolving deltas:  91% (276/302)Resolving deltas:  92% (278/302)Resolving deltas:  93% (281/302)Resolving deltas:  94% (284/302)Resolving deltas:  95% (287/302)Resolving deltas:  96% (292/302)Resolving deltas:  97% (293/302)Resolving deltas:  98% (296/302)Resolving deltas: 100% (302/302)Resolving deltas: 100% (302/302), done.
-travis_time:end:2e278491:start=1577319777858258000,finish=1577319778424313000,duration=566055000,event=checkout[0K$ cd lastpass/lastpass-cli
-travis_time:start:01444a60[0K$ git fetch origin +refs/pull/530/merge:
-remote: Enumerating objects: 11, done.[K
-remote: Counting objects:  10% (1/10)[Kremote: Counting objects:  20% (2/10)[Kremote: Counting objects:  30% (3/10)[Kremote: Counting objects:  40% (4/10)[Kremote: Counting objects:  50% (5/10)[Kremote: Counting objects:  60% (6/10)[Kremote: Counting objects:  70% (7/10)[Kremote: Counting objects:  80% (8/10)[Kremote: Counting objects:  90% (9/10)[Kremote: Counting objects: 100% (10/10)[Kremote: Counting objects: 100% (10/10), done.[K
-remote: Compressing objects:  50% (1/2)[Kremote: Compressing objects: 100% (2/2)[Kremote: Compressing objects: 100% (2/2), done.[K
-remote: Total 5 (delta 3), reused 4 (delta 3), pack-reused 0[K
-Unpacking objects:  20% (1/5)Unpacking objects:  40% (2/5)Unpacking objects:  60% (3/5)Unpacking objects:  80% (4/5)Unpacking objects: 100% (5/5)Unpacking objects: 100% (5/5), done.
-From https://github.com/lastpass/lastpass-cli
- * branch            refs/pull/530/merge -> FETCH_HEAD
-travis_time:end:01444a60:start=1577319778468877000,finish=1577319778876494000,duration=407617000,event=checkout[0K$ git checkout -qf FETCH_HEAD
-travis_fold:end:git.checkout[0K
-travis_time:end:01444a60:start=1577319778468877000,finish=1577319778915731000,duration=446854000,event=checkout[0Ktravis_time:start:0018169e[0Ktravis_time:end:0018169e:start=1577319778929924000,finish=1577319778954870000,duration=24946000,event=env[0K$ export TRAVIS_COMPILER=clang
-$ export CXX=${CXX:-clang++}
-$ export CXX_FOR_BUILD=${CXX_FOR_BUILD:-clang++}
-$ export CC=${CC:-clang}
-$ export CC_FOR_BUILD=${CC_FOR_BUILD:-clang}
-$ clang --version
-Apple LLVM version 9.1.0 (clang-902.0.39.2)
-Target: x86_64-apple-darwin17.7.0
-Thread model: posix
-InstalledDir: /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin
-travis_fold:start:before_install.1[0Ktravis_time:start:1121874d[0K$ if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew update; fi
-[34m==>[0m [1mHomebrew is run entirely by unpaid volunteers. Please consider donating:[0m
-  [4mhttps://github.com/Homebrew/brew#donations[24m
-Updated 2 taps (homebrew/cask and homebrew/core).
-[34m==>[0m [1mNew Formulae[0m
-baidupcs-go         ffuf                libffcall           python@3.8
-blis                fileicon            mavsdk              uni
-corral              findent             meilisearch         wordgrinder
-crc                 flint               nebula
-docker-slim         git-remote-gcrypt   node-sass
-ensmallen           hpack               okteto
-[34m==>[0m [1mUpdated Formulae[0m
-[1mcmake [32m✔[0m[0m                    geographiclib              now-cli
-[1mglib [32m✔[0m[0m                     ghq                        numpy@1.16
-[1mgo [32m✔[0m[0m                       git-annex                  nushell
-[1mlibpq [32m✔[0m[0m                    git-extras                 nvm
-[1mnode [32m✔[0m[0m                     git-plus                   ocrmypdf
-[1mprotobuf [32m✔[0m[0m                 gitlab-runner              opencv@2
-[1mpython@2 [32m✔[0m[0m                 gitmoji                    osc
-[1mqt [32m✔[0m[0m                       gitversion                 osslsigncode
-abcmidi                    gleam                      overmind
-activemq                   glew                       packer
-aliyun-cli                 glooctl                    paket
-allure                     gloox                      pandoc
-ammonite-repl              gmic                       pdf-redact-tools
-angular-cli                gmsh                       peco
-appscale-tools             gnunet                     pgcli
-arduino-cli                gnuradio                   phoronix-test-suite
-asdf                       gocr                       php
-asio                       godep                      php@7.2
-ask-cli                    golang-migrate             php@7.3
-aspectj                    grafana                    phpstan
-astrometry-net             grakn                      plantuml
-atlantis                   groonga                    pnpm
-audacious                  grpc                       ponyc
-aws-cdk                    gtk-mac-integration        prestosql
-aws-sdk-cpp                gts                        pspg
-azure-cli                  h3                         pulumi
-babel                      haxe                       pumba
-bashdb                     helm                       py2cairo
-bazel                      helmfile                   pyinvoke
-bazelisk                   helmsman                   qbs
-bedtools                   homeassistant-cli          qemu
-berglas                    howdoi                     qpid-proton
-binaryen                   hstr                       r
-bind                       hugo                       radare2
-bindfs                     i2p                        rav1e
-bison                      imagemagick                re2c
-bitwise                    imagemagick@6              rebar3
-borgmatic                  imlib2                     recon-ng
-bundletool                 iozone                     remctl
-c-blosc                    istioctl                   rethinkdb
-calicoctl                  ivy                        rex
-cargo-c                    janet                      riemann
-cargo-completion           javacc                     rsnapshot
-cassandra@2.1              jenkins                    ruby-build
-cassandra@2.2              jenkins-lts                rust
-cfn-lint                   jfrog-cli-go               rustup-init
-cimg                       jhipster                   sbt
-citus                      jupyterlab                 sceptre
-contentful-cli             k6                         scons
-convox                     khard                      scrcpy
-coq                        kibana                     sdb
-cppcheck                   kompose                    serverless
-cppunit                    krb5                       shfmt
-crc32c                     kubernetes-cli             skaffold
-crystal                    kustomize                  snakemake
-csvq                       landscaper                 snapcraft
-cups                       launch_socket_server       sonarqube
-dashing                    libde265                   sqlcipher
-deno                       libebml                    ssh-vault
-deployer                   libedit                    sslyze
-detekt                     libev                      sstp-client
-devspace                   libgit2                    starship
-dhall-bash                 libgr                      stolon
-django-completion          libheif                    stress-ng
-dlib                       libical                    subliminal
-dnscrypt-proxy             libmagic                   swiftformat
-docfx                      libpulsar                  tectonic
-duck                       librdkafka                 telegraf
-duplicity                  libsixel                   teleport
-dvc                        libvpx                     termshark
-easyengine                 linkerd                    terraform-docs
-embulk                     lmod                       terragrunt
-ephemeralpg                makensis                   terrahub
-erlang                     mame                       tflint
-eslint                     mariadb-connector-c        tomcat
-exploitdb                  mesa                       tomcat@7
-fastlane                   mesos                      tomcat@8
-fceux                      micronaut                  v8
-file-formula               minetest                   vice
-fio                        minikube                   vim
-firebase-cli               mitmproxy                  vulkan-headers
-flow                       monetdb                    weaver
-fluxctl                    mongo-c-driver             webpack
-fmt                        monolith                   wireguard-tools
-fonttools                  mutt                       wolfssl
-freeciv                    navi                       wtf
-fribidi                    nethack                    wtfutil
-frugal                     netpbm                     xmake
-fuseki                     newlisp                    xmrig
-futhark                    newsboat                   xrootd
-fx                         node@10                    yadm
-fzf                        node@12                    yamllint
-gatsby-cli                 node@8                     zeek
-gauche                     norm
-[34m==>[0m [1mDeleted Formulae[0m
-apm-server          docker-cloud        iron-functions      warp
-boost-python@1.59   gost                logentries
-borg                headphones          sshconfigfs
-travis_time:end:1121874d:start=1577319778996985000,finish=1577319809271499000,duration=30274514000,event=before_install[0Ktravis_fold:end:before_install.1[0Ktravis_fold:start:before_install.2[0Ktravis_time:start:00b2cd1c[0K$ if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install libxml2 || true ; fi
-[33mWarning:[0m libxml2 2.9.10 is already installed and up-to-date
-To reinstall 2.9.10, run `brew reinstall libxml2`
-travis_time:end:00b2cd1c:start=1577319809282824000,finish=1577319813213527000,duration=3930703000,event=before_install[0Ktravis_fold:end:before_install.2[0Ktravis_fold:start:before_install.3[0Ktravis_time:start:061e22a0[0K$ if [[ "$TRAVIS_OS_NAME" == "osx" ]]; then brew install cmake || true ; fi
-[31mError:[0m cmake 3.15.5 is already installed
-To upgrade to 3.16.2, run `brew upgrade cmake`.
-travis_time:end:061e22a0:start=1577319813224087000,finish=1577319816599738000,duration=3375651000,event=before_install[0Ktravis_fold:end:before_install.3[0Ktravis_fold:start:before_install.4[0Ktravis_time:start:02e1bb60[0K$ if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get -qq update; fi
-travis_time:end:02e1bb60:start=1577319816610027000,finish=1577319816618765000,duration=8738000,event=before_install[0Ktravis_fold:end:before_install.4[0Ktravis_fold:start:before_install.5[0Ktravis_time:start:0d2f6117[0K$ if [[ "$TRAVIS_OS_NAME" == "linux" ]]; then sudo apt-get install -y libxml2-dev; fi
-travis_time:end:0d2f6117:start=1577319816628817000,finish=1577319816640185000,duration=11368000,event=before_install[0Ktravis_fold:end:before_install.5[0Ktravis_time:start:0bf24222[0K$ make && make test
-mkdir -p build && cd build && cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_MANDIR:PATH=/usr/share/man ..
--- The C compiler identification is AppleClang 9.1.0.9020039
--- The CXX compiler identification is AppleClang 9.1.0.9020039
--- Check for working C compiler: /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang
--- Check for working C compiler: /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -- works
--- Detecting C compiler ABI info
--- Detecting C compiler ABI info - done
--- Detecting C compile features
--- Detecting C compile features - done
--- Check for working CXX compiler: /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++
--- Check for working CXX compiler: /Applications/Xcode-9.4.1.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++ -- works
--- Detecting CXX compiler ABI info
--- Detecting CXX compiler ABI info - done
--- Detecting CXX compile features
--- Detecting CXX compile features - done
--- Found PkgConfig: /usr/local/bin/pkg-config (found version "0.29.2") 
--- Checking for one of the modules 'bash-completion'
--- Found LibXml2: /usr/lib/libxml2.dylib (found version "2.9.4") 
--- Found OpenSSL: /usr/local/opt/openssl/lib/libcrypto.dylib (found version "1.1.1d")  
--- Found CURL: /usr/lib/libcurl.dylib (found version "7.54.0")  
-LASTPASS_CLI_VERSION  =1.3.3.17.g828d886
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/travis/build/lastpass/lastpass-cli/build
-/Applications/Xcode-9.4.1.app/Contents/Developer/usr/bin/make -C build all
-[35m[1mScanning dependencies of target lpass[0m
-[  2%] [32mBuilding C object CMakeFiles/lpass.dir/agent.c.o[0m
-[  4%] [32mBuilding C object CMakeFiles/lpass.dir/blob.c.o[0m
-[  7%] [32mBuilding C object CMakeFiles/lpass.dir/cipher.c.o[0m
-[  9%] [32mBuilding C object CMakeFiles/lpass.dir/clipboard.c.o[0m
-[ 11%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-add.c.o[0m
-[ 14%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-duplicate.c.o[0m
-[ 16%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-edit.c.o[0m
-[ 19%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-export.c.o[0m
-[ 21%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-generate.c.o[0m
-[ 23%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-import.c.o[0m
-[ 26%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-login.c.o[0m
-[ 28%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-logout.c.o[0m
-[ 30%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-ls.c.o[0m
-[ 33%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-mv.c.o[0m
-[ 35%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-passwd.c.o[0m
-[ 38%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-rm.c.o[0m
-[ 40%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-share.c.o[0m
-[ 42%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-show.c.o[0m
-[ 45%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-status.c.o[0m
-[ 47%] [32mBuilding C object CMakeFiles/lpass.dir/cmd-sync.c.o[0m
-[ 50%] [32mBuilding C object CMakeFiles/lpass.dir/cmd.c.o[0m
-[ 52%] [32mBuilding C object CMakeFiles/lpass.dir/config.c.o[0m
-[ 54%] [32mBuilding C object CMakeFiles/lpass.dir/edit.c.o[0m
-[ 57%] [32mBuilding C object CMakeFiles/lpass.dir/endpoints-login.c.o[0m
-[ 59%] [32mBuilding C object CMakeFiles/lpass.dir/endpoints-share.c.o[0m
-[ 61%] [32mBuilding C object CMakeFiles/lpass.dir/endpoints.c.o[0m
-[ 64%] [32mBuilding C object CMakeFiles/lpass.dir/format.c.o[0m
-[ 66%] [32mBuilding C object CMakeFiles/lpass.dir/http.c.o[0m
-[ 69%] [32mBuilding C object CMakeFiles/lpass.dir/json-format.c.o[0m
-[ 71%] [32mBuilding C object CMakeFiles/lpass.dir/kdf.c.o[0m
-[ 73%] [32mBuilding C object CMakeFiles/lpass.dir/log.c.o[0m
-[ 76%] [32mBuilding C object CMakeFiles/lpass.dir/lpass.c.o[0m
-[ 78%] [32mBuilding C object CMakeFiles/lpass.dir/notes.c.o[0m
-[ 80%] [32mBuilding C object CMakeFiles/lpass.dir/password.c.o[0m
-[ 83%] [32mBuilding C object CMakeFiles/lpass.dir/pbkdf2.c.o[0m
-[ 85%] [32mBuilding C object CMakeFiles/lpass.dir/process.c.o[0m
-[ 88%] [32mBuilding C object CMakeFiles/lpass.dir/session.c.o[0m
-[ 90%] [32mBuilding C object CMakeFiles/lpass.dir/terminal.c.o[0m
-[ 92%] [32mBuilding C object CMakeFiles/lpass.dir/upload-queue.c.o[0m
-[ 95%] [32mBuilding C object CMakeFiles/lpass.dir/util.c.o[0m
-[ 97%] [32mBuilding C object CMakeFiles/lpass.dir/xml.c.o[0m
-[100%] [32m[1mLinking C executable lpass[0m
-[100%] Built target lpass
-mkdir -p build && cd build && cmake -DCMAKE_INSTALL_PREFIX:PATH=/usr -DCMAKE_INSTALL_MANDIR:PATH=/usr/share/man ..
--- Checking for one of the modules 'bash-completion'
--- Configuring done
--- Generating done
--- Build files have been written to: /Users/travis/build/lastpass/lastpass-cli/build
-/Applications/Xcode-9.4.1.app/Contents/Developer/usr/bin/make -C build lpass-test && /Applications/Xcode-9.4.1.app/Contents/Developer/usr/bin/make -C build test
-[35m[1mScanning dependencies of target lpass-test[0m
-[  2%] [32mBuilding C object CMakeFiles/lpass-test.dir/agent.c.o[0m
-[  4%] [32mBuilding C object CMakeFiles/lpass-test.dir/blob.c.o[0m
-[  6%] [32mBuilding C object CMakeFiles/lpass-test.dir/cipher.c.o[0m
-[  9%] [32mBuilding C object CMakeFiles/lpass-test.dir/clipboard.c.o[0m
-[ 11%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-add.c.o[0m
-[ 13%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-duplicate.c.o[0m
-[ 16%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-edit.c.o[0m
-[ 18%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-export.c.o[0m
-[ 20%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-generate.c.o[0m
-[ 23%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-import.c.o[0m
-[ 25%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-login.c.o[0m
-[ 27%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-logout.c.o[0m
-[ 30%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-ls.c.o[0m
-[ 32%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-mv.c.o[0m
-[ 34%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-passwd.c.o[0m
-[ 37%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-rm.c.o[0m
-[ 39%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-share.c.o[0m
-[ 41%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-show.c.o[0m
-[ 44%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-status.c.o[0m
-[ 46%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd-sync.c.o[0m
-[ 48%] [32mBuilding C object CMakeFiles/lpass-test.dir/cmd.c.o[0m
-[ 51%] [32mBuilding C object CMakeFiles/lpass-test.dir/config.c.o[0m
-[ 53%] [32mBuilding C object CMakeFiles/lpass-test.dir/edit.c.o[0m
-[ 55%] [32mBuilding C object CMakeFiles/lpass-test.dir/endpoints-login.c.o[0m
-[ 58%] [32mBuilding C object CMakeFiles/lpass-test.dir/endpoints-share.c.o[0m
-[ 60%] [32mBuilding C object CMakeFiles/lpass-test.dir/endpoints.c.o[0m
-[ 62%] [32mBuilding C object CMakeFiles/lpass-test.dir/format.c.o[0m
-[ 65%] [32mBuilding C object CMakeFiles/lpass-test.dir/http.c.o[0m
-[ 67%] [32mBuilding C object CMakeFiles/lpass-test.dir/json-format.c.o[0m
-[ 69%] [32mBuilding C object CMakeFiles/lpass-test.dir/kdf.c.o[0m
-[ 72%] [32mBuilding C object CMakeFiles/lpass-test.dir/log.c.o[0m
-[ 74%] [32mBuilding C object CMakeFiles/lpass-test.dir/lpass.c.o[0m
-[ 76%] [32mBuilding C object CMakeFiles/lpass-test.dir/notes.c.o[0m
-[ 79%] [32mBuilding C object CMakeFiles/lpass-test.dir/password.c.o[0m
-[ 81%] [32mBuilding C object CMakeFiles/lpass-test.dir/pbkdf2.c.o[0m
-[ 83%] [32mBuilding C object CMakeFiles/lpass-test.dir/process.c.o[0m
-[ 86%] [32mBuilding C object CMakeFiles/lpass-test.dir/session.c.o[0m
-[ 88%] [32mBuilding C object CMakeFiles/lpass-test.dir/terminal.c.o[0m
-[ 90%] [32mBuilding C object CMakeFiles/lpass-test.dir/test/http_mock.c.o[0m
-[ 93%] [32mBuilding C object CMakeFiles/lpass-test.dir/upload-queue.c.o[0m
-[ 95%] [32mBuilding C object CMakeFiles/lpass-test.dir/util.c.o[0m
-[ 97%] [32mBuilding C object CMakeFiles/lpass-test.dir/xml.c.o[0m
-[100%] [32m[1mLinking C executable lpass-test[0m
-[100%] Built target lpass-test
-[36mRunning tests...[0m
-Test project /Users/travis/build/lastpass/lastpass-cli/build
-      Start  1: test_login
- 1/21 Test  #1: test_login ........................   Passed    0.09 sec
-      Start  2: test_login_wrong_pw_should_fail
- 2/21 Test  #2: test_login_wrong_pw_should_fail ...   Passed    0.06 sec
-      Start  3: test_add_account
- 3/21 Test  #3: test_add_account ..................   Passed    0.16 sec
-      Start  4: test_add_note
- 4/21 Test  #4: test_add_note .....................   Passed    0.16 sec
-      Start  5: test_add_note_with_field
- 5/21 Test  #5: test_add_note_with_field ..........   Passed    0.16 sec
-      Start  6: test_add_site_note
- 6/21 Test  #6: test_add_site_note ................   Passed    0.16 sec
-      Start  7: test_add_ssn_name
- 7/21 Test  #7: test_add_ssn_name .................   Passed    0.16 sec
-      Start  8: test_add_ssh_key
- 8/21 Test  #8: test_add_ssh_key ..................   Passed    0.21 sec
-      Start  9: test_edit_ssh_key
- 9/21 Test  #9: test_edit_ssh_key .................   Passed    0.28 sec
-      Start 10: test_edit_username
-10/21 Test #10: test_edit_username ................   Passed    0.17 sec
-      Start 11: test_edit_field
-11/21 Test #11: test_edit_field ...................   Passed    0.16 sec
-      Start 12: test_edit_reprompt
-12/21 Test #12: test_edit_reprompt ................   Passed    0.25 sec
-      Start 13: test_duplicate
-13/21 Test #13: test_duplicate ....................   Passed    0.16 sec
-      Start 14: test_generate
-14/21 Test #14: test_generate .....................   Passed    0.15 sec
-      Start 15: test_show
-15/21 Test #15: test_show .........................   Passed    0.13 sec
-      Start 16: test_show_json
-16/21 Test #16: test_show_json ....................   Passed    0.13 sec
-      Start 17: test_show_note
-17/21 Test #17: test_show_note ....................   Passed    0.13 sec
-      Start 18: test_show_reprompt
-18/21 Test #18: test_show_reprompt ................   Passed    0.14 sec
-      Start 19: test_ls
-19/21 Test #19: test_ls ...........................   Passed    0.13 sec
-      Start 20: test_export
-20/21 Test #20: test_export .......................   Passed    0.15 sec
-      Start 21: test_export_extended
-21/21 Test #21: test_export_extended ..............   Passed    0.15 sec
-
-[0;32m100% tests passed[0;0m, 0 tests failed[0;0m out of 21
-
-Total Test time (real) =   3.33 sec
-travis_time:end:0bf24222:start=1577319816649919000,finish=1577319834975728000,duration=18325809000,event=script[0K[32;1mThe command "make && make test" exited with 0.[0m
-
-
-Done. Your build exited with 0.
